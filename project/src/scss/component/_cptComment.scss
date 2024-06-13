@@ -1,0 +1,56 @@
+/* --------------------------- 게시판 댓글 --------------------------- */
+.cptComment{
+    .cmtArea{
+        .cmtTop{
+            .cmtTitle{}
+            .number{}
+        }
+        .cmtBody{
+
+        }
+    }
+    .cmtUnit{
+        .cmtName{
+
+        }
+        .cmtBox{
+            .cmtCont{
+                .cmtText{}
+                .cmtBtnBox{
+                    .btn{
+                        &.basic{}
+                        &.bGray{}
+                        &.oGray{}
+                    }
+                }
+                .cmtDate{}
+            }
+        }
+    }
+    .cmtWriteBox{
+        .writeText{
+            textarea{}
+            .byte{}
+        }
+        .writeBtm{
+            .btmL{}
+            .btmR{
+                .btn{
+                    &.basic{}
+                    &.bGray{}
+                    &.oGray{}
+                }
+            }
+        }
+    }
+}
+
+//태블릿 + 모바일
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+
+}
+
+//모바일
+@media screen and (min-width: 100px) and (max-width: 755px) {
+
+}

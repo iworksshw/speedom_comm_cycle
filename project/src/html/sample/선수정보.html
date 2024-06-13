@@ -1,0 +1,191 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "선수정보",
+                    url: "../../",
+                }) %>
+
+                <!-- 선수정보 -->
+                <div class="cptPlayerInfo">
+                    <div class="imgBox">
+                        <img src="" alt="">
+                    </div>
+                    <div class="infoBox">
+                        <div class="title">
+                            홍길동 (12345678)
+                        </div>
+                        <ul class="infoList">
+                            <li class="infoItem">기수 : 17기</li>
+                            <li class="infoItem">출신지 : 충북</li>
+                            <li class="infoItem">등급 : A2</li>
+                            <li class="infoItem">훈련지 : 가평</li>
+                        </ul>
+                        <div class="btnBox">
+                            <button class="btn basic">비밀번호 재설정</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 바이오리등 -->
+
+                <!-- 테이블 상단 -->
+                <div class="comGroupTop">
+                    <div class="alignL">
+                        <div class="groupTitle">2024년 경주기록</div>
+                    <div class="alignR">
+                        <ul class="comSideOpt">
+                            <li class="sideItem">
+                                <div class="text">전체 성적순위 : 850위</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 테이블 -->
+                <div class="comTable">
+                    <table>
+                        <caption></caption>
+                        <tbody>
+                            <tr>
+                                <th>승률</th>
+                                <th>연대율</th>
+                                <th>삼연대율</th>
+                                <th>출주횟수</th>
+                                <th>출주일수</th>
+                                <th>선행1착수</th>
+                                <th>선행2착수</th>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>62</td>
+                                <td>90</td>
+                                <td>7</td>
+                                <td>21</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th>선행3착수</th>
+                                <th>추입1착</th>
+                                <th>추입2착</th>
+                                <th>추입3착</th>
+                                <th>총편균</th>
+                                <th>젖히기1착수</th>
+                                <th>젖히기2착수</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>96.626</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>승률</th>
+                                <th>연대율</th>
+                                <th>삼연대율</th>
+                                <th>출주횟수</th>
+                                <th>출주일수</th>
+                                <th>선행1착수</th>
+                                <th>선행2착수</th>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>62</td>
+                                <td>90</td>
+                                <td>7</td>
+                                <td>21</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th>선행3착수</th>
+                                <th>추입1착</th>
+                                <th>추입2착</th>
+                                <th>추입3착</th>
+                                <th>총편균</th>
+                                <th>젖히기1착수</th>
+                                <th>젖히기2착수</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>96.626</td>
+                                <td>2</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>승률</th>
+                                <th>연대율</th>
+                                <th>삼연대율</th>
+                                <th>출주횟수</th>
+                                <th>출주일수</th>
+                                <th>선행1착수</th>
+                                <th>선행2착수</th>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>62</td>
+                                <td>90</td>
+                                <td>7</td>
+                                <td>21</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

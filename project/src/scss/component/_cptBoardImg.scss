@@ -1,0 +1,31 @@
+/* --------------------------- 게시판 리스트 --------------------------- */
+.cptBoardList{
+    .table{
+        .tr{
+            td{
+                &.left{}
+                .num{
+
+                }
+                .icons{
+                    .new{}
+                    .file{}
+                    .secret{}
+                }
+                .state{
+                    &.complete{}
+                }
+            }
+        }
+    }
+}
+
+//태블릿 + 모바일
+@media screen and (min-width: 100px) and (max-width: 1023px) {
+
+}
+
+//모바일
+@media screen and (min-width: 100px) and (max-width: 755px) {
+
+}
