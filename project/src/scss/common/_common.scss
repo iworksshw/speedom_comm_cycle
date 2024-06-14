@@ -155,38 +155,78 @@ input[type=password] {}
 
 }
 
-.frmChoBox {
-    .iptChk  {
-        
-        & + .iptLbl{
 
-        }
-        &:checked + .iptLbl{
+/* ------------------------------------------------ Form ------------------------------------------------ */
+/* 크기 */
+.frmGroup {margin-top:5px;}
+.frmGroup:first-child {margin-top:0;}
+html .frmTini {width:60px; min-width:60px;}
+html .frmXs {width:100px; min-width:100px;}
+html .frmSm {width:130px; min-width:130px;}
+html .frmMd {width:170px; min-width:170px;}
+html .frmLg {width:200px; min-width:200px;}
+html .frmHalf {width:calc(50% - 3px); min-width:calc(50% - 3px);}
+html .frmThrd {width:calc(33% - 3px); min-width:calc(33% - 3px);}
+html .frmFrth {width:calc(25% - 3px); min-width:calc(25% - 3px);}
+textArea.areaMd {height:150px;}
 
-        }
-        &:disabled + .iptLbl{
+/* ------------------------------------------------ 라디오/체크박스 ------------------------------------------------ */
+/* 일반 체크박스/라디오 박스 */
+.frmChoBox {margin-right:30px; display:inline-block; position:relative;}
+.frmChoBox .iptLbl {min-height:30px; margin-right:10px; padding-top:5px; padding-bottom:5px; word-break:keep-all;}
+.frmChoBox .iptLbl:last-child {margin-right:0;}
+.frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size:14px; font-weight:300; line-height:20px; color:#000; background:url(../images/icon/ic_chk_off.svg) left center no-repeat;}
+.frmChoBox .iptChk:checked + .iptLbl {background:url(../images/icon/ic_chk_on.svg) left center no-repeat;}
 
-        }
-        &:disabled:checked + .iptLbl{
+.frmChoBox .iptChk:disabled + .iptLbl {color:#666; background:url(../images/icon/ic_chk_dis_off.svg) left center no-repeat;}
+.frmChoBox .iptChk:disabled:checked + .iptLbl {background:url(../images/icon/ic_chk_dis_on.svg) left center no-repeat;}
 
-        }
-    }
-    .iptRdo  {
-        
-        & + .iptLbl{
-            
-        }
-        &:checked + .iptLbl{
+.frmChoBox .iptRdo + .iptLbl {padding-left:29px; font-size:14px; font-weight:300; line-height:20px; color:#000; background:url(../images/icon/ic_rdo_off.svg) left center no-repeat;}
+.frmChoBox .iptRdo:checked + .iptLbl {background:url(../images/icon/ic_rdo_on.svg) left center no-repeat;}
 
-        }
-        &:disabled + .iptLbl{
+.frmChoBox .iptRdo:disabled + .iptLbl {color:#666; background:url(../images/icon/ic_rdo_dis_off.svg) left center no-repeat;}
+.frmChoBox .iptRdo:disabled:checked + .iptLbl {background:url(../images/icon/ic_rdo_dis_on.svg) left center no-repeat;}
 
-        }
-        &:disabled:checked + .iptLbl{
+.frmChoBox:last-child {margin-right:0;}
 
-        }
-    }
-}
+/* 체크박스/라디오 리스트 */
+.frmChoList {width:100%; display:flex; flex-wrap:wrap;}
+.frmChoList .frmChoBox {width:200px; margin-right:0;}
+.frmChoList.w100 .frmChoBox {width:100px;}
+.frmChoList.w150 .frmChoBox {width:150px;}
+.frmChoList.w200 .frmChoBox {width:200px;}
+.frmChoList.w250 .frmChoBox {width:250px;}
+.frmChoList.w300 .frmChoBox {width:300px;}
+.frmChoList.col6 .frmChoBox {width:50%;}
+.frmChoList.col4 .frmChoBox {width:33.333%;}
+.frmChoList.col3 .frmChoBox {width:25%;}
+.frmChoList.col2 .frmChoBox {width:16.666%;}
+.frmChoList.vertical {padding-top:5px;}
+.frmChoList.vertical .frmChoBox {width:100%;}
+
+/* 텍스트 없는 체크박스/라디오 */
+.frmChoBox.only .iptChk + .iptLbl {height:30px; margin:0; padding-left:20px;}
+.frmChoBox.only .iptRdo + .iptLbl {height:30px; margin:0; padding-left:20px;}
+
+/*일반 체크 및 라디오 박스 여백 좁힘*/
+.frmChoBox.type02 {margin-right:10px;}
+
+/*일반 체크 및 라디오 박스 가로 퍼센트 비율*/
+.frmChoBox.type03 {margin:0; width:13.9%;}
+
+/* 버튼식 체크박스/라디오 박스 */
+.frmChoBtn {display:flex;} 
+.frmChoBtn .iptChk + .iptLbl {width:100px; height:30px; font-size:14px; font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
+.frmChoBtn .iptChk:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
+.frmChoBtn .iptRdo + .iptLbl {width:100px; height:30px; font-size:14px; font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
+.frmChoBtn .iptRdo:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
+
+
+/* ------------------------------ 한줄 안에 여러폼을 넣어야 할 경우 ------------------------------ */
+.frmGroup {display:flex; align-items:center;}
+.frmGroup .iptText, .frmGroup .iptSlt, .frmGroup .textBox {margin-left:5px;}
+.frmGroup .textBox.clar {margin-top:0; margin-left:5px;}
+.frmGroup.multiLine {flex-wrap: wrap;}
 
 @media screen and (min-width: 100px) and (max-width: 1023px) {
 

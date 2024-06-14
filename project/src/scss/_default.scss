@@ -4,16 +4,31 @@
   --key-text01:#00aede;
 }
 
+
+
+/* Pretendard */
+@font-face {
+  font-family: "NotoSansCJKkr";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../common/webfont/NotoSansKR-Thin.woff") format("woff"),
+    url("../../common/webfont/NotoSansKR-Thin.woff2") format("woff2"),
+    url("../../common/webfont/NotoSansKR-Thin.otf") format("opentype");
+    
+}
+
+
+
+
+
 /* 본고딕 Thin */
 @font-face {
-    font-family: "NotoSansCJKkr";
-    font-style: normal;
-    font-weight: 200;
-    src: url("../../common/webfont/NotoSansKR-Thin.woff") format("woff"),
-      url("../../common/webfont/NotoSansKR-Thin.woff2") format("woff2"),
-      url("../../common/webfont/NotoSansKR-Thin.otf") format("opentype");
-      
-  }
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300 900;
+  src: url("../../common/webfont/PretendardVariable.woff2") format("woff2");
+    
+}
   
   /* 본고딕 Light */
   @font-face {
