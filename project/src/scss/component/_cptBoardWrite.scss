@@ -1,15 +1,29 @@
 /* --------------------------- 게시판 상세 --------------------------- */
 .cptBoardWrite{
+    width:100%; padding:0 20px;
     .boardArea{
+        width: 100%; padding-bottom:20px; border-bottom:1px solid #eee;
         .boardTop{
+            width: 100%; margin-bottom:20px;
             .boardTitle{
-                input{
-
+                width:100%; height:90px; padding-bottom:20px; border-bottom:1px solid #eee;
+                @include media('mobile'){height:70px;}
+                input {
+                    width:100%; height:70px; padding:0 40px; color: #000; font-size: 22px; font-style: normal; font-weight: 300; line-height: normal;
+                     border:0; border-radius:12px; background:#F7F9FB;
+                    &::placeholder {color:rgba(0,0,0,0.3); font-size: 16px;}
+                    @include media('mobile'){
+                        height:50px; padding:0 15px; font-size: 18px;
+                        &::placeholder {font-size: 14px;}
+                    }
                 }
             }
             .boardType{
+                width:100%; height:50px; margin-top:20px;
                 select{
-
+                    width:300px; height:50px; padding:0 40px; color: #000; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal;
+                     border:0; border-radius:12px; background:#F7F9FB url(../../images/common/ico_wirte_slt.svg) right 20px top 21px no-repeat;
+                     @include media('mobile'){width:100%; padding:0 15px; font-size:12px;}
                 }
             }
             .boardState{
@@ -20,21 +34,17 @@
             }
         }
         .boardBody{
+            width:100%;
             .boardCont{
-                textarea{
-                    
+                width:100%; padding:127px 150px 83px; border-radius:12px; background:#F7F9FB; position:relative;
+                @include media('mobile'){padding:83px 15px 35px;}
+                &::before {content:""; width:calc(100% - 20px); height:38px; border-radius:8px; background:#fff; display:block; position:absolute; left:10px; top:10px;}
+                textarea.boardText{
+                    width:100%; height:auto; min-height:250px; background:transparent; color: #000; font-size: 16px; font-style: normal; font-weight: 300; line-height: 1.75; border:0; resize:vertical;
+                    &::placeholder {color:rgba(0,0,0,0.3);}
+                    @include media('mobile'){min-height:342px; font-size: 15px; line-height: 1.5;}
                 }
             }
         }
     }
-}
-
-//태블릿 + 모바일
-@media screen and (min-width: 100px) and (max-width: 1023px) {
-
-}
-
-//모바일
-@media screen and (min-width: 100px) and (max-width: 755px) {
-
 }

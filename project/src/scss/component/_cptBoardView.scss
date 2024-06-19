@@ -1,34 +1,48 @@
 /* --------------------------- 게시판 상세 --------------------------- */
 .cptBoardView{
+    width:100%; padding:0 20px;
     .boardArea{
+        width: 100%; padding-bottom:70px; border-bottom:1px solid #eee;
+        @include media('mobile'){padding-bottom:40px;}
         .boardTop{
+            width: 100%; padding-bottom:30px; margin-bottom:20px; border-bottom:1px solid #eee;
+            @include media('mobile'){padding-bottom:16px;}
             .boardType{
-                
+                margin-bottom:10px; color: #000; text-align: left; font-size: 15px; font-style: normal; font-weight: 600; line-height: normal;
+                @include media('mobile'){margin-bottom: 9px; font-size: 13px;}
             }
             .boardTitle{
-                
+                color: #000; font-size: 34px; font-style: normal; font-weight: 300; line-height: 1.35;
+                @include media('mobile'){font-size: 24px; line-height: 1.25}
             }
             .boardState{
+                width:100%; height:30px; margin-top:30px; display:flex; justify-content: end; gap:26px;
+                @include media('mobile'){
+                    justify-content: flex-start;
+                }
                 .item{
-                    &.state{}
-                    &.blue{}
+                    color: #000; font-size: 14px; font-style: normal; font-weight: 300; line-height: normal; align-self: center;
+                    &.info{
+                        display:flex; gap:26px;
+                        span{
+
+                        }
+                    }
+                    &.state{
+                        min-width: 66px; height:30px; padding:0 15px; text-align: center; font-size: 12px; font-style: normal; font-weight: 800; 
+                        line-height: 30px; border-radius: 15px; background: #F4F6F8;
+                    }
+                    &.pink{color: #FF5ADB;}
+                    &.blue{color: #4053FF;}
+                    &.gray{color: #888888;}
                 }
             }
         }
         .boardBody{
+            padding:60px 150px 0;
             .boardCont{
-                
+                padding-bottom:50px; color: #000; font-size: 16px; font-style: normal; font-weight: 300; line-height: 1.75;
             }
         }
     }
-}
-
-//태블릿 + 모바일
-@media screen and (min-width: 100px) and (max-width: 1023px) {
-
-}
-
-//모바일
-@media screen and (min-width: 100px) and (max-width: 755px) {
-
 }

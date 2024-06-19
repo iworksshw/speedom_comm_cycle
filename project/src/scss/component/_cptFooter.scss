@@ -1,36 +1,61 @@
 .cptFooter{
     width: 100%; margin-top:220px;
+    @include media('mobile'){margin-top:110px;}
     .footArea{
         width: 100%;
         .siteArea{
             width: 100%; height: 90px; background: #F7F9FB;
+            @include media('mobile'){height:auto; padding:32px 0 26px;}
             .siteGroup{
                 width: 100%; padding:0 20px; max-width: 1312px; height: 100%; margin:0 auto; display:flex;
+                @include media('mobile'){flex-wrap:wrap;}
                 .siteItem{
                     height: 100%; flex-grow: 1; position:relative;
-                    &:first-child::before{content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; left:0; top:38px;}
-                    &::after {content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; right:0; top:38px;}
+                    &:first-child::before{content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; left:0; top:calc(50% - 6px);}
+                    &::after {content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; right:0; top:calc(50% - 6px);}
                     a {
                         width: 100%; height: 100%; color: #000; text-align: center; font-size: 15px; font-style: normal; font-weight: 500; line-height: normal; 
                         display:flex; justify-content: center; align-items: center;
+                    }
+                    @include media('mobile'){
+                        height:30px; padding:0 4px; display:flex; 
+                        &:nth-child(1) {
+                            order:1;
+                            &::before{display:none;}
+                        }
+                        &:nth-child(2) {order:2;}
+                        &:nth-child(3) {order:2;}
+                        &:nth-child(4) {order:1;}
+                        &:nth-child(5) {order:1;}
+                        &:nth-child(6) {
+                            order:2;
+                            &::after{display:none;}
+                        }
                     }
                 }
             }
         }
         .copyArea{
             width: 100%; height: 60px; background: #021426;
+            @include media('mobile'){height:auto;}
             .copyGroup{
                 width: 100%; padding:0 60px; height: 100%; display:flex; justify-content: space-between;
                 @include media('gnb'){max-width:1340px; padding:0 20px; margin:0 auto;}
+                @include media('mobile'){padding:40px 20px 32px; flex-wrap: wrap-reverse;;}
                 .copyL{
                     display:flex; flex-grow: 1;
                     .copyList{
                         display:flex;
+                        @include media('mobile'){width: 100%; margin-top: 24px; flex-wrap: wrap; justify-content: center;}
                         .copyItem{
                             padding-left:26px; color: rgba(255,255,255,0.6); font-size: 14px; font-style: normal; font-weight: 400; line-height: normal; display:flex; align-items: center; position:relative;
                             &::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:14px; top:calc(50% - 6px);}
                             &:first-child {
                                 padding-left:0;
+                                &::after {display:none;}
+                            }
+                            @include media('mobile'){
+                                width: 100%; padding-left:0; justify-content: center;
                                 &::after {display:none;}
                             }
                         }
@@ -40,12 +65,18 @@
                     display:flex; flex-grow: 1;
                     .numberList{
                         width: 100%; display:flex; justify-content: flex-end;
+                        @include media('mobile'){flex-wrap: wrap; justify-content: center;}
                         .numItem{
                             padding-left:26px; color: #FFF; font-size: 15px; font-style: normal; font-weight: 500; line-height: normal; display:flex; align-items: center; position:relative;
                             &::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:14px; top:calc(50% - 6px);}
                             &:first-child {
                                 padding-left:0;
                                 &::after {display:none;}
+                            }
+                            @include media('mobile'){
+                                width: 100%; height:43px; padding-left:0; font-size: 34px; font-weight: 300; justify-content: center; align-items: flex-start;
+                                &::after {display:none;}
+                                .sup {margin-top:6px; margin-left:3px; font-size: 12px; font-style: normal; font-weight: 500; line-height: normal;}
                             }
                         }
                     }

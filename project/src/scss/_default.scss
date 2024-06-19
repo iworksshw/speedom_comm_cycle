@@ -33,6 +33,7 @@ caption {font-size: 0;}
 
 input[type=radio] {width:1px; height:1px; font-size:0; opacity:0.01; overflow:hidden;}
 input[type=checkbox] {width:1px; height:1px; font-size:0; opacity:0.01; overflow:hidden;}
+input[type=file] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
 
 select {-moz-appearance:none; -webkit-appearance:none; appearance:none; -moz-border-radius:0; -webkit-border-radius: 0;border-radius: 0;  background:#fff url(../../common/images/icon_select.png) calc(100% - 9px) center no-repeat;}
 select::-ms-expand {display:none}
