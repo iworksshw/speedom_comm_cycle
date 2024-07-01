@@ -5,12 +5,86 @@
     @include media('mobile'){margin-bottom:47px;}
     .titleArea{
         h1{
-            color: #000; font-size: 58px; font-style: normal; font-weight: 600; line-height: normal;
-            @include media('mobile'){font-size: 44px;}
+            color: #000; font-size: rem(58px); font-style: normal; font-weight: 600; line-height: normal;
+            @include media('mobile'){font-size: rem(44px);}
         }
     }
 }
 
+/* -------------------------------- 작은 타이틀 (테이블 타이틀) -------------------------------- */
+.comInTitle {
+    margin-bottom:22px;
+    h4 {
+        padding-left:17px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 600; line-height: normal; position:relative;
+        &::before {content:""; width:7px; height:7px; border-radius:50%; background: #4D5DF2; display:block; position:absolute; left:0; top:5px;}
+    }
+}
+
+/* -------------------------------- 정보상자 -------------------------------- */
+.comInfoBox{
+    width:100%; margin-bottom:60px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01);
+    .infoList {
+        .item{ 
+            margin-top:4px; padding-left:18px; position:relative; color: #4d4d4d; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.5;
+            &::before{content:""; width:4px; height:4px; border-radius:50%; background:#000; display:block; position:absolute; left:0; top:10px;}
+            &:first-child {margin-top:0;}
+            b{
+                &.bold {font-weight:600;}
+                &.c_blue {font-weight:600; color:var(--blue-txt01);}
+            }
+        }
+    }
+}
+
+/* -------------------------------- 동영상 영역 -------------------------------- */
+.comMovieView {
+    .playerBox {
+        position:relative;
+        .playerBox {width:100%; height:100%; position:absolute; left:0; top:0; background:#000;}
+    }
+}
+.comBtnInView {
+    .btnArea {
+        width:100%; margin-top:40px; margin-bottom:40px; display:flex; justify-content: flex-end; gap: 6px;
+        .btn {
+            width: 260px; height: 60px; padding: 0px 28px 0px 30px; text-align: center; font-size: rem(15px); font-style: normal; font-weight: 800; 
+            border-radius: 12px; line-height: normal; justify-content: center; align-items: center;
+            &.basic {
+                color: var(--blue-txt01); border:4px solid #808CFC; background: var(--gray-bg01);
+                &:disabled {mix-blend-mode: luminosity; opacity:0.4;}
+            }
+            &.complete {
+                color: var(--blue-txt01); border:4px solid var(--gray-bg01); background: var(--gray-bg01);
+            }
+        }
+    }
+}
+
+/* -------------------------------- 테이블 -------------------------------- */
+.comTable {
+    width:100%; margin-top: 20px;
+    table {
+        width:100%; border-spacing: 0; border-collapse: collapse; table-layout: fixed; border-top:1px solid #555;
+        thead {
+            th {
+                height:60px; color: #000; font-size: rem(14px); font-weight: 600; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
+                &.t_01 {}
+                &.t_02 {background:#F1F3FB;}
+            }
+        }
+        tbody {
+            th {
+                height:60px; color: #000; font-size: rem(14px); font-weight: 600; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
+            }
+            td {
+                height:60px; padding:18px 0; color: #000; font-size: rem(16px); font-weight: 300; text-align:center; line-height: 1.5; border-bottom:1px solid #eee;
+            }
+            .frm {padding:5px 0;}
+            .left {padding-left:40px; text-align:left;}
+        }
+        .iptSlt {height: 49px; padding-left:24px;}
+    }
+}
 
 /* -------------------------------- 테이블,그리드,게시판 등의 상단 -------------------------------- */
 .comGroupTop {
@@ -25,7 +99,7 @@
     }
     .unit{
         .text{
-            color: rgba(0,0,0,0.5); font-size: 14px; font-style: normal; font-weight: 300; line-height: normal;
+            color: rgba(0,0,0,0.5); font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal;
             .total{}
         }
     }
@@ -33,13 +107,14 @@
 
 /* -------------------------------- 사이드 옵션 -------------------------------- */
 .comSideOpt{
+    display: flex; gap: 8px;
     @include media('mobile'){width:100%;}
     .sideItem{
         .frmSearch{
             position:relative;
             input{
-                width: 300px; height: 40px; padding:0 17px; color: #000; text-align: left; font-size: 16px; font-style: normal; font-weight: 300; 
-                line-height: normal; border:0; border-radius: 12px; background: #F7F9FB;
+                width: 300px; height: 40px; padding:0 17px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; 
+                line-height: normal; border:0; border-radius: 12px; background: var(--gray-bg01);
                 &::placeholder {color:rgba(0,0,0,0.3);}
             }
             .btnSearch {
@@ -48,6 +123,10 @@
             @include media('mobile'){
                 input{width:100%;}
             }
+        }
+        .iptSlt {
+            width: 300px; height: 40px; padding:0 40px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; 
+            line-height: normal; border:0; border-radius: 12px; background: var(--gray-bg01) url(../../images/common/ic_side_slt.svg) right 20px center no-repeat;
         }
     }
 }
@@ -58,12 +137,13 @@
     @include media('mobile'){margin-top:14px;}
     .alignL{
         width:100%; display:flex; justify-content: flex-start;
+        .frmGroup {align-items: flex-start;}
     }
     .alignR{
         width:100%; display:flex; justify-content: flex-end;
     }
     .btn {
-        width:max-content; min-width:90px; height:44px; margin-right:4px; padding:0 15px; font-size: 14px; font-weight: 600; border-radius:12px;
+        width:max-content; min-width:90px; height:44px; margin-right:4px; padding:0 15px; font-size: rem(14px); font-weight: 600; border-radius:12px;
         display: flex; justify-content: center; align-items: center;
         @include media('mobile'){min-width:76px;}
         &:last-child {margin-right:0;}
@@ -72,10 +152,10 @@
             &:disabled {background:#BBC1F6;}
         }
         &.bGray {
-            color: #4053FF; background: #F4F6F8;
+            color: var(--blue-txt01); background: var(--gray-bg01);
         }
         &.oGray {
-            color: #FF9900; background: #F4F6F8;
+            color: #FF9900; background: var(--gray-bg01);
         }
     }
 }
@@ -86,30 +166,30 @@
     @include media('mobile'){padding:0 20px; margin-top:35px;}
     .start{
         width:40px; height:40px; font-size:0; vertical-align:top; border-radius:10px; 
-        background:#F7F9FB url(../../images/common/ic_paging_start.svg) center no-repeat; display:inline-block;
+        background:var(--gray-bg01) url(../../images/common/ic_paging_start.svg) center no-repeat; display:inline-block;
         @include media('mobile'){width: 30px; height: 30px; border-radius: 8px;}
     }
     .prev{
         width:40px; height:40px; margin-left:2px; font-size:0; vertical-align:top; border-radius:10px;  
-        background:#F7F9FB url(../../images/common/ic_paging_prev.svg) center no-repeat; display:inline-block;
+        background:var(--gray-bg01) url(../../images/common/ic_paging_prev.svg) center no-repeat; display:inline-block;
         @include media('mobile'){width: 30px; height: 30px; border-radius: 8px;}
     }
     .next{
         width:40px; height:40px; margin-left:30px; font-size:0; vertical-align:top; border-radius:10px;  
-        background:#F7F9FB url(../../images/common/ic_paging_next.svg) center no-repeat; display:inline-block;
+        background:var(--gray-bg01) url(../../images/common/ic_paging_next.svg) center no-repeat; display:inline-block;
         @include media('mobile'){width: 30px; height: 30px; margin-left:10px; border-radius: 8px;}
     }
     .end{
         width:40px; height:40px; margin-left:2px; font-size:0; vertical-align:top; border-radius:10px;  
-        background:#F7F9FB url(../../images/common/ic_paging_end.svg) center no-repeat; display:inline-block;
+        background:var(--gray-bg01) url(../../images/common/ic_paging_end.svg) center no-repeat; display:inline-block;
         @include media('mobile'){width: 30px; height: 30px; border-radius: 8px;}
     }
     .numList{
         margin-left:30px; vertical-align:top; display:inline-block;
         > li{
             width:40px; height:40px; margin-left:3px; font-size:0; border-radius:10px; border:1px solid #EEF0F1; display:inline-block;
-            :first-child {margin-left:0;}
-            a{width:100%; height:100%; color: #000; text-align: center; font-size: 14px; font-weight: 500; line-height: 38px; display:block;}
+            &:first-child {margin-left:0;}
+            a{width:100%; height:100%; color: #000; text-align: center; font-size: rem(14px); font-weight: 500; line-height: 38px; display:block;}
             &.on{
                 a{color:#ff9900;}
             }
@@ -130,7 +210,7 @@
     .fileGroup{
         width:100%; 
         .file{
-            width: 100%; height: 66px; margin-top: 12px; border-radius: 12px; background: #F7F9FB;
+            width: 100%; height: 66px; margin-top: 12px; border-radius: 12px; background: var(--gray-bg01);
             &:first-child {margin-top:0;}
             &.upload{
 
@@ -139,10 +219,10 @@
 
             }
             dl{
-                width:100%; height:100%; display: flex;
+                width:100%; height:100%; display: flex; 
                 dt{
-                    padding-left:52px; color: #000; font-size: 14px; font-style: normal; font-weight: 500; align-self: center;
-                    @include media('mobile'){padding-left:20px; font-size:12px;}
+                    min-width: max-content; padding-left:52px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 500; align-self: center;
+                    @include media('mobile'){padding-left:20px; font-size: rem(12px);}
                 }
                 dd{
                     padding-left:49px; align-self: center; flex-grow: 1;
@@ -150,7 +230,7 @@
                 }
             }
             .fileName {
-                width:100%; color: #000; font-size: 16px; font-style: normal; font-weight: 300; line-height: 1.75; display:block; 
+                width:100%; padding-right: 75px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.75; display:block; 
                 background:url(../../images/common/ico_file_download.svg) right 40px center no-repeat;
             }
         }
@@ -162,17 +242,17 @@
     width: 100%; position:relative;
     .fileBefore{
         .btn{
-            width:70px; height:30px; color: #4053FF; text-align: center; font-size: 12px; font-style: normal; font-weight: 700; border-radius:15px; border: 1px solid #A2A9ED; 
+            width:70px; height:30px; color: var(--blue-txt01); text-align: center; font-size: rem(12px); font-style: normal; font-weight: 700; border-radius:15px; border: 1px solid #A2A9ED; 
             background: #FFF; display:flex; justify-content: center; align-items: center;
         }
     }
     .fileAfter {
         padding-right:18px; align-items: center; justify-content: space-between; display:none;
-        .textBox {color: rgba(0,0,0,0.7); font-size: 16px; font-style: normal; font-weight: 300;}
+        .textBox {color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 300;}
         .fileDel {width:30px; height:30px; font-size:0; background:url(../../images/common/ico_file_del.svg) center no-repeat;}
         @include media('mobile'){
             padding-left:6px;
-            .textBox {font-size: 15px;}
+            .textBox {font-size: rem(15px);}
         }
     }
     &.on{
@@ -194,54 +274,46 @@
 
 /* -------------------------------- 이전글/다음글 -------------------------------- */
 .comOtherPage{
+    width:100%; max-width: 1340px; padding:0 20px; margin-top:84px;
+    @include media('mobile'){margin-top:70px;}
     .otherGroup{
+        width:100%; border-top:1px solid #eeeeee;
         .otherItem{
+            width:100%; height:60px; border-bottom:1px solid #eeeeee; display:flex; 
+            @include media('mobile'){height:auto; padding:20px 0 16px; display:block;}
             .otherTitle{
-                
-            }
+                width:150px; color: #000; text-align: center; font-size: rem(14px); font-style: normal; font-weight: 500; line-height: normal; align-self: center; flex-shrink: 0;
+                @include media('mobile'){font-size: rem(12px);}
+            } 
             .otherCont{
+                flex-grow:1; align-self: center; @include line1();
+                @include media('mobile'){margin-top:7px;}
                 .link{
-                    
+                    color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.5;
+                @include media('mobile'){font-size: rem(15px);}
                 }
             }
             .otherDate{
-                
+                width:100px; color: #000; text-align: right; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal; align-self: center; flex-shrink: 0;
+                @include media('mobile'){font-size: rem(12px);}
             }
         }
     }
 }
 
-@media screen and (min-width: 100px) and (max-width: 1023px) {
-
-}
 
 //기본 폼
 input[type=text] {}
 input[type=password] {}
 
-//폼그룹
-.frmSearch{
-    .frmTini {}
-    .frmXs {}
-    .frmSm {}
-    .frmMd {}
-    .frmLg {}
-    .frmXl {}
+
+.iptText { 
+    width: 300px; height: 40px; padding: 0 17px; color: #000; text-align: left; font-size: 1rem; font-style: normal; font-weight: 300; line-height: normal; border: 0; 
+    border-radius: 12px; background: var(--gray-bg01);
 }
-
-@media screen and (min-width: 100px) and (max-width: 1023px) {
-
-}
-
-.iptText {
-    
-}
-.iptSlt  {
-    
-}
-
-@media screen and (min-width: 100px) and (max-width: 1023px) {
-
+.iptSlt  { 
+    width: 100%; height: 40px; padding: 0 40px; color: #000; text-align: left; font-size: 1rem; font-style: normal; font-weight: 300; line-height: normal; border: 0; 
+    border-radius: 12px; background: var(--gray-bg01) url(../../images/common/ic_side_slt.svg) right 20px center no-repeat;
 }
 
 
@@ -261,20 +333,20 @@ textArea.areaMd {height:150px;}
 
 /* ------------------------------------------------ 라디오/체크박스 ------------------------------------------------ */
 /* 일반 체크박스/라디오 박스 */
-.frmChoBox {margin-right:30px; display:inline-block; position:relative;}
+.frmChoBox {margin-right:20px; display:inline-block; position:relative;}
 .frmChoBox .iptLbl {min-height:30px; margin-right:10px; padding-top:5px; padding-bottom:5px; word-break:keep-all;}
 .frmChoBox .iptLbl:last-child {margin-right:0;}
-.frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size:14px; font-weight:300; line-height:20px; color:#000; background:url(../images/icon/ic_chk_off.svg) left center no-repeat;}
-.frmChoBox .iptChk:checked + .iptLbl {background:url(../images/icon/ic_chk_on.svg) left center no-repeat;}
+.frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight:300; line-height:20px; color:#000; background:url(../../images/common/ic_chk_off.svg) left center no-repeat;}
+.frmChoBox .iptChk:checked + .iptLbl {background:url(../../images/common/ic_chk_on.svg) left center no-repeat;}
 
-.frmChoBox .iptChk:disabled + .iptLbl {color:#666; background:url(../images/icon/ic_chk_dis_off.svg) left center no-repeat;}
-.frmChoBox .iptChk:disabled:checked + .iptLbl {background:url(../images/icon/ic_chk_dis_on.svg) left center no-repeat;}
+.frmChoBox .iptChk:disabled + .iptLbl {color:#666; background:url(../../images/common/ic_chk_dis_off.svg) left center no-repeat;}
+.frmChoBox .iptChk:disabled:checked + .iptLbl {background:url(../../images/common/ic_chk_dis_on.svg) left center no-repeat;}
 
-.frmChoBox .iptRdo + .iptLbl {padding-left:29px; font-size:14px; font-weight:300; line-height:20px; color:#000; background:url(../images/icon/ic_rdo_off.svg) left center no-repeat;}
-.frmChoBox .iptRdo:checked + .iptLbl {background:url(../images/icon/ic_rdo_on.svg) left center no-repeat;}
+.frmChoBox .iptRdo + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight:300; line-height:20px; color:#000; background:url(../../images/common/ic_rdo_off.svg) left center no-repeat;}
+.frmChoBox .iptRdo:checked + .iptLbl {background:url(../../images/common/ic_rdo_on.svg) left center no-repeat;}
 
-.frmChoBox .iptRdo:disabled + .iptLbl {color:#666; background:url(../images/icon/ic_rdo_dis_off.svg) left center no-repeat;}
-.frmChoBox .iptRdo:disabled:checked + .iptLbl {background:url(../images/icon/ic_rdo_dis_on.svg) left center no-repeat;}
+.frmChoBox .iptRdo:disabled + .iptLbl {color:#666; background:url(../../images/common/ic_rdo_dis_off.svg) left center no-repeat;}
+.frmChoBox .iptRdo:disabled:checked + .iptLbl {background:url(../../images/common/ic_rdo_dis_on.svg) left center no-repeat;}
 
 .frmChoBox:last-child {margin-right:0;}
 
@@ -305,9 +377,9 @@ textArea.areaMd {height:150px;}
 
 /* 버튼식 체크박스/라디오 박스 */
 .frmChoBtn {display:flex;} 
-.frmChoBtn .iptChk + .iptLbl {width:100px; height:30px; font-size:14px; font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
+.frmChoBtn .iptChk + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
 .frmChoBtn .iptChk:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
-.frmChoBtn .iptRdo + .iptLbl {width:100px; height:30px; font-size:14px; font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
+.frmChoBtn .iptRdo + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
 .frmChoBtn .iptRdo:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
 
 

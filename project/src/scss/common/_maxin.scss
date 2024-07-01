@@ -25,3 +25,11 @@ $breakpointText: (
 }
 
 //여러줄 말줄임
+
+
+//rem공식
+//$basicFontSize:16px; default.scss 최상단에 있음
+$basicFontSize:16px;
+@function rem($pixels, $base: $basicFontSize) {
+    @return calc($pixels / $base)+rem;
+}

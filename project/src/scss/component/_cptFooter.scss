@@ -4,7 +4,7 @@
     .footArea{
         width: 100%;
         .siteArea{
-            width: 100%; height: 90px; background: #F7F9FB;
+            width: 100%; height: 90px; background: var(--gray-bg01);
             @include media('mobile'){height:auto; padding:32px 0 26px;}
             .siteGroup{
                 width: 100%; padding:0 20px; max-width: 1312px; height: 100%; margin:0 auto; display:flex;
@@ -14,7 +14,7 @@
                     &:first-child::before{content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; left:0; top:calc(50% - 6px);}
                     &::after {content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; right:0; top:calc(50% - 6px);}
                     a {
-                        width: 100%; height: 100%; color: #000; text-align: center; font-size: 15px; font-style: normal; font-weight: 500; line-height: normal; 
+                        width: 100%; height: 100%; color: #000; text-align: center; font-size: rem(15px); font-style: normal; font-weight: 500; line-height: normal; 
                         display:flex; justify-content: center; align-items: center;
                     }
                     @include media('mobile'){
@@ -48,7 +48,7 @@
                         display:flex;
                         @include media('mobile'){width: 100%; margin-top: 24px; flex-wrap: wrap; justify-content: center;}
                         .copyItem{
-                            padding-left:26px; color: rgba(255,255,255,0.6); font-size: 14px; font-style: normal; font-weight: 400; line-height: normal; display:flex; align-items: center; position:relative;
+                            padding-left:26px; color: rgba(255,255,255,0.6); font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal; display:flex; align-items: center; position:relative;
                             &::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:14px; top:calc(50% - 6px);}
                             &:first-child {
                                 padding-left:0;
@@ -67,16 +67,16 @@
                         width: 100%; display:flex; justify-content: flex-end;
                         @include media('mobile'){flex-wrap: wrap; justify-content: center;}
                         .numItem{
-                            padding-left:26px; color: #FFF; font-size: 15px; font-style: normal; font-weight: 500; line-height: normal; display:flex; align-items: center; position:relative;
+                            padding-left:26px; color: #FFF; font-size: rem(15px); font-style: normal; font-weight: 500; line-height: normal; display:flex; align-items: center; position:relative;
                             &::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:14px; top:calc(50% - 6px);}
                             &:first-child {
                                 padding-left:0;
                                 &::after {display:none;}
                             }
                             @include media('mobile'){
-                                width: 100%; height:43px; padding-left:0; font-size: 34px; font-weight: 300; justify-content: center; align-items: flex-start;
+                                width: 100%; height:43px; padding-left:0; font-size: rem(34px); font-weight: 300; justify-content: center; align-items: flex-start;
                                 &::after {display:none;}
-                                .sup {margin-top:6px; margin-left:3px; font-size: 12px; font-style: normal; font-weight: 500; line-height: normal;}
+                                .sup {margin-top:6px; margin-left:3px; font-size: rem(12px); font-style: normal; font-weight: 500; line-height: normal;}
                             }
                         }
                     }
