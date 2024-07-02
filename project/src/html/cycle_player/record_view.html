@@ -1,32 +1,8 @@
 <!-- Header -->
-
-<!doctype html>
-<html lang="ko">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" >
-	<meta name="format-detection" content="telephone=no">
-	<!-- 캐싱방지 -->
-	<!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-	<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT"> -->
-	<!-- 모바일 상단,타이틀바,주소창 색변경(안드로이드에서 크롬,파폭,오페라,삼성브라우저만 가능) -->
-	<!-- <meta name="theme-color" content="#4285f4"> -->
-
-	<title>경륜 커뮤니티</title>
-
-	<link rel="stylesheet" href="../../common/css/swiper.css" />
-	<link rel="stylesheet" href="../../common/css/style.css" />
-	<!-- <link rel="stylesheet" href="../common/css/jquery-ui.min.css" /> -->
-	
-	<script src="../../common/js/swiper.js"></script>
-	<script src="../../common/js/common.js"></script>
-	<!--
-    <script src="../common/js/basic.js"></script>
-    -->
-</head>
-<body>
-<div class="skip"><a class="quickBtn" href="#container">본문바로가기</a></div>
-<div class="wrap">
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
 
 <!-- 레이아웃 -->
 <div class="lytLayout">
@@ -35,49 +11,9 @@
         <!-- 상단영역 -->
         <div class="layoutTop">
             <!-- Top -->
-            
-
-            <div class="cptGnb">
-                <div class="gnbArea">
-                    <div class="logoBox">
-                        <a href="#"><img src="../../images/common/logo_kcycle.png" alt="KCYCLE" style="width:100%;"></a>
-                    </div>
-                    <div class="gnbBox">
-                        <div class="menuArea">
-                            <ul class="depth1Group">
-                                <li class="depth1List">
-                                    <a href="#" class="depth1Name">소통공간</a>
-                                    <ul class="depth2Group">
-                                        <li class="depth2List">
-                                            <a href="#" class="depth2Name">소통공간</a>
-                                        </li>
-                                        <li class="depth2List">
-                                            <a href="#" class="depth2Name">소통공간</a>
-                                        </li>
-                                        <li class="depth2List">
-                                            <a href="#" class="depth2Name">소통공간</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="depth1List">
-                                    <a href="#" class="depth1Name">선수공간</a>
-                                </li>
-                                <li class="depth1List">
-                                    <a href="#" class="depth1Name">마이페이지</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="menuBtn">
-                            <span>메</span>
-                            <span>뉴</span>
-                            <span>열기</span>
-                        </button>
-                    </div>
-                    <div class="gnbTitle">
-                        경륜선수커뮤니티
-                    </div>
-                </div>
-            </div>
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
         </div>
         <!-- //상단영역 -->
 
@@ -89,13 +25,10 @@
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
-                
-
-<div class="comH1Title">
-    <div class="titleArea">
-        <h1>기록측정</h1>
-    </div>
-</div>
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "기록측정",
+                    url: "../../",
+                }) %>
 
                 <!-- 그룹 상단 -->
                 <div class="cptBoardView">
@@ -106,7 +39,7 @@
                                 <li class="item info">
                                     <span>경륜 심판팀</span>
                                     <span>6485</span>
-                                    <span>0000.00.00</span>
+                                    <span>0000-00-00</span>
                                 </li>
                             </ul>
                         </div>
@@ -204,12 +137,14 @@
                                                 </div>
                                             </td>
                                             <td class="frm">
-                                                <select name="" id="" class="iptSlt">
-                                                    <option value="">신청사유 선택</option>
-                                                    <option value="">장기 미출전</option>
-                                                    <option value="">3일연속 최하위</option>
-                                                    <option value="">주행능력저하 5차신 이상</option>
-                                                </select>
+                                                <div class="frmGroup">
+                                                    <select name="" id="" class="iptSlt">
+                                                        <option value="">신청사유 선택</option>
+                                                        <option value="">장기 미출전</option>
+                                                        <option value="">3일연속 최하위</option>
+                                                        <option value="">주행능력저하 5차신 이상</option>
+                                                    </select>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -239,12 +174,12 @@
                         <li class="otherItem">
                             <b class="otherTitle">이전글</b>
                             <p class="otherCont"><a href="#" class="link">지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다.</a></p>
-                            <i class="otherDate">2004.05.20</i>
+                            <i class="otherDate">2004-05-20</i>
                         </li>
                         <li class="otherItem">
                             <b class="otherTitle">다음글</b>
                             <p class="otherCont"><a href="#" class="link">할머니 할아버지께서 들려주시는 재미있는 옛날이야기나 구연동화에 귀를 귀울여보신 적 있으신가요?</a></p>
-                            <i class="otherDate">2004.05.20</i>
+                            <i class="otherDate">2004-05-20</i>
                         </li>
                     </ul>
                 </div>
@@ -268,7 +203,7 @@
                                             <button class="btn bGray">수정</button>
                                             <button class="btn oGray">삭제</button>
                                         </span> -->
-                                        <i class="cmtDate">2004.05.20</i>
+                                        <i class="cmtDate">2004-05-20</i>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +221,7 @@
                                             <button class="btn bGray">수정</button>
                                             <button class="btn oGray">삭제</button>
                                         </span> -->
-                                        <i class="cmtDate">2004.05.20</i>
+                                        <i class="cmtDate">2004-05-20</i>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +236,7 @@
                                             <button class="btn bGray">수정</button>
                                             <button class="btn oGray">삭제</button>
                                         </span>
-                                        <i class="cmtDate">2004.05.20</i>
+                                        <i class="cmtDate">2004-05-20</i>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +251,7 @@
                                             <button class="btn bGray">수정</button>
                                             <button class="btn oGray">삭제</button>
                                         </span> -->
-                                        <i class="cmtDate">2004.05.20</i>
+                                        <i class="cmtDate">2004-05-20</i>
                                     </div>
                                     
                                     <!-- 댓글 입력 영역 (수정) -->
@@ -380,46 +315,9 @@
         <!-- 하단영역 -->
         <div class="layoutFooter">
             <!-- Footer -->
-            
-
-<div class="cptFooter">
-    <div class="footArea">
-        <div class="siteArea">
-            <ul class="siteGroup">
-                <li class="siteItem"><a href="">KSPO 국민체육진흥공단</a></li>
-                <li class="siteItem"><a href="">경주사업총괄본부</a></li>
-                <li class="siteItem"><a href="">KCYCLE 경룬</a></li>
-                <li class="siteItem"><a href="">KBOAT 경정</a></li>
-                <li class="siteItem"><a href="">올림핑공원</a></li>
-                <li class="siteItem"><a href="">한국스포츠개발원</a></li>
-            </ul>
-        </div>
-        <div class="copyArea">
-            <div class="copyGroup">
-                <div class="copyL">
-                    <div class="copyList">
-                        <span class="copyItem">
-                            경기도 광명시 광명로 721 (광명동)
-                        </span>
-                        <span class="copyItem">
-                            공정신고 : secure1@kspo.or.kr
-                        </span>
-                    </div>
-                </div>
-                <div class="copyR">
-                    <div class="numberList">
-                        <span class="numItem">
-                            080-008-5000 <span class="sup">(무료)</span>
-                        </span>
-                        <span class="numItem">
-                            02-2067-8000 <span class="sup">(유료)</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
         </div>
         <!-- //하단영역 -->
 
@@ -428,7 +326,4 @@
 
 
 <!-- Bottom -->
-
-</div>
-</body>
-</html>
+<%- include('../_ejs/bottom.ejs', { }) %>

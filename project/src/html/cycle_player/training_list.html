@@ -26,7 +26,7 @@
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
                 <%- include('../_ejs/sub_top.ejs', {
-                    subTitle: "기록측정",
+                    subTitle: "온라인 훈련교육",
                     url: "../../",
                 }) %>
 
@@ -37,12 +37,13 @@
                     <div class="alignR">
                         <ul class="comSideOpt">
                             <li class="sideItem">
-                                <select name="" id="" class="iptSlt">
-                                    <option value="">신청상태 전체</option>
-                                    <option value="">신청하기</option>
-                                    <option value="">신청가능</option>
-                                    <option value="">신청마감</option>
-                                </select>
+                                <div class="frmGroup">
+                                    <select name="" id="" class="iptSlt">
+                                        <option value="">학습상태 전체</option>
+                                        <option value="">학습하기</option>
+                                        <option value="">학습완료</option>
+                                    </select>
+                                </div>
                             </li>
                             <li class="sideItem">
                                 <div class="frmSearch">
@@ -68,7 +69,43 @@
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#"><b>온라인교육(5th.)'히말라야 14좌'</b></a>
+                                            <span class="num">[2]</span>
+                                            <span class="icons">
+                                                <span class="icon new">새로운 글</span>
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state blue">학습하기</span></td> <!-- blue : 학습하기, gray : 학습완료 -->
+                                <td>경륜훈련원</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경륜선수와 함께하는 자전거 안전교실 재능기부 활동 경륜선수와 함께하는 자전거 안전교실 재능기부 활동 경륜선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                            <span class="icons">
+                                                <span class="icon new">새로운 글</span>
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"></td>
+                                <td>경륜훈련원</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">온라인교육</a>
                                             <span class="num">[2]</span>
                                             <span class="icons">
                                                 <span class="icon new">새로운 글</span>
@@ -76,141 +113,107 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state pink">신청가능</span></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"><span class="state gray">학습완료</span></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
-                                            <span class="num">[2]</span>
-                                            <span class="icons">
-                                                <span class="icon new">새로운 글</span>
-                                            </span>
+                                            <a href="#">온라인교육(4th.)'나는 나를 증명했습니다'</a>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state blue">신청하기</span></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
-                                            <span class="num">[2]</span>
-                                            <span class="icons">
-                                                <span class="icon new">새로운 글</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="bdState"><span class="state gray">신청마감</span></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
-                                <td>경륜훈련원</td>
-                                <td>35125</td>
-                                <td class="right">0000.00.00</td>
-                            </tr>
-                            <tr>
-                                <td class="bdTitle left">
-                                    <div class="link">
-                                        <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
-                                <td>경륜훈련원</td>
-                                <td>35125</td>
-                                <td class="right">0000.00.00</td>
-                            </tr>
-                            <tr>
-                                <td class="bdTitle left">
-                                    <div class="link">
-                                        <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#">온라인교육(3rd.)'하인리히의 법칙'</a>
                                             <span class="num">[2]</span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#">온라인교육(3rd.)'하인리히의 법칙'</a>
                                             <span class="num">[2]</span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#">온라인교육(3rd.)'하인리히의 법칙'</a>
                                             <span class="num">[2]</span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#">온라인교육(3rd.)'하인리히의 법칙'</a>
                                             <span class="num">[2]</span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#">온라인교육(3rd.)'하인리히의 법칙'</a>
                                             <span class="num">[2]</span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">5월 29일 (수) 기록측정</a>
+                                            <a href="#">온라인교육(3rd.)'하인리히의 법칙'</a>
                                             <span class="num">[2]</span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"></td> <!-- pink : 신청가능, blue : 신청하기, gray : 신청마감 -->
+                                <td class="bdState"></td> <!-- blue : 학습하기, gray : 학습완료 -->
                                 <td>경륜훈련원</td>
                                 <td>35125</td>
-                                <td class="right">0000.00.00</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                         </tbody>
                     </table>

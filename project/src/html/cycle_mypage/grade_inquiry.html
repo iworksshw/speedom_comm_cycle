@@ -1,0 +1,272 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "성적조회",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint">
+                    <div class="alignR">
+                        <button class="btn bLine excel">엑셀다운로드</button>
+                        <button class="btn bLine print">인쇄</button>
+                    </div>
+                </div>
+
+                <div class="comTable">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:108px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="t_01" rowspan="2">연도</th>
+                                <th class="t_02" colspan="4">평균득점</th>
+                                <th class="t_01" colspan="4">최근 3회득점</th>
+                                <th class="t_02" rowspan="2">승률<br>%</th>
+                                <th class="t_01" rowspan="2">연대율<br>%</th>
+                                <th class="t_02" rowspan="2">삼연대율<br>%</th>
+                            </tr>
+                            <tr>
+                                <th class="t_02">종합</th>
+                                <th class="t_01">광명</th>
+                                <th class="t_02">창원</th>
+                                <th class="t_01">부산</th>
+                                <th class="t_02">종합</th>
+                                <th class="t_01">광명</th>
+                                <th class="t_02">창원</th>
+                                <th class="t_01">부산</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024</td>
+                                <td>95.07</td>
+                                <td>95.24</td>
+                                <td>94.85</td>
+                                <td>93.67</td>
+                                <td>94.01</td>
+                                <td>93.82</td>
+                                <td>97.34</td>
+                                <td>0</td>
+                                <td>16</td>
+                                <td>31</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>18</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>24</td>
+                                <td>44</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>95.07</td>
+                                <td>95.24</td>
+                                <td>94.85</td>
+                                <td>93.67</td>
+                                <td>94.01</td>
+                                <td>93.82</td>
+                                <td>97.34</td>
+                                <td>0</td>
+                                <td>16</td>
+                                <td>31</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>18</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>24</td>
+                                <td>44</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>95.07</td>
+                                <td>95.24</td>
+                                <td>94.85</td>
+                                <td>93.67</td>
+                                <td>94.01</td>
+                                <td>93.82</td>
+                                <td>97.34</td>
+                                <td>0</td>
+                                <td>16</td>
+                                <td>31</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>18</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>24</td>
+                                <td>44</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>95.07</td>
+                                <td>95.24</td>
+                                <td>94.85</td>
+                                <td>93.67</td>
+                                <td>94.01</td>
+                                <td>93.82</td>
+                                <td>97.34</td>
+                                <td>0</td>
+                                <td>16</td>
+                                <td>31</td>
+                                <td>46</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>5</td>
+                                <td>18</td>
+                                <td>55</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>98.07</td>
+                                <td>98.24</td>
+                                <td>95.85</td>
+                                <td>96.67</td>
+                                <td>91.01</td>
+                                <td>93.82</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>24</td>
+                                <td>44</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

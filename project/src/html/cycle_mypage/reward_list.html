@@ -1,0 +1,162 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "상금명세서",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint">
+                    <div class="alignL">
+                        <div class="frmGroup">
+                            <select name="" id="" class="iptSlt">
+                                <option value="">조회년도</option>
+                                <option value="">2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="alignR">
+                        <button class="btn bLine excel">엑셀다운로드</button>
+                        <button class="btn bLine print">인쇄</button>
+                    </div>
+                </div>
+
+                <div class="comH2Title">
+                    <div class="titleArea">
+                        <h2>2024년 선수 상금명세서</h2>
+                    </div>
+                </div>
+
+                <div class="comGroupTop mb30">
+                    <div class="alignR">
+                        <dl class="money">
+                            <dt>지급총액</dt>
+                            <dd>13,981,000원</dd>
+                        </dl>
+                        <dl class="money">
+                            <dt>총공제액</dt>
+                            <dd>488,350원</dd>
+                        </dl>
+                        <dl class="money">
+                            <dt>차인지급액</dt>
+                            <dd>13,492,650원</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="comTable">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:210px;">
+                            <col style="width:210px;">
+                            <col style="width:210px;">
+                            <col style="width:210px;">
+                            <col style="width:210px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="t_01">지급회차</th>
+                                <th class="t_02">지급총액</th>
+                                <th class="t_01">공제총액</th>
+                                <th class="t_02">차인지급액</th>
+                                <th class="t_01">지급일자</th>
+                                <th class="t_02">명세서</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>17</td>
+                                <td>850,000</td>
+                                <td>28,050</td>
+                                <td>821,950</td>
+                                <td>2024-05-10</td>
+                                <td class="frm">
+                                    <button class="btn basic">상급명세서 상세보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>4,475,000</td>
+                                <td>147,670</td>
+                                <td>4,327,330</td>
+                                <td>2024-05-03</td>
+                                <td class="frm">
+                                    <button class="btn basic">상급명세서 상세보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>4,083,000</td>
+                                <td>28,050</td>
+                                <td>3,948,270</td>
+                                <td>2024-03-18</td>
+                                <td class="frm">
+                                    <button class="btn basic">상급명세서 상세보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>4,573,000</td>
+                                <td>177,900</td>
+                                <td>4,395,100</td>
+                                <td>2024-01-26</td>
+                                <td class="frm">
+                                    <button class="btn basic">상급명세서 상세보기</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text clar">* 상금명세서는 2010년부터 조회가 가능합니다.</p>
+                </div>
+                
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

@@ -1,6 +1,6 @@
 /* --------------------------- 게시판 댓글 --------------------------- */
 .cptComment{
-    width:100%; max-width: 1340px; padding:0 20px; margin-top:180px;
+    width:100%; max-width: 1340px; margin-top:180px;
     @include media('mobile'){margin-top:80px;}
     .cmtArea{
         width:100%; 

@@ -47,3 +47,38 @@ label {font-size: 0;}
 .hide {font-size:0 !important; position:fixed; left:-5000px; top:0;}
 
 body.noScrl {height:100vh; overflow:hidden;}
+
+/* ------------------- margin ------------------- */
+.mt5 {margin-top:5px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt20 {margin-top:20px;}
+.mt30 {margin-top:30px;}
+.mt40 {margin-top:40px;}
+.mt50 {margin-top:50px;}
+
+.mb5 {margin-bottom:5px;}
+.mb10 {margin-bottom:10px;}
+.mb15 {margin-bottom:15px;}
+.mb20 {margin-bottom:20px;}
+.mb30 {margin-bottom:30px;}
+.mb40 {margin-bottom:40px;}
+.mb50 {margin-bottom:50px;}
+
+@include media('mobile'){
+  .mo_mt5 {margin-top:5px;}
+  .mo_mt10 {margin-top:10px;}
+  .mo_mt15 {margin-top:15px;}
+  .mo_mt20 {margin-top:20px;}
+  .mo_mt30 {margin-top:30px;}
+  .mo_mt40 {margin-top:40px;}
+  .mo_mt50 {margin-top:50px;}
+
+  .mo_mb5 {margin-bottom:5px;}
+  .mo_mb10 {margin-bottom:10px;}
+  .mo_mb15 {margin-bottom:15px;}
+  .mo_mb20 {margin-bottom:20px;}
+  .mo_mb30 {margin-bottom:30px;}
+  .mo_mb40 {margin-bottom:40px;}
+  .mo_mb50 {margin-bottom:50px;}
+}
