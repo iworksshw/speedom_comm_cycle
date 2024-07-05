@@ -1,0 +1,130 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "등급변동안내",
+                    url: "../../",
+                }) %>
+
+                <div class="comMyGrade">
+                    <span class="textBox">나의 현재 등급</span>
+                    <b>A2</b>
+                </div>
+
+                <div class="comTable">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:433px;">
+                            <col style="width:433px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="t_01">변경시점</th>
+                                <th class="t_02">변경 전 등급</th>
+                                <th class="t_01">변경 후 등급</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-12</td>
+                                <td>A1</td>
+                                <td>A1</td>
+                            </tr>
+                            <tr>
+                                <td>2022-06</td>
+                                <td>S3</td>
+                                <td>A1</td>
+                            </tr>
+                            <tr>
+                                <td>2021-03</td>
+                                <td>S2</td>
+                                <td>S1</td>
+                            </tr>
+                            <tr>
+                                <td>2018-07</td>
+                                <td>S2</td>
+                                <td>S2</td>
+                            </tr>
+                            <tr>
+                                <td>2016-11</td>
+                                <td>S1</td>
+                                <td>S1</td>
+                            </tr>
+                            <tr>
+                                <td>2016-11</td>
+                                <td>S1</td>
+                                <td>S1</td>
+                            </tr>
+                            <tr>
+                                <td>2016-11</td>
+                                <td>S1</td>
+                                <td>S1</td>
+                            </tr>
+                            <tr>
+                                <td>2016-11</td>
+                                <td>S1</td>
+                                <td>S1</td>
+                            </tr>
+                            <tr>
+                                <td>2016-11</td>
+                                <td>S1</td>
+                                <td>S1</td>
+                            </tr>
+                            <tr>
+                                <td>2016-11</td>
+                                <td>S1</td>
+                                <td>S1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

@@ -68,14 +68,37 @@
         &.print {
             padding-right:50px; background:var(--gray-bg01) url(../../images/common/ic_print.svg) right 20px center no-repeat;
         }
+        &.info {
+            padding-right:50px; background:var(--gray-bg01) url(../../images/common/ic_info_print.svg) right 20px center no-repeat;
+        }
     }
 }
 
+/* -------------------------------- 나의등급 -------------------------------- */
+.comMyGrade{
+    width:100%; height:80px; border-radius: 12px; border: 4px solid #808CFC; background: var(--gray-bg01); display:flex; justify-content: center;
+    .textBox {
+        color: #000; font-size: 16px; font-weight: 600; display: block; align-self: center;
+    }
+    b {
+        margin-left:19px; color: var(--blue-txt01); font-size: 40px; font-style: normal; font-weight: 600; line-height: normal; align-self: center;
+    }
+}
 
 /* -------------------------------- 정보상자 -------------------------------- */
 .comInfoBox{
-    width:100%; margin-bottom:60px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01);
+    width:100%; margin-bottom:60px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01); position: relative;
+    .infoArea {
+        .infoTitle{
+            padding-left:17px; color: #000; font-size: rem(15px); font-weight: 600; position: relative;
+            &::before {content:""; width:7px; height:7px; border-radius:50%; background: #4D5DF2; display:block; position:absolute; left:0; top:7px;}
+        }
+        .infoCont{
+            padding-left:26px; margin-top:20px;
+        }
+    }
     .infoList {
+        padding:2px 0;
         .item{ 
             margin-top:4px; padding-left:18px; position:relative; color: #4d4d4d; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.5;
             &::before{content:""; width:4px; height:4px; border-radius:50%; background:#000; display:block; position:absolute; left:0; top:10px;}
@@ -86,7 +109,12 @@
             }
         }
     }
+    .downAcro {
+        width: 260px; height: 60px; position: absolute; right: 55px; top: 33px;
+        img {width: 100%;}
+    }
 }
+.cptAppliForm + .comInfoBox {margin-top:90px;}
 
 /* -------------------------------- 동영상 영역 -------------------------------- */
 .comMovieView {
@@ -117,6 +145,8 @@
     width:100%; margin-top: 20px;
     table {
         width:100%; border-spacing: 0; border-collapse: collapse; table-layout: fixed; border-top:1px solid #555;
+
+        & + table {border-top:0;}
         thead {
             th {
                 height:60px; color: #000; font-size: rem(14px); font-weight: 600; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
@@ -127,25 +157,107 @@
         tbody {
             th {
                 height:60px; color: #000; font-size: rem(14px); font-weight: 600; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
+                &.t_02 {background:#F1F3FB;}
             }
             td {
                 height:60px; padding:18px 0; color: #000; font-size: rem(16px); font-weight: 300; text-align:center; line-height: 1.5; border-bottom:1px solid #eee;
+                &:last-child {padding-right:0 !important;}
             }
-            .frm {padding:5px 0;}
-            .left {padding-left:40px; text-align:left;}
+            .left {
+                padding-left:40px; text-align:left;
+                .frmGroup {
+                    justify-content: flex-start;
+                    .iptText {text-align: left;}
+                }
+            }
+            .frmS {padding:5px 5px;}
+            .frm {padding:5px 16px;}
+            .frmL {padding:5px 40px;}
         }
-        .iptSlt {height: 49px; padding-left:24px;}
+        .frmGroup {justify-content: center;}
+        .iptSlt {
+            height: 49px; padding-left:24px;
+            &:first-child {margin-left:0;}
+        }
+        .iptText {
+            width:100%; height: 46px; padding: 0 15px; text-align: center; background: transparent;
+            &:first-child {margin-left:0;}
+            &::placeholder {color:rgba(0,0,0,0.3);}
+        }
+        .iptTextarea {
+            width:100%; min-height: 109px; padding:25px 200px 25px 25px; color:#000; font-size: rem(16px); font-weight: 300; line-height: 1.5; border:0; border-radius:12px; 
+            background: var(--gray-bg01);
+            &::placeholder {color: rgba(0,0,0,0.3);}
+        }
+        .textByte {
+            color: rgba(0,0,0,0.3); display: inline-block; position: absolute; top: 12px; right: 12px;
+        }
+        .required {
+            color: #F00; font-size: rem(14px); font-weight: 600;
+        }
     }
     .btn {
-        padding:0 20px; text-align: center; font-style: normal; font-size: rem(14px); font-weight: 600; line-height:43px; border-radius:12px;
+        padding:0 20px; text-align: center; font-style: normal; font-size: rem(14px); font-weight: 600; line-height:45px; border-radius:12px;
         &.basic {
-            color: #fff; background: #4D5DF2;
+            color: #fff; border: 2px solid #4D5DF2; background: #4D5DF2;
+        }
+        &.bLine {
+            color: var(--blue-txt01); border: 2px solid #CACFFC; background: #F8F8FE;
         }
     }
     .text{
-        margin-top:30px;
-        .clar{
-            color: #000; font-size: 14px; font-style: normal; font-weight: 300;
+        width:100%; margin-top:30px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: 2;
+        &.clar{
+            color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height:1.5;
+        }
+        &.pointR {
+            color: #F00; text-align: right; font-size: rem(18px); font-weight: 600; line-height: normal;
+        }
+        &.top {
+            margin:0 0 15px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 300;
+        }
+        .c_blue{
+            color: var(--blue-txt01); font-size: rem(16px); font-weight: 400; line-height: normal;
+        }
+        & + .text {margin-top:20px;}
+    }
+
+    /* 예외 - 주선통보 */
+    table {
+        .frmGroup.ex1 {
+            .iptSlt {min-width:120px;}
+            .textBox {margin:0 9px 0 31px;}
+            .tui-datepicker-input {min-width: 140px;}
+            @include media(1400px) {
+                flex-wrap: wrap; justify-content: flex-start;
+                .iptSlt {width:100%;}
+                .textBox {margin:15px 0 5px 0;}
+                .tui-datepicker-input {margin:0;}
+            }
+        }
+        .frmGroup.ex2 {
+            .iptSlt {min-width: 175px;}
+            .iptText {min-width: 170px; margin-left:15px; padding:0;}
+            @include media(1400px) {
+                flex-wrap: wrap; justify-content: flex-start;
+                .iptSlt {min-width: 175px;}
+                .iptText {min-width: 177px; margin-left:0; margin-top:5px;}
+            }
+        }
+        .frmGroup.ex3 {
+            .btn {min-width: 175px;}
+            .iptText {margin-left:9px; background: var(--gray-bg01);}
+            @include media(1400px) {
+            }
+        }
+        .frmGroup.ex4 {
+            .btn {min-width: 175px;}
+            .iptText {
+                height:59px; margin-left:9px; border-radius:0; margin-top:-5px; margin-bottom:-5px; text-align: center !important;
+                &:nth-child(3) {background: var(--gray-bg01);}
+            }
+            @include media(1400px) {
+            }
         }
     }
 }
@@ -219,6 +331,12 @@
     }
     .alignR{
         width:100%; display:flex; justify-content: flex-end;
+    }
+    .textBox {
+        color:#000; font-size: rem(16px); font-weight: 400; line-height: normal;
+    }
+    .c_blue {
+        color: var(--blue-txt01);
     }
     
     .btn {
@@ -365,7 +483,7 @@
                 @include media('mobile'){font-size: rem(12px);}
             } 
             .otherCont{
-                flex-grow:1; align-self: center; @include line1();
+                color: rgba(0,0,0,0.7); font-size: rem(16px); font-weight: 300; line-height: 1.5; flex-grow:1; align-self: center; @include line1();
                 @include media('mobile'){margin-top:7px;}
                 .link{
                     color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.5;
@@ -389,20 +507,22 @@ input[type=password] {}
 .iptText { 
     width: 300px; height: 40px; padding: 0 17px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: normal; border: 0; 
     border-radius: 12px; background: var(--gray-bg01);
+    &:first-child {margin-left:0;}
 }
 .iptSlt  { 
     width: 100%; height: 40px; padding: 0 40px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: normal; border: 0; 
     border-radius: 12px; background: var(--gray-bg01) url(../../images/common/ic_side_slt.svg) right 20px center no-repeat;
+    &:first-child {margin-left:0;}
 }
 
 
 /* ------------------------------------------------ Form ------------------------------------------------ */
 /* 크기 */
-.frmGroup {margin-top:5px;}
+.frmGroup {margin-top: 5px; position: relative;}
 .frmGroup:first-child {margin-top:0;}
 html .frmTini {width:60px; min-width:60px;}
 html .frmXs {width:100px; min-width:100px;}
-html .frmSm {width:130px; min-width:130px;}
+html .frmSm {width:120px; min-width:120px;}
 html .frmMd {width:170px; min-width:170px;}
 html .frmLg {width:200px; min-width:200px;}
 html .frmHalf {width:calc(50% - 3px); min-width:calc(50% - 3px);}
@@ -412,7 +532,7 @@ textArea.areaMd {height:150px;}
 
 /* ------------------------------------------------ 라디오/체크박스 ------------------------------------------------ */
 /* 일반 체크박스/라디오 박스 */
-.frmChoBox {margin-right:20px; display:inline-block; position:relative;}
+.frmChoBox {margin-right:20px; display:inline-flex; position:relative;}
 .frmChoBox .iptLbl {min-height:30px; margin-right:10px; padding-top:5px; padding-bottom:5px; word-break:keep-all;}
 .frmChoBox .iptLbl:last-child {margin-right:0;}
 .frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight:300; line-height:20px; color:#000; background:url(../../images/common/ic_chk_off.svg) left center no-repeat;}
@@ -464,7 +584,7 @@ textArea.areaMd {height:150px;}
 
 /* ------------------------------ 한줄 안에 여러폼을 넣어야 할 경우 ------------------------------ */
 .frmGroup {display:flex; align-items:center;}
-.frmGroup .iptText, .frmGroup .iptSlt, .frmGroup .textBox {margin-left:5px;}
+.frmGroup .iptText, .frmGroup .iptSlt, .frmGroup .textBox {margin-left:5px; white-space: nowrap;}
 .frmGroup .textBox.clar {margin-top:0; margin-left:5px;}
 .frmGroup.multiLine {flex-wrap: wrap;}
 

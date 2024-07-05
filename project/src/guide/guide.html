@@ -12,10 +12,15 @@
 	<title>시스템 플랫폼 퍼블리싱 가이드</title>
 	
 	<link rel="stylesheet" href="../common/css/swiper.css" />
+	<link rel="stylesheet" href="../common/css/tui-date-picker.css" />
+	<link rel="stylesheet" href="../common/css/tui-time-picker.css" />
 	<link rel="stylesheet" href="../common/css/style.css" />
 
 	<script src="../common/js/jquery-3.4.1.min.js"></script>
 	<script src="../common/js/swiper.js"></script>
+	<script src="../common/js/tui-time-picker.js"></script>
+	<script src="../common/js/tui-date-picker.js"></script>
+	<script src="../common/js/common.js"></script>
 <style type="text/css">
 /* Guide Layout */
 * {box-sizing:border-box;}
@@ -72,6 +77,7 @@ xmp{display:none;}
 </style>
 </head>
 <body>
+<div class="wrap">
 <div class="g-wrap">
 	<div class="g-nav">
 		<div class="g-logo">
@@ -81,16 +87,25 @@ xmp{display:none;}
 			<ul class="g-depth1-group">
 				<!-- 뎁스1 레이아웃 -->
 				<li class="g-depth1-list">
+					<div class="g-depth1-name"><h2>Guide</h2></div>
+					<ul class="g-depth2-group">
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="guide">Guide</a></h3></div>
+						</li>
+					</ul>
+				</li>
+				<!-- //뎁스1 레이아웃 -->
+
+				<!-- 뎁스1 레이아웃 -->
+				<li class="g-depth1-list">
 					<div class="g-depth1-name"><h2>Layout</h2></div>
 					<ul class="g-depth2-group">
-						<!--
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="/contents/basic/sample/sample001.html" target="_blank" class="out">Layout 1 (_blank)</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="login">Login</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="/contents/basic/sample/sample002.html" target="_blank" class="out">Layout 2 (_blank)</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="top">Top</a></h3></div>
 						</li>
-						-->
 					</ul>
 				</li>
 				<!-- //뎁스1 레이아웃 -->
@@ -101,34 +116,23 @@ xmp{display:none;}
 					
 					<ul class="g-depth2-group">
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="search">Search</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="login">Login</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="grid">Grid</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="board_list">Board List</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="table">Table</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="board_view">Board View</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="data_history">Data History</a></h3></div>
-						</li>
-						<!--
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="board">Board</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="board_write">Board Write</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="board-thum">Board (image)</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="reply">Reply</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="table">Table</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="appli_form">Appli Form</a></h3></div>
 						</li>
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="table">Table</a></h3></div>
-						</li>
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="paging">Paging</a></h3></div>
-						</li>
-					-->
 					</ul>
 				</li>
 				<!-- //뎁스1 콤포넌트 -->
@@ -141,20 +145,20 @@ xmp{display:none;}
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="tab">Tab</a></h3></div>
 						</li>
-						<!--
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="accordion">Accordion</a></h3></div>
 						</li>
-						-->
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="popup">Popup</a></h3></div>
 						</li>
+						<!--
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="alert">Alert</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="division">Division</a></h3></div>
 						</li>
+						-->
 					</ul>
 				</li>
 				<!-- //뎁스1 콤포넌트 -->
@@ -165,7 +169,13 @@ xmp{display:none;}
 					
 					<ul class="g-depth2-group">
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="headline">HeadLine</a></h3></div>
+							<div class="g-depth2-name"><h3><a href="title">Title</a></h3></div>
+						</li>
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="table">Table</a></h3></div>
+						</li>
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="table2">Table2</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="group_top">Group Top</a></h3></div>
@@ -176,21 +186,15 @@ xmp{display:none;}
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="paging">Paging</a></h3></div>
 						</li>
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="other_page">Other Page</a></h3></div>
+						</li>
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="other">Other</a></h3></div>
+						</li>
 						<!--
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="contents-title">Contents Title</a></h3></div>
-						</li>
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="button">Button</a></h3></div>
-						</li>
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="buttonarea">Button Area</a></h3></div>
-						</li>
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="button-popup">Button Popup</a></h3></div>
-						</li>
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="forms">Forms</a></h3></div>
 						</li>
 						<li class="g-depth2-list">
 							<div class="g-depth2-name"><h3><a href="alert">Alert</a></h3></div>
@@ -199,21 +203,6 @@ xmp{display:none;}
 					</ul>
 				</li>
 				<!-- //뎁스1 공통 -->
-				
-				<!-- 뎁스1 클로벌 -->
-				<li class="g-depth1-list">
-					<div class="g-depth1-name"><h2>Global</h2></div>
-					<ul class="g-depth2-group">
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="tooltip">Tooltip</a></h3></div>
-						</li>
-						<!--
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="/contents/basic/sample/sample002.html" target="_blank" class="out">Layout 2 (_blank)</a></h3></div>
-						</li>
-						-->
-					</ul>
-				</li>
 
 				<!-- 뎁스1 모듈 -->
 				<li class="g-depth1-list">
@@ -221,24 +210,29 @@ xmp{display:none;}
 					
 					<ul class="g-depth2-group">
 						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><a href="form">form</a></h3></div>
-						</li>
+							<div class="g-depth2-name"><h3><a href="button">Button</a></h3></div>
+						</li> 
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="button2">Button Other</a></h3></div>
+						</li> 
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="file">file</a></h3></div>
+						</li> 
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="input_all">Input All</a></h3></div>
+						</li> 
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="input_text">Input Text</a></h3></div>
+						</li> 
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="input_select">Input Select</a></h3></div>
+						</li> 
+						<li class="g-depth2-list">
+							<div class="g-depth2-name"><h3><a href="input_check">Input Checkbox, Radio</a></h3></div>
+						</li> 
 					</ul>
 				</li>
 				<!-- //뎁스1 모듈 -->
-
-				<!-- 뎁스1 테마 -->
-				<li class="g-depth1-list">
-					<div class="g-depth1-name"><h2>Thema</h2></div>
-					
-					<ul class="g-depth2-group">
-						<li class="g-depth2-list">
-							<div class="g-depth2-name"><h3><button>basic</button></h3></div>
-							<div class="g-depth2-name"><h3><button>basic-orange</button></h3></div>
-						</li>
-					</ul>
-				</li>
-				<!-- //뎁스1 테마 -->
 			</ul>
 		</div>
 	</div>
@@ -259,6 +253,7 @@ xmp{display:none;}
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 <div class="themaArea"></div>
 <script>
@@ -297,8 +292,42 @@ $(document).ready(function(){
 				</li>
 	*/
 	
-	$(".g-in-body").load("./Component/search.html");
+	$(".g-in-body").load("./Guide/guide.html");
 });
+
+</script>
+
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/xml.min.js"></script>
+
+<script>
+    function escapeHtml(html) {
+        return html
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    }
+
+    function run(){
+        const codeGuides = document.querySelectorAll('.cptPubGuide .codeGuide');
+        const codes = document.querySelectorAll('.cptPubGuide code.xml');
+        const viewers = document.querySelectorAll('.cptPubGuide .gView');
+        codes.forEach(function(code,idx){
+            code.innerHTML = escapeHtml(codeGuides[idx].value);
+        });
+        viewers.forEach(function(viewer,idx){
+            viewer.innerHTML = codeGuides[idx].value;
+        });
+        hljs.highlightAll();
+    }
+    window.onload = function(){
+        run();
+    }
 </script>
 </body>
 </html>

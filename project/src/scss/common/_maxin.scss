@@ -33,3 +33,8 @@ $basicFontSize:16px;
 @function rem($pixels, $base: $basicFontSize) {
     @return calc($pixels / $base)+rem;
 }
+
+//vw 공식
+@function vw($pixels2, $base2) {
+    @return calc($pixels2 * 100 / $base2)+vw;
+}

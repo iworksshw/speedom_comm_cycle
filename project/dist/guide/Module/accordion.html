@@ -1,0 +1,345 @@
+
+<style>
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.guideBox {margin-top:40px;}
+.guideTitle {font-size:18px; font-weight:500;}
+.guideCont {margin-top:10px;}
+.gGroup {margin-top:20px;}
+.gText {font-size:14px;}
+.gView {padding:10px; border:1px solid #bbbbbb; background:#fff;}
+</style>
+
+<div class="cptPubGuide">
+<div class="guideArea">
+
+<!-- 가이드 그룹 -->
+<div class="guideBox">
+<div class="guideTitle">아코디언</div>
+<div class="guideCont">
+<div class="gText">
+         - 콘텐츠 내용을 감추가 나타내는데 사용합니다.
+    <br> - accordionInit(); 함수로 기능을 활성화 합니다.
+    <br> - 한 페이지 안에 아코디언이 여러번 중복 될 수 있으나 아코디언 안에 아코디언은 불가능합니다.
+    <br> - script는 common.js에 있습니다. (//모드 탭 함수)
+</div>
+<div class="gGroup">
+<div class="gView"></div>
+<div class="gCode">
+<pre><code class="xml" style="font-size:14px; letter-spacing:1.5px; font-family: 'D2Coding'"></code></pre>
+<textarea class="codeGuide" style="display:none;">
+
+
+<div class="modAccordion">
+    <div class="textBox info">
+        <p>선수정보와 출전준비상태를 꼭 확인 후 작성해주세요.</p>
+    </div>
+    <div class="accrBox">
+        <div class="accrTitle">
+            <div class="alignL"><span class="tit">선수정보</span></div>
+            <div class="alignR"><div class="text">작성일자 : 2024-05-22</div></div>
+        </div>
+        <div class="accrBody">
+            <div class="accrCont">
+                <div class="comTable">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="t_01">선수명</th>
+                                <td>류선재</td>
+                                <th class="t_01">훈련지</th>
+                                <td>가평 /	희망일자 2024-05-20</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">개명 전</th>
+                                <td>나훈아</td>
+                                <th class="t_01">개명 후</th>
+                                <td>션오프리</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">결혼여부</th>
+                                <td>-</td>
+                                <th class="t_01">흡연유무</th>
+                                <td>흡연</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">휴대전화</th>
+                                <td>-</td>
+                                <th class="t_01">유선전화</th>
+                                <td>070-2222-2222</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">상금계좌</th>
+                                <td>새마을금고 323010180074</td>
+                                <th class="t_01">사업자 등록번호</th>
+                                <td>123-45-67890</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">주소</th>
+                                <td colspan="3" class="left">(12345) 경기도 광명시 광명로 721 (광명동)</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">차량정보</th>
+                                <td colspan="3" class="left">아이오닉 5 / 36고 9021	</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" class="t_01">가족관계</th>
+                                <td colspan="3" class="left">[모]  서문다미 1963-01-01 주부 고등학교 졸업</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="left">[처]  김영희  1990-01-01 주부 대학교 졸업</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="left">[자]  홍혁  2022-01-01	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:200px;">
+                            <col style="width:auto;">
+                            <col style="width:auto;">
+                            <col style="width:auto;">
+                            <col style="width:auto;">
+                            <col style="width:auto;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th rowspan="2" class="t_01">학력사항</th>
+                                <th class="t_02">대학교</th>
+                                <th class="t_01">대학원</th>
+                                <th class="t_02">전공</th>
+                                <th class="t_01">최종학력</th>
+                                <th class="t_02">최종학력상태</th>
+                                <th class="t_01">최종학력졸업일자</th>
+                            </tr>
+                            <tr>
+                                <td>한국</td>
+                                <td>-</td>
+                                <td>레크레이션 학과</td>
+                                <td>대학교</td>
+                                <td>중퇴</td>
+                                <td>2012</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">비고</th>
+                                <td colspan="6"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="comFileList">
+                    <ul class="fileGroup">
+                        <li class="file download">
+                            <dl>
+                                <dt>첨부파일</dt>
+                                <dd><a href="#" class="fileName">재능기부 훈련지 모집공고.png</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="accrBtnGroup">
+                    <div class="alignR">
+                        <button class="btn basic">작성하기</button>
+                        <button class="btn basic">등록하기</button>
+                        <button class="btn basic" disabled="">등록하기</button>
+                        <button class="btn basic">수정하기</button>
+                        <button class="btn basic">참가통보하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="textBox btm">
+        <p>출전통보작성기간이 만료되었습니다.</p>
+        <p>출전통보가 완료되었습니다.</p>
+        <p class="c_blue">통보일자 : 2024-05-22</p>
+    </div>
+</div>
+
+<script>
+accordionInit(); //모드 아코디언 함수
+</script>
+        
+</textarea>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+setTimeout(function(){
+    accordionInit(); //모드 아코디언 함수
+},500)
+</script>
+<!-- //가이드 그룹 -->
+    
+
+
+<!-- 가이드 그룹 -->
+<div class="guideBox">
+<div class="guideTitle">아코디언 리스트</div>
+<div class="guideCont">
+<div class="gText">
+        - 아코디언리스트 디자인이 현재는 없습니다.
+    <br> - QnA, FAQ 등에서 주로 사용합니다.
+    <br> - accordionListInit(); 함수로 기능을 활성화 합니다.
+    <br> - 한 페이지 안에 아코디언리스트가 여러번 중복 될 수 있으나 아코디언리스트 안에 아코디언리스트를 넣는 것은 불가능합니다.
+    <br> - script는 common.js에 있습니다. (//모드 탭 함수)
+</div>
+<div class="gGroup">
+<div class="gView"></div>
+<div class="gCode">
+<pre><code class="xml" style="font-size:14px; letter-spacing:1.5px; font-family: 'D2Coding'"></code></pre>
+<textarea class="codeGuide" style="display:none;">
+
+
+<style>
+/* ----------------------------------- 모드 탭 ----------------------------------- */
+.modAccordionList {margin-top:30px;}
+.modAccordionList .accoList {}
+.modAccordionList .accoList .accoItem {margin-top:10px;}
+.modAccordionList .accoList .accoItem:first-child {margin-top:0;}
+.modAccordionList .accoArea {}
+.modAccordionList .accoArea.on {}
+.modAccordionList .accoArea .accoTop {padding:5px 10px; border:1px solid #ccc;}
+.modAccordionList .accoArea .accoTop .accoTitle {font-size:16px;}
+.modAccordionList .accoArea .accoBody {width:100%; overflow:hidden; display:none;}
+.modAccordionList .accoArea .accoBody .accoCont {padding:40px; background:#ccc;}
+
+</style>
+<div class="modAccordionList">
+    <ul class="accoList">
+        <li class="accoItem">
+            <dl class="accoArea">
+                <dt class="accoTop">
+                    <button class="accoTitle">Title 00</button>
+                </dt>
+                <dd class="accoBody">
+                    <div class="accoCont">
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다. 
+                    </div>
+                </dd>
+            </dl>
+        </li>
+        <li class="accoItem">
+            <dl class="accoArea">
+                <dt class="accoTop">
+                    <button class="accoTitle">Title 01</button>
+                </dt>
+                <dd class="accoBody">
+                    <div class="accoCont">
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다.
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의  <br>
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다. 
+                        아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다.
+                    </div>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<div class="modAccordionList">
+    <ul class="accoList">
+        <li class="accoItem">
+            <dl class="accoArea">
+                <dt class="accoTop">
+                    <button class="accoTitle">Title 10</button>
+                </dt>
+                <dd class="accoBody">
+                    <div class="accoCont">
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다. 
+                    </div>
+                </dd>
+            </dl>
+        </li>
+        <li class="accoItem">
+            <dl class="accoArea">
+                <dt class="accoTop">
+                    <button class="accoTitle">Title 11</button>
+                </dt>
+                <dd class="accoBody">
+                    <div class="accoCont">
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다.
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의  <br>
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다. 
+                        아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다.
+                    </div>
+                </dd>
+            </dl>
+        </li>
+        <li class="accoItem">
+            <dl class="accoArea">
+                <dt class="accoTop">
+                    <button class="accoTitle">Title 12</button>
+                </dt>
+                <dd class="accoBody">
+                    <div class="accoCont">
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다.
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의  <br>
+                        게시글 제목 사랑이 가득한 물까치 가족 여섯 식구 오월의 마지막 월요일을 산뜻하게 열어봅니다. 여섯 식구의 아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다. 
+                        아침을 엿보면서 오월의 마지막 월요일을 산뜻하게 열어봅니다.
+                    </div>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<script>
+accordionListInit(); //모드 아코디언 리스트 함수
+</script>
+        
+</textarea>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+setTimeout(function(){
+    accordionListInit(); //모드 아코디언 리스트 함수
+},500)
+</script>
+<!-- //가이드 그룹 -->
+
+</div>
+</div>
+
+    
+<script>
+    run();
+</script>
+    
+        
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+

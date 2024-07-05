@@ -1,0 +1,45 @@
+.cptAppliForm {
+    width: 100%;
+    .formTitle{
+        width: 100%; 
+        h2 {
+            width: 100%; color: #000; text-align: center; font-size: rem(34px); font-weight: 500; line-height: normal;
+        }
+    }
+    .formName {
+        width: 100%; 
+        p {
+            width: 100%; color: #000; text-align: right; font-size: rem(24px); font-weight: 300; line-height: 1.667;
+        }
+    }
+    .formCont {
+        width: 100%; 
+        p {
+            width: 100%; color: #000; text-align: center; font-size: rem(24px); font-weight: 300; line-height: 1.67;
+        }
+    }
+    .formDate {
+        width: 100%; 
+        p {
+            width: 100%; color: #000; text-align: center; font-size: rem(20px); font-weight: 500; line-height: normal;
+        }
+    }
+    .formBtm {
+        width: 100%; 
+        p {
+            width: 100%; color: #000; text-align: center; font-size: rem(22px); font-weight: 500; line-height: 1.545;
+        }
+    }
+    .formTitle + .formName {margin-top:50px;}
+    .formTitle + .comInTitle {margin-top:80px;}
+    .formTitle + .formCont {margin-top:65px;}
+    .formName + .formCont {margin-top:30px;}
+    .formCont + .formBtm {margin-top:65px;}
+    .formCont + .comTable {margin-top:120px;}
+    .comTable + .formDate {margin-top:90px;}
+    .comTable + .formBtm {margin-top:80px;}
+    .formDate + .formBtm {margin-top:30px;}
+    .formBtm + .comInTitle {margin-top:80px;}
+    .formBtm + .comFileList {margin-top:90px;}
+    .comFileList + .comOtherPage {margin-top:35px;}
+}

@@ -1,0 +1,25 @@
+/* ----------------------------------- 모드 탭 ----------------------------------- */
+.modTab {
+    width:100%;
+    .tabMenu {
+        width:100%; margin-bottom:10px; display:flex; justify-content: flex-end;
+        .tabItem {
+            min-width:300px; height:50px; margin-right:-2px;
+            &:last-child {margin-right:0;}
+            .tabName {
+                width:100%; height:100%; color: #bfbfbf; text-align: center; font-size: rem(15px); font-weight: 800; line-height: normal; 
+                border-radius: 12px 12px 0px 0px; border-top: 2px solid #ededed; border-right: 2px solid #ededed; border-left: 2px solid #ededed; border-bottom: 2px solid #CACFFC;
+                background: #F8F8FE; position: relative; z-index: 1;
+                &.on {
+                    color: #4053FF; z-index: 2; border-top: 2px solid #CACFFC; border-right: 2px solid #CACFFC; border-left: 2px solid #CACFFC; border-bottom: 0;
+                }
+            }
+        }
+    }
+    .tabContianer {
+        .tabCont {
+            display:none;
+            &.on {display:block;}
+        }
+    }
+}

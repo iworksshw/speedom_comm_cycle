@@ -1,0 +1,146 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "재제 불참사유서",
+                    url: "../../",
+                }) %>
+
+                
+                <div class="cptAppliForm">
+                    <div class="formTitle">
+                        <h2>재제심의위원회 불참사유서</h2>
+                    </div>
+
+                    <div class="comInTitle">
+                        <h4 class="">재제심의위원회 불참사유서 신청</h4>
+                    </div>
+
+                    <div class="comTable">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:260px;">
+                                <col style="width:auto;">
+                                <col style="width:260px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>선수명</th>
+                                    <td>류선재</td>
+                                    <th>등록번호</th>
+                                    <td>6576821315486</td>
+                                </tr>
+                                <tr>
+                                    <th>불참 회차(기간)</th>
+                                    <td colspan="3" class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                                <input type="text" id="datepicker-input" aria-label="Date-Time">
+                                                <div id="datepicker-container" style="margin-top: -1px;"><div class="tui-datepicker tui-hidden">      <div class="tui-datepicker-body tui-datepicker-type-date">      <div class="tui-calendar-container"><div class="tui-calendar">    <div class="tui-calendar-header"><div class="tui-calendar-header-inner">      <button class="tui-calendar-btn tui-calendar-btn-prev-month">Prev month</button>      <em class="tui-calendar-title tui-calendar-title-month">July 2024</em>      <button class="tui-calendar-btn tui-calendar-btn-next-month">Next month</button>    </div>    <div class="tui-calendar-header-info">    <p class="tui-calendar-title-today">Today: Friday, July 5, 2024</p>  </div></div>    <div class="tui-calendar-body"><table class="tui-calendar-body-inner" cellspacing="0" cellpadding="0">  <caption><span>Dates</span></caption>  <thead class="tui-calendar-body-header">    <tr>      <th class="tui-sun" scope="col">Sun</th>      <th scope="col">Mon</th>      <th scope="col">Tue</th>      <th scope="col">Wed</th>      <th scope="col">Thu</th>      <th scope="col">Fri</th>      <th class="tui-sat" scope="col">Sat</th>    </tr>  </thead>  <tbody>        <tr class="tui-calendar-week">            <td class="tui-calendar-date tui-calendar-prev-month tui-calendar-sun tui-is-selectable" data-timestamp="1719673200000">30</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1719759600000">1</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1719846000000">2</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1719932400000">3</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720018800000">4</td>            <td class="tui-calendar-date tui-calendar-today tui-is-selectable tui-is-selected" data-timestamp="1720105200000">5</td>            <td class="tui-calendar-date tui-calendar-sat tui-is-selectable" data-timestamp="1720191600000">6</td>          </tr>        <tr class="tui-calendar-week">            <td class="tui-calendar-date tui-calendar-sun tui-is-selectable" data-timestamp="1720278000000">7</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720364400000">8</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720450800000">9</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720537200000">10</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720623600000">11</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720710000000">12</td>            <td class="tui-calendar-date tui-calendar-sat tui-is-selectable" data-timestamp="1720796400000">13</td>          </tr>        <tr class="tui-calendar-week">            <td class="tui-calendar-date tui-calendar-sun tui-is-selectable" data-timestamp="1720882800000">14</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1720969200000">15</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721055600000">16</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721142000000">17</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721228400000">18</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721314800000">19</td>            <td class="tui-calendar-date tui-calendar-sat tui-is-selectable" data-timestamp="1721401200000">20</td>          </tr>        <tr class="tui-calendar-week">            <td class="tui-calendar-date tui-calendar-sun tui-is-selectable" data-timestamp="1721487600000">21</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721574000000">22</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721660400000">23</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721746800000">24</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721833200000">25</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1721919600000">26</td>            <td class="tui-calendar-date tui-calendar-sat tui-is-selectable" data-timestamp="1722006000000">27</td>          </tr>        <tr class="tui-calendar-week">            <td class="tui-calendar-date tui-calendar-sun tui-is-selectable" data-timestamp="1722092400000">28</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1722178800000">29</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1722265200000">30</td>            <td class="tui-calendar-date tui-is-selectable" data-timestamp="1722351600000">31</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1722438000000">1</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1722524400000">2</td>            <td class="tui-calendar-date tui-calendar-next-month tui-calendar-sat tui-is-selectable" data-timestamp="1722610800000">3</td>          </tr>        <tr class="tui-calendar-week">            <td class="tui-calendar-date tui-calendar-next-month tui-calendar-sun tui-is-selectable" data-timestamp="1722697200000">4</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1722783600000">5</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1722870000000">6</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1722956400000">7</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1723042800000">8</td>            <td class="tui-calendar-date tui-calendar-next-month tui-is-selectable" data-timestamp="1723129200000">9</td>            <td class="tui-calendar-date tui-calendar-next-month tui-calendar-sat tui-is-selectable" data-timestamp="1723215600000">10</td>          </tr>      </tbody></table></div></div></div>    </div>  </div></div>
+                                            </div>
+                                        </div>
+                                        <script>datePicker("datepicker-input","datepicker-container");</script>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>불참사유</th>
+                                    <td colspan="3" class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder="불참사유를 입력해주세요"></textarea>
+                                            <span class="textByte">56/5000 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 파일 업로드 -->
+                    <div class="comFileList">
+                        <ul class="fileGroup">
+                            <li class="file upload">
+                                <dl>
+                                    <dt>첨부파일</dt>
+                                    <dd>
+                                        <div class="frmGroup">
+                                            <div class="fileBox">
+                                                <div class="fileBefore">
+                                                    <label for="uploadBtn1" class="btn">파일선택</label>
+                                                    <input type="file" id="uploadBtn1" class="uploadBtn">
+                                                </div>
+                                                <div class="fileAfter">
+                                                    <div class="textBox"></div>
+                                                    <button class="fileDel">삭제</button>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="textBox clar"> * 최대 500MB까지 첨부가능</div> -->
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="comBtnInView">
+                        <div class="btnArea">
+                            <button class="btn basic" disabled="">신청하기</button>
+                            <button class="btn basic">신청하기</button>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="comGroupBtm">
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

@@ -1,0 +1,111 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "증명서 발급",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint">
+                    <div class="alignR">
+                        <button class="btn bLine info">인쇄안내</button>
+                        <button class="btn bLine print">인쇄</button>
+                    </div>
+                </div>
+
+                <div class="comInTitle">
+                    <h4>발급상세내역</h4>
+                </div>
+
+                <div class="comTable">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:260px;">
+                            <col style="width:auto;">
+                            <col style="width:260px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="t_01">신청번호</th>
+                                <td>4700</td>
+                                <th class="t_01">신청내역</th>
+                                <td>선수등록증명서</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">이름</th>
+                                <td>홍길동</td>
+                                <th class="t_01">처리상태</th>
+                                <td>승인</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">용도</th>
+                                <td>서류제출용</td>
+                                <th class="t_01">신청일자</th>
+                                <td>2024-05-30 16:38:10.0</td>
+                            </tr>
+                            <tr>
+                                <th class="t_01">인쇄횟수</th>
+                                <td>3회</td>
+                                <th class="t_01">처리일자</th>
+                                <td>2024-05-30 16:38:10.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="comGroupBtm line">
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
