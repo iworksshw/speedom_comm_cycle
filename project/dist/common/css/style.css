@@ -358,7 +358,7 @@ body.noScrl {
 	color: #000;
 	font-size: 3.625rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 @media screen and (max-width: 767px) {
@@ -407,7 +407,7 @@ body.noScrl {
 	color: #000;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	position: relative;
 }
@@ -470,7 +470,7 @@ body.noScrl {
 	color: #000;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 42px;
 }
 @media screen and (max-width: 767px) {
@@ -498,7 +498,7 @@ body.noScrl {
 	text-align: center;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 12px;
 }
 .comTopPrint .btn:last-child {
@@ -556,7 +556,7 @@ body.noScrl {
 .comMyGrade .textBox {
 	color: #000;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
 	display: block;
 	align-self: center;
 }
@@ -565,7 +565,7 @@ body.noScrl {
 	color: var(--blue-txt01);
 	font-size: 40px;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	align-self: center;
 }
@@ -589,7 +589,7 @@ body.noScrl {
 	padding-left: 17px;
 	color: #000;
 	font-size: 0.9375rem;
-	font-weight: 600;
+	font-weight: 700;
 	position: relative;
 }
 .comInfoBox .infoArea .infoTitle::before {
@@ -635,10 +635,10 @@ body.noScrl {
 	margin-top: 0;
 }
 .comInfoBox .infoList .item b.bold {
-	font-weight: 600;
+	font-weight: 700;
 }
 .comInfoBox .infoList .item b.c_blue {
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--blue-txt01);
 }
 @media screen and (max-width: 767px) {
@@ -750,7 +750,7 @@ body.noScrl {
 	height: 60px;
 	color: #000;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	line-height: 1.5;
 	border-bottom: 1px solid #eee;
@@ -763,7 +763,7 @@ body.noScrl {
 	height: 60px;
 	color: #000;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	line-height: 1.5;
 	border-bottom: 1px solid #eee;
@@ -806,7 +806,7 @@ body.noScrl {
 }
 .comTable table .c_blue {
 	color: var(--blue-txt01);
-	font-weight: 600;
+	font-weight: 700;
 }
 .comTable table .frmGroup {
 	justify-content: center;
@@ -856,14 +856,14 @@ body.noScrl {
 .comTable table .required {
 	color: #F00;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .comTable .btn {
 	padding: 0 20px;
 	text-align: center;
 	font-style: normal;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 45px;
 	border-radius: 12px;
 }
@@ -897,7 +897,7 @@ body.noScrl {
 	color: #F00;
 	text-align: right;
 	font-size: 1.125rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 .comTable .text.top {
@@ -1061,7 +1061,7 @@ body.noScrl {
 .comGroupTop .moneyBox .money dt {
 	color: #000;
 	font-size: 0.9375rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .comGroupTop .moneyBox .money dd {
 	color: var(--blue-txt01);
@@ -1204,7 +1204,7 @@ body.noScrl {
 	margin-right: 4px;
 	padding: 0 15px;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 12px;
 	display: flex;
 	justify-content: center;
@@ -1337,7 +1337,7 @@ body.noScrl {
 	color: #000;
 	text-align: center;
 	font-size: 0.875rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 38px;
 	display: block;
 }
@@ -1388,7 +1388,7 @@ body.noScrl {
 	color: #000;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	align-self: center;
 }
 @media screen and (max-width: 767px) {
@@ -1523,7 +1523,7 @@ body.noScrl {
 	text-align: center;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	align-self: center;
 	flex-shrink: 0;
@@ -1972,7 +1972,7 @@ textArea.areaMd {
 	font-family: "Pretendard";
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 .cptLogin .lgInner .contBox dl .title .required {
@@ -2045,7 +2045,7 @@ textArea.areaMd {
 	font-family: "Pretendard";
 	font-size: 1rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	border-radius: 12px;
 }
@@ -2084,7 +2084,7 @@ textArea.areaMd {
 	font-family: Pretendard;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.85em;
 	position: absolute;
 	bottom: 0;
@@ -2222,7 +2222,7 @@ textArea.areaMd {
 	color: #FFF;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: right;
 	line-height: normal;
 	letter-spacing: 9px;
@@ -2301,7 +2301,7 @@ textArea.areaMd {
 	text-align: center;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	display: flex;
 	justify-content: center;
@@ -2440,7 +2440,7 @@ textArea.areaMd {
 	color: #FFF;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	display: flex;
 	align-items: center;
@@ -2480,7 +2480,7 @@ textArea.areaMd {
 		margin-left: 3px;
 		font-size: 0.75rem;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: 700;
 		line-height: normal;
 	}
 }
@@ -2592,7 +2592,7 @@ textArea.areaMd {
 	text-align: center;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 @media screen and (max-width: 767px) {
@@ -2653,7 +2653,7 @@ textArea.areaMd {
 	text-overflow: ellipsis;
 }
 .cptBoardList table tr td .link .title a b {
-	font-weight: 600;
+	font-weight: 700;
 }
 @media screen and (max-width: 767px) {
 	.cptBoardList table tr td .link .title a {
@@ -2669,7 +2669,7 @@ textArea.areaMd {
 	margin-left: 8px;
 	color: var(--blue-txt01);
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 26px;
 }
 @media screen and (max-width: 767px) {
@@ -2797,7 +2797,7 @@ textArea.areaMd {
 	text-align: left;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 @media screen and (max-width: 767px) {
@@ -3103,7 +3103,7 @@ textArea.areaMd {
 	text-align: left;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	display: flex;
 	align-items: center;
@@ -3171,7 +3171,7 @@ textArea.areaMd {
 	margin-right: 4px;
 	padding: 0 15px;
 	font-size: 0.75rem;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 8px;
 	display: flex;
 	justify-content: center;
@@ -3325,7 +3325,7 @@ textArea.areaMd {
 	margin-right: 4px;
 	padding: 0 15px;
 	font-size: 0.75rem;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 8px;
 	display: flex;
 	justify-content: center;
@@ -3361,7 +3361,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 2.125rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 @media screen and (max-width: 767px) {
@@ -3405,7 +3405,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 1.25rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 .cptAppliForm .formBtm {
@@ -3416,7 +3416,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 1.375rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.545;
 }
 @media screen and (max-width: 767px) {
@@ -3521,7 +3521,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 4vw;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 .cptPrintAppliForm .formArea .formBox .formCont {
@@ -3549,7 +3549,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 1.4vw;
-	font-weight: 600;
+	font-weight: 700;
 	border-bottom: 1px solid #ccc;
 	background: #F8F8FE;
 }
@@ -3568,7 +3568,7 @@ textArea.areaMd {
 	text-align: right;
 	color: #F00;
 	font-size: 1.3333333333vw;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 }
 .cptPrintAppliForm .formArea .formBox .formBtm {
@@ -3578,7 +3578,7 @@ textArea.areaMd {
 	text-align: center;
 	font-size: 2.4vw;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.388;
 }
 
@@ -3635,7 +3635,7 @@ textArea.areaMd {
 	padding-left: 17px;
 	color: #000;
 	font-size: 0.9375rem;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: normal;
 	position: relative;
 }
@@ -3739,7 +3739,7 @@ textArea.areaMd {
 .modAccordion .textBox .c_blue {
 	color: var(--blue-txt01);
 	font-size: 1.125rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .modAccordion + .modAccordion {
 	margin-top: 10px;
