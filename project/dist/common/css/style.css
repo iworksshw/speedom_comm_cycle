@@ -470,7 +470,7 @@ body.noScrl {
 	color: #000;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 42px;
 }
 @media screen and (max-width: 767px) {
@@ -1337,7 +1337,7 @@ body.noScrl {
 	color: #000;
 	text-align: center;
 	font-size: 0.875rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 38px;
 	display: block;
 }
@@ -1388,7 +1388,7 @@ body.noScrl {
 	color: #000;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	align-self: center;
 }
 @media screen and (max-width: 767px) {
@@ -1523,7 +1523,7 @@ body.noScrl {
 	text-align: center;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 	align-self: center;
 	flex-shrink: 0;
@@ -2301,7 +2301,7 @@ textArea.areaMd {
 	text-align: center;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 	display: flex;
 	justify-content: center;
@@ -2440,7 +2440,7 @@ textArea.areaMd {
 	color: #FFF;
 	font-size: 0.9375rem;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 	display: flex;
 	align-items: center;
@@ -2480,7 +2480,7 @@ textArea.areaMd {
 		margin-left: 3px;
 		font-size: 0.75rem;
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 600;
 		line-height: normal;
 	}
 }
@@ -2653,7 +2653,7 @@ textArea.areaMd {
 	text-overflow: ellipsis;
 }
 .cptBoardList table tr td .link .title a b {
-	font-weight: 700;
+	font-weight: 600;
 }
 @media screen and (max-width: 767px) {
 	.cptBoardList table tr td .link .title a {
@@ -3103,7 +3103,7 @@ textArea.areaMd {
 	text-align: left;
 	font-size: 0.875rem;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 	display: flex;
 	align-items: center;
@@ -3361,7 +3361,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 2.125rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 }
 @media screen and (max-width: 767px) {
@@ -3405,7 +3405,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 1.25rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 }
 .cptAppliForm .formBtm {
@@ -3416,7 +3416,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 1.375rem;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.545;
 }
 @media screen and (max-width: 767px) {
@@ -3521,7 +3521,7 @@ textArea.areaMd {
 	color: #000;
 	text-align: center;
 	font-size: 4vw;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: normal;
 }
 .cptPrintAppliForm .formArea .formBox .formCont {
@@ -3578,7 +3578,7 @@ textArea.areaMd {
 	text-align: center;
 	font-size: 2.4vw;
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.388;
 }
 
