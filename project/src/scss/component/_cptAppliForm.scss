@@ -11,6 +11,7 @@
         width: 100%; 
         p {
             width: 100%; color: #000; text-align: right; font-size: rem(24px); font-weight: 300; line-height: 1.667;
+            @include media('mobile'){font-size: rem(19px);}
         }
     }
     .formCont {
@@ -24,6 +25,7 @@
         width: 100%; 
         p {
             width: 100%; color: #000; text-align: center; font-size: rem(20px); font-weight: 500; line-height: normal;
+            @include media('mobile'){font-size: rem(16px);}
         }
     }
     .formBtm {
@@ -46,14 +48,14 @@
     .formBtm + .comFileList {margin-top:90px;}
     .comFileList + .comOtherPage {margin-top:35px;}
     @include media('mobile'){
-        .formTitle + .formName {margin-top:50px;}
+        .formTitle + .formName {margin-top:30px;}   //
         .formTitle + .comInTitle {margin-top:80px;}
         .formTitle + .formCont {margin-top:40px;}   //
-        .formName + .formCont {margin-top:30px;}
+        .formName + .formCont {margin-top:18px;}    //
         .formCont + .formBtm {margin-top:40px;}     //
-        .formCont + .comTable {margin-top:120px;}
-        .comTable + .formDate {margin-top:90px;}
-        .comTable + .formBtm {margin-top:80px;}
+        .formCont + .comTable {margin-top:60px;}    //
+        .comTable + .formDate {margin-top:50px;}    //
+        .comTable + .formBtm {margin-top:40px;}     //
         .formDate + .formBtm {margin-top:30px;}
         .formBtm + .comInTitle {margin-top:80px;}
         .formBtm + .comFileList {margin-top:90px;}
