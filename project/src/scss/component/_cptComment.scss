@@ -52,7 +52,7 @@
                 }
                 .cmtDate{
                     width:96px; color: #000; text-align: right; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal; flex-shrink: 0;
-                    @include media('mobile'){font-size: rem(12px); position:absolute; top:-22px; right:0;}
+                    @include media('mobile'){font-size: rem(12px); color: rgba(0,0,0,0.4); position:absolute; top:-22px; right:0;}
                 }
             }
 

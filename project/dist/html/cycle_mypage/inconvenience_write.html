@@ -97,118 +97,63 @@
 
 <div class="comH1Title">
     <div class="titleArea">
-        <h1>상담일지</h1>
+        <h1>불편 오류사항 신고</h1>
     </div>
 </div>
 
-                <div class="comInTitle">
-                    <h4>참가 신청</h4>
-                </div>
-
-                <div class="comTable">
-                    <table>
-                        <caption></caption>
-                        <colgroup>
-                            <col style="width:260px;">
-                            <col style="width:auto;">
-                            <col style="width:260px;">
-                            <col style="width:auto;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th class="t_01">선수명</th>
-                                <td>홍길동</td>
-                                <th class="t_01">등급</th>
-                                <td>A2</td>
-                            </tr>
-                            <tr>
-                                <th class="t_01"><span class="required">*</span>훈련지</th>
-                                <td>청주</td>
-                                <th class="t_01">경주 회차</th>
-                                <td>24회차</td>
-                            </tr>
-                            <tr>
-                                <th class="t_01"><span class="required">*</span>전일숙소</th>
-                                <td>훈련 동참자 집</td>
-                                <th class="t_01">훈련 동참자</th>
-                                <td>김길동</td>
-                            </tr>
-                            <tr>
-                                <th class="t_01">특이사항</th>
-                                <td colspan="3" class="left">이사 이슈로 인해 훈련 동참자 집에서 잠</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="comInTitle">
-                    <h4>훈련기록</h4>
-                </div>
-
-                <div class="comTable">
-                    <div class="text top">
-                        <p>선수정보와 출전준비상태를 꼭 확인 후 작성해주세요.</p>
-                    </div>
-                    <table>
-                        <caption></caption>
-                        <colgroup>
-                            <col style="width:260px;">
-                            <col style="width:auto;">
-                            <col style="width:auto;">
-                            <col style="width:auto;">
-                            <col style="width:auto;">
-                            <col style="width:auto;">
-                            <col style="width:auto;">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th rowspan="2" class="t_01">훈련상태</th>
-                                <th class="t_02"><span class="required">*</span> 인터벌 200m</th>
-                                <th class="t_01"><span class="required">*</span> 인터벌 333m</th>
-                                <th class="t_02"><span class="required">*</span> 인터벌 333m</th>
-                                <th class="t_01"><span class="required">*</span> 도로</th>
-                                <th class="t_02"><span class="required">*</span> 피스타</th>
-                                <th class="t_01">훈련일수</th>
-                            </tr>
-                            <tr>
-                                <td>2회</td>
-                                <td>2회</td>
-                                <td>2회</td>
-                                <td>30Km</td>
-                                <td>0주회</td>
-                                <td>6일</td>
-                            </tr>
-                            <tr>
-                                <th class="t_01"><span class="required">*</span>훈련내용</th>
-                                <td colspan="6" class="left">
-                                    도로에서 오르막 등판훈련과 내리막 훈련을 하였으며, 보조훈련으로 웨이트 트레이닝을 하였습니다.
-                                </td>
-                            </tr>
-                            <tr>
-                                <th rowspan="2" class="t_01">상해보험 청구여부</th>
-                                <th colspan="3" class="t_02">부상(사고)일자</th>
-                                <th colspan="3" class="t_01">사고부위</th>
-                            </tr>
-                            <tr>
-                                <td colspan="3">2024-06-20</td>
-                                <td colspan="3">허벅지 안쪽 타박상</td>
-                            </tr>
-                            <tr>
-                                <th class="t_01">장비 변경사항</th>
-                                <td colspan="6" class="left">
-                                    안경태 교체(5/23)<br>
-                                    ※ 예시) 스파이크 흰색 교체(5/23) (안경테, 핸들그립, 스파이크, 장갑, 안장, 슈커버 등 교체사항 날짜와 함께 기재)
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="comBtnInView">
-                    <div class="btnArea">
-                        <button class="btn basic">수정하기</button>
+                <!-- 그룹 상단 -->
+                <div class="cptBoardWrite">
+                    <div class="boardArea">
+                        <div class="boardTop">
+                            <h2 class="boardTitle"><input type="text" placeholder="제목을 입력해주세요"></h2>
+                            <div class="boardType">
+                                <select name="" id="">
+                                    <option>유형 선택</option>
+                                    <option>불편사항</option>
+                                    <option>오류사항</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="boardBody">
+                            <div class="boardCont">
+                                <textarea class="boardText" placeholder="내용을 입력해주세요."></textarea>
+                            </div>
+                            <div class="comFileList">
+                                <ul class="fileGroup">
+                                    <li class="file upload">
+                                        <dl>
+                                            <dt>첨부파일</dt>
+                                            <dd>
+                                                <div class="frmGroup">
+                                                    <div class="fileBox">
+                                                        <div class="fileBefore">
+                                                            <label for="uploadBtn1" class="btn">파일선택</label>
+                                                            <input type="file" id="uploadBtn1" class="uploadBtn">
+                                                        </div>
+                                                        <div class="fileAfter">
+                                                            <div class="textBox"></div>
+                                                            <button class="fileDel">삭제</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="textBox clar"> * 최대 500MB까지 첨부가능</div> -->
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- 그룹하단 -->
+                <div class="comGroupBtm">
+                    <div class="alignR">
+                        <button class="btn basic" disabled>등록</button>
+                        <button class="btn basic">등록</button>
+                    </div>
+                </div>
+
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
             </div>
