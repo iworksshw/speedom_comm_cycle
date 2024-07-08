@@ -21,10 +21,10 @@
                 }
             }
             .kspoIndex{
-                margin-top:50px; color: #000; text-align: center; font-size: rem(40px); font-style: normal; font-weight: 300; line-height: normal;
+                margin-top:50px; color: #000; text-align: center; font-size: rem(40px); font-style: normal; font-weight: 400; line-height: normal;
             }
             .kspoDesc{
-                margin-top: 13px; color: #000; text-align: center; font-size: rem(18px); font-style: normal; font-weight: 300; line-height: normal;
+                margin-top: 13px; color: #000; text-align: center; font-size: rem(18px); font-style: normal; font-weight: 400; line-height: normal;
             }
         }
         .titleBox {
@@ -37,7 +37,7 @@
             .textMsg{
                 width:100%; 
                 .text{
-                    color: #000; text-align: center; font-size: 18px; font-style: normal; font-weight: 300; line-height: normal;
+                    color: #000; text-align: center; font-size: 18px; font-style: normal; font-weight: 400; line-height: normal;
                     &.left{text-align:left;}
                 }
             }
@@ -49,15 +49,15 @@
             dl{
                 width:100%;
                 .title{
-                    width:100%; color: #000; font-family: "Pretendard"; font-size: rem(15px); font-style: normal; font-weight: 600; line-height: normal;
+                    width:100%; color: #000; font-family: "Pretendard"; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: normal;
                     .required{
-                        vertical-align: middle; margin-right:5px;
+                        color: #f00; vertical-align: middle; margin-right:5px;
                     }
                 }
                 .iptBox{
                     width:100%; margin-top:12px;
                     input{
-                        width:100%; height:66px; padding:0 30px; color: #000; font-family: "Pretendard"; font-size: rem(16px); font-style: normal; font-weight: 300; 
+                        width:100%; height:66px; padding:0 30px; color: #000; font-family: "Pretendard"; font-size: rem(16px); font-style: normal; font-weight: 400; 
                         line-height: normal; border:0; border-radius: 12px; background: var(--gray-bg01); 
                     }
                 }
@@ -66,9 +66,9 @@
                 }
             }
             .inText{
-                width:100%; margin-top:14px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal;
+                width:100%; margin-top:14px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal;
                 &.clar{
-                    min-height:16px; margin-top:18px; padding-left:22px; color: #F00; font-size: rem(14px); font-style: normal; font-weight: 300; line-height:1.2;
+                    min-height:16px; margin-top:18px; padding-left:22px; color: #F00; font-size: rem(14px); font-style: normal; font-weight: 400; line-height:1.2;
                     background:url(../../images/common/ic_login_caution.svg) left center no-repeat;
                 }
                 .point {
@@ -85,11 +85,11 @@
                 width:100%;
                 + .loginBox {margin-top:10px;}
                 .btn{
-                    width: 100%; height: 66px; font-family: "Pretendard"; font-size: rem(16px); font-style: normal; font-weight: 600; line-height: normal; border-radius: 12px;
+                    width: 100%; height: 66px; font-family: "Pretendard"; font-size: rem(16px); font-style: normal; font-weight: 700; line-height: normal; border-radius: 12px;
                     &.basic{
                         color: #FFF; background: #4D5DF2;
                         &:disabled{
-                            background: #BBC1F6 !important;
+                            opacity: 0.4; mix-blend-mode: luminosity;
                         }
                     }
                     &.sub{
@@ -101,10 +101,10 @@
                 }
             }
             .loginSerch{
-                width:100%; margin-top:22px; color: #000; text-align: center; font-family: "Pretendard"; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal;
+                width:100%; margin-top:22px; color: #000; text-align: center; font-family: "Pretendard"; font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal;
             }
             .footInfo{
-                width:100%; margin-top:70px; color: rgba(0,0,0,0.5); text-align: center; font-family: Pretendard; font-size: rem(14px); font-style: normal; font-weight: 600; line-height: 1.85em; position:absolute; bottom:0; left:0;
+                width:100%; margin-top:70px; color: rgba(0,0,0,0.5); text-align: center; font-family: Pretendard; font-size: rem(14px); font-style: normal; font-weight: 700; line-height: 1.85em; position:absolute; bottom:0; left:0;
             }
         }
     }

@@ -22,4 +22,11 @@
             &.on {display:block;}
         }
     }
+    @include media('mobile'){
+        .tabMenu{
+            .tabItem{
+                min-width: auto; width: 100%;
+            }
+        }
+    }
 }

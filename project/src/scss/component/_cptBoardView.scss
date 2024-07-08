@@ -8,23 +8,23 @@
             width: 100%; padding-bottom:30px; border-bottom:1px solid #eee;
             @include media('mobile'){padding-bottom:16px;}
             .boardType{
-                margin-bottom:10px; color: #000; text-align: left; font-size: rem(15px); font-style: normal; font-weight: 600; line-height: normal;
+                margin-bottom:10px; color: #000; text-align: left; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: normal;
                 @include media('mobile'){margin-bottom: 9px; font-size: rem(13px);}
             }
             .boardTitle{
-                color: #000; font-size: rem(34px); font-style: normal; font-weight: 300; line-height: 1.35;
+                color: #000; font-size: rem(34px); font-style: normal; font-weight: 400; line-height: 1.35;
                 @include media('mobile'){font-size: rem(24px); line-height: 1.25}
             }
             .boardState{
                 width: 100%; height: 30px; margin-top: 30px; display: flex; justify-content: end; gap: 26px;
                 .item{
-                    color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal; align-self: center;
+                    color: #000; font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal; align-self: center;
                     &.info{
                         display: flex; gap: 26px;
                     }
                     &.state{
                         min-width: 66px; height:30px; padding:0 15px; text-align: center; font-size: rem(12px); font-style: normal; font-weight: 800; 
-                        line-height: 30px; border-radius: 15px; background: #F4F6F8;
+                        line-height: 30px; border-radius: 15px; background: #F5F5FE;
                     }
                     &.pink{color: #FF5ADB;}
                     &.blue{color: var(--blue-txt01);}
@@ -50,13 +50,13 @@
             }
         }
         .boardBody {
-            padding:60px 150px 0;
+            padding:70px 150px 0;
             @include media('mobile'){padding:40px 0 0;}
             .boardCont {
-                margin-top:40px; padding-bottom:50px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.75;
+                margin-top:70px; padding-bottom:50px; color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.75;
                 &:first-child {margin-top:0;}
                 img {max-width:100%;}
-                @include media('mobile'){padding-bottom:40px; font-size: rem(15px); line-height: 1.53;}
+                @include media('mobile'){padding-bottom:40px; color: #000; font-size: rem(15px); line-height: 1.53;}
             }
         }
     }

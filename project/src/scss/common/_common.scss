@@ -5,7 +5,7 @@
     @include media('mobile'){margin-bottom:47px;}
     .titleArea{
         h1{
-            color: #000; font-size: rem(58px); font-style: normal; font-weight: 600; line-height: normal;
+            color: #000; font-size: rem(58px); font-style: normal; font-weight: 700; line-height: normal;
             @include media('mobile'){font-size: rem(44px);}
         }
     }
@@ -15,7 +15,7 @@
 .comH2Title{
     margin-bottom:49px;
     .titleArea{
-        h2{color: #000; font-size: rem(34px); font-style: normal; font-weight: 300; line-height: normal;}
+        h2{color: #000; font-size: rem(34px); font-style: normal; font-weight: 400; line-height: normal;}
     }
     & + .comInTitle {margin-top:80px;}
     @include media('mobile'){
@@ -33,11 +33,11 @@
         display:flex; position:absolute; right:0; bottom:-12px;
     }
     h4 {
-        padding-left:17px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 600; line-height: normal; position:relative;
+        padding-left:17px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: normal; position:relative;
         &::before {content:""; width:7px; height:7px; border-radius:50%; background: #4D5DF2; display:block; position:absolute; left:0; top:5px;}
     }
     .textBox {
-        color: #000; font-size: rem(14px); font-weight: 300; line-height: normal;
+        color: #000; font-size: rem(14px); font-weight: 400; line-height: normal;
     }
 }
 .comTable + .comInTitle {margin-top:50px;}
@@ -54,7 +54,7 @@
         width:100%; display:flex; justify-content: flex-end;
     }
     .textBox {
-        margin-right:20px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 500; line-height: 42px;
+        margin-right:20px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: 42px;
     }
     .frmGroup {
         @include media('mobile'){width:100%;}
@@ -67,7 +67,7 @@
         }
     }
     .btn{
-        height: 42px; margin-right:4px; padding: 0px 26px; text-align: center; font-size: rem(14px); font-style: normal; font-weight: 600; 
+        height: 42px; margin-right:4px; padding: 0px 20px; text-align: center; font-size: rem(14px); font-style: normal; font-weight: 700; 
         border-radius: 12px;
         &:last-child {margin-right:0;}
         &.bLine {
@@ -84,7 +84,6 @@
             padding-right:50px; background:var(--gray-bg01) url(../../images/common/ic_info_print.svg) right 20px center no-repeat;
         }
         @include media('mobile'){
-            padding: 0px 20px;
             &.excel {
                 padding-right:44px; background:var(--gray-bg01) url(../../images/common/ic_down_excel.svg) right 16px center no-repeat;
             }
@@ -102,20 +101,20 @@
 .comMyGrade{
     width:100%; height:80px; border-radius: 12px; border: 4px solid #808CFC; background: var(--gray-bg01); display:flex; justify-content: center;
     .textBox {
-        color: #000; font-size: 16px; font-weight: 600; display: block; align-self: center;
+        color: #000; font-size: 16px; font-weight: 700; display: block; align-self: center;
     }
     b {
-        margin-left:19px; color: var(--blue-txt01); font-size: 40px; font-style: normal; font-weight: 600; line-height: normal; align-self: center;
+        margin-left:19px; color: var(--blue-txt01); font-size: 40px; font-style: normal; font-weight: 700; line-height: normal; align-self: center;
     }
 }
 
 /* -------------------------------- 정보상자 -------------------------------- */
 .comInfoBox{
-    width:100%; margin-bottom:60px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01); position: relative;
+    width:100%; margin-bottom:70px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01); position: relative;
     @include media('mobile'){margin-bottom:50px; padding:40px 20px;}
     .infoArea {
         .infoTitle{
-            padding-left:17px; color: #000; font-size: rem(15px); font-weight: 600; position: relative;
+            padding-left:17px; color: #000; font-size: rem(15px); font-weight: 700; position: relative;
             &::before {content:""; width:7px; height:7px; border-radius:50%; background: #4D5DF2; display:block; position:absolute; left:0; top:7px;}
         }
         .infoCont{
@@ -126,7 +125,7 @@
     .infoList {
         padding:2px 0;
         .item{ 
-            margin-top:4px; padding-left:18px; position:relative; color: #4d4d4d; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.5;
+            margin-top:4px; padding-left:18px; position:relative; color: #4d4d4d; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.5;
             &::before{content:""; width:4px; height:4px; border-radius:50%; background:#000; display:block; position:absolute; left:0; top:10px;}
             &:first-child {margin-top:0;}
             b{
@@ -143,6 +142,7 @@
     .downAcro {
         width: 260px; height: 60px; position: absolute; right: 55px; top: 33px;
         img {width: 100%;}
+        @include media('mobile'){margin: 20px auto 0; display: block; position: static;}
     }
 }
 .cptAppliForm + .comInfoBox {
@@ -158,9 +158,10 @@
     }
 }
 .comBtnInView {
-    width: 100%;
+    width: 100%; margin-top:40px; margin-bottom:40px;
+    &:last-child {margin-bottom:0;}
     .btnArea {
-        width:100%; margin-top:40px; margin-bottom:40px; display:flex; justify-content: flex-end; gap: 6px;
+        width:100%; display:flex; justify-content: flex-end; gap: 6px;
         .btn {
             width: 260px; height: 60px; padding: 0px 28px 0px 30px; text-align: center; font-size: rem(15px); font-style: normal; font-weight: 800; 
             border-radius: 12px; line-height: normal; justify-content: center; align-items: center;
@@ -184,13 +185,17 @@
 /* -------------------------------- 테이블 -------------------------------- */
 .comTable {
     width:100%; margin-top: 20px;
+    &:first-child {margin-top:0;}
+    .tableArea {
+        width:100%; 
+    }
     table {
         width:100%; border-spacing: 0; border-collapse: collapse; table-layout: fixed; border-top:1px solid #555;
 
         & + table {border-top:0;}
         thead {
             th {
-                height:60px; color: #000; font-size: rem(14px); font-weight: 600; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
+                height:60px; color: #000; font-size: rem(14px); font-weight: 700; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
                 &.t_01 {}
                 &.t_02 {background:#F1F3FB;}
                 @include media('mobile'){font-size: rem(13px);}
@@ -198,12 +203,12 @@
         }
         tbody {
             th {
-                height:60px; color: #000; font-size: rem(14px); font-weight: 600; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
+                height:60px; color: #000; font-size: rem(14px); font-weight: 700; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
                 &.t_02 {background:#F1F3FB;}
                 @include media('mobile'){font-size: rem(13px);}
             }
             td {
-                height:60px; padding:18px 0; color: #000; font-size: rem(16px); font-weight: 300; text-align:center; line-height: 1.5; border-bottom:1px solid #eee;
+                height:60px; padding:18px 0; color: #000; font-size: rem(16px); font-weight: 400; text-align:center; line-height: 1.5; border-bottom:1px solid #eee;
                 &:last-child {padding-right:0 !important;}
                 @include media('mobile'){font-size: rem(15px);}
             }
@@ -220,11 +225,11 @@
             
         }
         .c_blue{
-            color: var(--blue-txt01); font-weight: 600;
+            color: var(--blue-txt01); font-weight: 700;
         }
         .frmGroup {justify-content: center;}
         .iptSlt {
-            height: 49px; padding-left:24px;
+            height: 49px; padding-left:24px; font-size: rem(14px);
             &:first-child {margin-left:0;}
         }
         .iptText {
@@ -233,19 +238,19 @@
             &::placeholder {color:rgba(0,0,0,0.3);}
         }
         .iptTextarea {
-            width:100%; min-height: 109px; padding:25px 200px 25px 25px; color:#000; font-size: rem(16px); font-weight: 300; line-height: 1.5; border:0; border-radius:12px; 
+            width:100%; min-height: 109px; padding:25px 200px 25px 25px; color:#000; font-size: rem(16px); font-weight: 400; line-height: 1.5; border:0; border-radius:12px; 
             background: var(--gray-bg01);
             &::placeholder {color: rgba(0,0,0,0.3);}
         }
         .textByte {
-            color: rgba(0,0,0,0.3); display: inline-block; position: absolute; top: 12px; right: 12px;
+            color: rgba(0,0,0,0.3); font-size: rem(14px); display: inline-block; position: absolute; top: 12px; right: 12px;
         }
         .required {
-            color: #F00; font-size: rem(14px); font-weight: 600;
+            color: #F00; font-size: rem(14px); font-weight: 700;
         }
     }
     .btn {
-        padding:0 20px; text-align: center; font-style: normal; font-size: rem(14px); font-weight: 600; line-height:45px; border-radius:12px;
+        padding:0 20px; text-align: center; font-style: normal; font-size: rem(14px); font-weight: 700; line-height:45px; border-radius:12px;
         &.basic {
             color: #fff; border: 2px solid #4D5DF2; background: #4D5DF2;
         }
@@ -254,17 +259,17 @@
         }
     }
     .text{
-        width:100%; margin-top:30px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: 2;
+        width:100%; margin-top:30px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 400; line-height: 2;
         @include media('mobile'){margin-top:20px;}
         &.clar{
-            color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height:1.5;
+            color: #000; font-size: rem(14px); font-style: normal; font-weight: 400; line-height:1.5;
         }
         &.pointR {
-            color: #F00; text-align: right; font-size: rem(18px); font-weight: 600; line-height: normal;
+            color: #F00; text-align: right; font-size: rem(18px); font-weight: 700; line-height: normal;
             @include media('mobile'){font-size: rem(16px);}
         }
         &.top {
-            margin:0 0 15px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 300;
+            margin:0 0 15px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 400;
         }
         .c_blue{
             color: var(--blue-txt01); font-size: rem(16px); font-weight: 400; line-height: normal;
@@ -274,12 +279,12 @@
 
     @include media('tablet'){
         &.sizeL {
-            overflow-x: auto;
-            table {min-width: 980px;}
+            .tableArea {overflow-x: auto;}
+            .tableArea > table {min-width: 980px;}
         }
         &.sizeM {
-            overflow-x: auto;
-            table {min-width: 780px;}
+            .tableArea {overflow-x: auto;}
+            .tableArea > table {min-width: 780px;}
         }
     }
     @include minWidth('mobile'){
@@ -340,7 +345,7 @@
     }
     .unit{
         .text{
-            color: rgba(0,0,0,0.5); font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal;
+            color: rgba(0,0,0,0.5); font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal;
             .total{}
         }
     }
@@ -350,16 +355,16 @@
             margin-right:30px; display:flex; align-items: center; gap:10px; 
             &:last-child {margin-right:0;}
             dt {
-                color: #000; font-size: rem(15px); font-weight: 600;
+                color: #000; font-size: rem(15px); font-weight: 700;
             }
             dd {
-                color: var(--blue-txt01); font-size: rem(24px); font-weight: 300;
+                color: var(--blue-txt01); font-size: rem(24px); font-weight: 400;
             }
         }
         @include media('mobile'){
             flex-wrap: wrap;
             .money {
-                margin-right:0; margin-top:6px;
+                width: 100%; margin-right:0; margin-top:6px; justify-content: flex-end;
                 &:first-child {margin-top:0;}
                 dt {font-size: rem(14px);}
                 dd { font-size: rem(22px);}
@@ -378,22 +383,23 @@
         .frmSearch{
             position:relative;
             input{
-                width: 300px; height: 42px; padding:0 17px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; 
+                width: 300px; height: 42px; padding:0 24px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 400; 
                 line-height: normal; border:0; border-radius: 12px; background: var(--gray-bg01);
                 &::placeholder {color:rgba(0,0,0,0.3);}
             }
             .btnSearch {
-                width:20px; height:22px; font-size:0; background:url(../../images/common/ico_search.svg) center / 20px no-repeat; position:absolute; right:10px; top:9px;
+                width:20px; height:22px; font-size:0; background:url(../../images/common/ico_search.svg) center / 20px no-repeat; position:absolute; right:24px; top:9px;
             }
             @include media('mobile'){
-                input{width:100%;}
+                input{width:100%; padding:0 16px; font-size: rem(14px);}
+                .btnSearch {right:9px;}
             }
         }
         .iptSlt {
-            width: 300px; height: 42px; padding:0 40px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; 
+            width: 300px; height: 42px; padding:0 38px 0 24px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 400; 
             line-height: normal; border:0; border-radius: 12px; background: var(--gray-bg01) url(../../images/common/ic_side_slt.svg) right 20px center no-repeat;
             @include media('mobile'){
-                width:100%; margin-left:0;
+                width:100%; margin-left:0; padding:0 34px 0 20px; font-size: rem(14px);
             }
         }
     }
@@ -422,12 +428,12 @@
     @include media('mobile'){
         margin-top:14px;
         &.line {margin-top:60px;}
-        .alignR {width:auto;}
+        .alignR {width:auto; flex-grow: 1;}
         .textBox {font-size: rem(15px);}
     }
     
     .btn {
-        width:max-content; min-width:90px; height:44px; margin-right:4px; padding:0 15px; font-size: rem(14px); font-weight: 600; border-radius:12px;
+        width:max-content; min-width:90px; height:44px; margin-right:4px; padding:0 15px; font-size: rem(14px); font-weight: 700; border-radius:12px;
         display: flex; justify-content: center; align-items: center;
         @include media('mobile'){min-width:76px;}
         &:last-child {margin-right:0;}
@@ -446,7 +452,7 @@
 
 /* -------------------------------- 페이징 -------------------------------- */
 .comPaging{
-    width:100%; margin-top:26px; font-size:0; text-align:center;
+    width:100%; margin-top:46px; font-size:0; text-align:center;
     @include media('mobile'){margin-top:35px;}
     .start{
         width:40px; height:40px; font-size:0; vertical-align:top; border-radius:10px; 
@@ -473,7 +479,7 @@
         > li{
             width:40px; height:40px; margin-left:3px; font-size:0; border-radius:10px; border:1px solid #EEF0F1; display:inline-block;
             &:first-child {margin-left:0;}
-            a{width:100%; height:100%; color: #000; text-align: center; font-size: rem(14px); font-weight: 500; line-height: 38px; display:block;}
+            a{width:100%; height:100%; color: #000; text-align: center; font-size: rem(14px); font-weight: 700; line-height: 38px; display:block;}
             &.on{
                 a{color:#ff9900;}
             }
@@ -487,6 +493,7 @@
         }
     }
 }
+.cptBoardList + .comPaging {margin-top:110px;}
 
 /* -------------------------------- 파일 업로드/다운로드 -------------------------------- */
 .comFileList{
@@ -505,7 +512,7 @@
             dl{
                 width:100%; height:100%; display: flex; 
                 dt{
-                    min-width: max-content; padding-left:52px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 500; align-self: center;
+                    min-width: max-content; padding-left:52px; color: #000; font-size: rem(14px); font-style: normal; font-weight: 700; align-self: center;
                     @include media('mobile'){padding-left:20px; font-size: rem(12px);}
                 }
                 dd{
@@ -514,7 +521,7 @@
                 }
             }
             .fileName {
-                width:100%; padding-right: 75px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.75; display:block; 
+                width:100%; padding-right: 75px; color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.75; display:block; 
                 background:url(../../images/common/ico_file_download.svg) right 40px center no-repeat; @include line1();
             }
         }
@@ -532,7 +539,7 @@
     }
     .fileAfter {
         padding-right:18px; align-items: center; justify-content: space-between; display:none;
-        .textBox {color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 300;}
+        .textBox {color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 400;}
         .fileDel {width:30px; height:30px; font-size:0; background:url(../../images/common/ico_file_del.svg) center no-repeat;}
         @include media('mobile'){
             padding-left:6px;
@@ -566,19 +573,19 @@
             width:100%; height:60px; border-bottom:1px solid #eeeeee; display:flex; 
             @include media('mobile'){height:auto; padding:20px 0 16px; display:block;}
             .otherTitle{
-                width:150px; color: #000; text-align: center; font-size: rem(14px); font-style: normal; font-weight: 500; line-height: normal; align-self: center; flex-shrink: 0;
+                width:150px; color: #000; text-align: center; font-size: rem(14px); font-style: normal; font-weight: 700; line-height: normal; align-self: center; flex-shrink: 0;
                 @include media('mobile'){font-size: rem(12px); text-align: left; display: block;}
             } 
             .otherCont{
-                color: rgba(0,0,0,0.7); font-size: rem(16px); font-weight: 300; line-height: 1.5; flex-grow:1; align-self: center; @include line1();
+                color: rgba(0,0,0,0.7); font-size: rem(16px); font-weight: 400; line-height: 1.5; flex-grow:1; align-self: center; @include line1();
                 @include media('mobile'){margin-top:7px;}
                 .link{
-                    color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 1.5;
+                    color: rgba(0,0,0,0.7); font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.5;
                     @include media('mobile'){font-size: rem(15px); color: #000;}
                 }
             }
             .otherDate{
-                width:100px; color: #000; text-align: right; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal; align-self: center; flex-shrink: 0;
+                width:100px; color: rgba(0,0,0,0.7); text-align: right; font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal; align-self: center; flex-shrink: 0;
                 @include media('mobile'){font-size: rem(12px); color: rgba(0,0,0,0.5); text-align: left; display: block;}
             }
         }
@@ -592,13 +599,13 @@ input[type=password] {}
 
 
 .iptText { 
-    width: 300px; height: 40px; padding: 0 17px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: normal; border: 0; 
+    width: 300px; height: 40px; padding: 0 17px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal; border: 0; 
     border-radius: 12px; background: var(--gray-bg01);
     &:first-child {margin-left:0;}
     @include media('mobile'){font-size: rem(15px);}
 }
 .iptSlt  { 
-    width: 100%; height: 40px; padding: 0 40px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: normal; border: 0; 
+    width: 100%; height: 40px; padding: 0 40px; color: #000; text-align: left; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal; border: 0; 
     border-radius: 12px; background: var(--gray-bg01) url(../../images/common/ic_side_slt.svg) right 20px center no-repeat;
     &:first-child {margin-left:0;}
     @include media('mobile'){font-size: rem(15px);}
@@ -624,13 +631,13 @@ textArea.areaMd {height:150px;}
 .frmChoBox {margin-right:20px; display:inline-flex; position:relative;}
 .frmChoBox .iptLbl {min-height:30px; margin-right:10px; padding-top:5px; padding-bottom:5px; word-break:keep-all;}
 .frmChoBox .iptLbl:last-child {margin-right:0;}
-.frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight:300; line-height:20px; color:#000; background:url(../../images/common/ic_chk_off.svg) left center no-repeat;}
+.frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight: 400; line-height:20px; color:#000; background:url(../../images/common/ic_chk_off.svg) left center no-repeat;}
 .frmChoBox .iptChk:checked + .iptLbl {background:url(../../images/common/ic_chk_on.svg) left center no-repeat;}
 
 .frmChoBox .iptChk:disabled + .iptLbl {color:#666; background:url(../../images/common/ic_chk_dis_off.svg) left center no-repeat;}
 .frmChoBox .iptChk:disabled:checked + .iptLbl {background:url(../../images/common/ic_chk_dis_on.svg) left center no-repeat;}
 
-.frmChoBox .iptRdo + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight:300; line-height:20px; color:#000; background:url(../../images/common/ic_rdo_off.svg) left center no-repeat;}
+.frmChoBox .iptRdo + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight: 400; line-height:20px; color:#000; background:url(../../images/common/ic_rdo_off.svg) left center no-repeat;}
 .frmChoBox .iptRdo:checked + .iptLbl {background:url(../../images/common/ic_rdo_on.svg) left center no-repeat;}
 
 .frmChoBox .iptRdo:disabled + .iptLbl {color:#666; background:url(../../images/common/ic_rdo_dis_off.svg) left center no-repeat;}
@@ -665,9 +672,9 @@ textArea.areaMd {height:150px;}
 
 /* 버튼식 체크박스/라디오 박스 */
 .frmChoBtn {display:flex;} 
-.frmChoBtn .iptChk + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
+.frmChoBtn .iptChk + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight: 400; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
 .frmChoBtn .iptChk:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
-.frmChoBtn .iptRdo + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight:300; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
+.frmChoBtn .iptRdo + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight: 400; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
 .frmChoBtn .iptRdo:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
 
 

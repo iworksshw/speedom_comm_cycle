@@ -26,7 +26,7 @@
                         &:first-child::before{content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:0; top:29px;}
                         &::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; right:0; top:29px;}
                         .depth1Name{
-                            height: 100%; padding:0 52px; color: #FFF; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: normal; display:flex; 
+                            height: 100%; padding:0 52px; color: #FFF; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal; display:flex; 
                             align-items: center
                         }
                         .depth2Group{
@@ -55,7 +55,7 @@
             }
         }
         .gnbTitle {
-            width:200px; padding-top:29px; color: #FFF; font-size: rem(15px); font-style: normal; font-weight: 600; text-align: right; line-height: normal; letter-spacing: 9px;
+            width:200px; padding-top:29px; color: #FFF; font-size: rem(15px); font-style: normal; font-weight: 700; text-align: right; line-height: normal; letter-spacing: 9px;
             @include media('tablet'){display:none;}
         }
     }

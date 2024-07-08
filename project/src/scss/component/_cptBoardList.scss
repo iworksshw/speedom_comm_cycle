@@ -12,7 +12,7 @@
             @include media('mobile'){width:100%; padding:28px 0; border-bottom:1px solid #eee; display:flex; flex-wrap: wrap; position:relative;}
             td{
                 height:100px; border-bottom:1px solid #eee; text-align: center; vertical-align: middle;
-                color: #000; font-size: rem(14px); font-style: normal; font-weight: 300; line-height: normal; position:relative;
+                color: #000; font-size: rem(14px); font-style: normal; font-weight: 400; line-height: normal; position:relative;
                 @include media('mobile'){
                     height:auto; margin-top:5px; padding-right:20px; font-size:rem(12px); border-bottom:0; display:flex; color:rgba(0,0,0,0.5); order:10;
                     &::after{
@@ -37,11 +37,11 @@
                 &.left{text-align: left;}
                 &.right{text-align: right;}
                 .listType {
-                    color: #000; text-align: center; font-size: rem(15px); font-style: normal; font-weight: 600; line-height: normal;
+                    color: #000; text-align: center; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: normal;
                     @include media('mobile'){width: 100%; font-size: rem(12px);  text-align:left;}
                 }
                 .link {
-                    width:100%; color: #000; font-size: rem(22px); font-style: normal; font-weight: 300; line-height: normal; display:flex;
+                    width:100%; color: #000; font-size: rem(22px); font-style: normal; font-weight: 400; line-height: normal; display:flex;
                     @include media('mobile'){padding-right:72px; font-size: 18px; line-height: 24px; display:flex;}
                     .reply {
                         height:100px; padding-left:70px; font-size:0; background:#fff url(../../images/common/ico_list_reply.svg) calc(100% - 20px) 45px no-repeat; display:flex;
@@ -56,7 +56,7 @@
                             @include media('mobile'){width: auto; margin-top:5px; display: inline; white-space: initial; overflow:auto; text-overflow: initial;}
                         }
                         .num{
-                            margin-left:8px; color: var(--blue-txt01); font-size: rem(16px); font-weight: 600; line-height:26px;
+                            margin-left:8px; color: var(--blue-txt01); font-size: rem(16px); font-weight: 700; line-height:26px;
                             @include media('mobile'){margin-left:3px; font-size: rem(14px); line-height: 19px; vertical-align: top;}
                         }
                         .icons{

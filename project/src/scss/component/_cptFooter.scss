@@ -74,7 +74,7 @@
                                 &::after {display:none;}
                             }
                             @include media('mobile'){
-                                width: 100%; height:43px; padding-left:0; font-size: rem(34px); font-weight: 300; justify-content: center; align-items: flex-start;
+                                width: 100%; height:43px; padding-left:0; font-size: rem(34px); font-weight: 400; justify-content: center; align-items: flex-start;
                                 &::after {display:none;}
                                 .sup {margin-top:6px; margin-left:3px; font-size: rem(12px); font-style: normal; font-weight: 500; line-height: normal;}
                             }
