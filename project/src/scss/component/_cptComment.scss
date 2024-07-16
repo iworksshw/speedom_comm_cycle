@@ -17,7 +17,7 @@
         width:100%; border-bottom:1px solid #eee; display:flex;
         @include media('mobile'){padding-top:30px; flex-wrap: wrap;}
         .cmtName{
-            width:150px; height:80px; color: #000; text-align: left; font-size: rem(14px); font-style: normal; font-weight: 500; line-height: normal; display:flex; 
+            width:150px; height:80px; color: #000; text-align: left; font-size: rem(14px); font-style: normal; font-weight: 700; line-height: normal; display:flex; 
             align-items: center; flex-shrink: 0;
             @include media('mobile'){width:100%; height:auto; font-size: rem(12px);}
         }
@@ -74,9 +74,10 @@
         .writeText{
             width:100%; position:relative;
             textarea {
-                width:100%; min-height:200px; padding:40px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.5; border: 1px solid #808CFC;
+                width:100%; min-height:200px; padding:40px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.5; border: 0;
                 border-radius: 12px; background:var(--gray-bg01); resize:vertical;
                 &::placeholder {color:rgba(0,0,0,0.3);}
+                &:focus { outline: 1px solid #808CFC;}
                 @include media('mobile'){min-height:165px; padding:45px 15px 35px; font-size: rem(15px);}
             }
             .byte {

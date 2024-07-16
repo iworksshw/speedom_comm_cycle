@@ -2,14 +2,18 @@
 .cptLogin{
     width:100%; min-height:100vh; margin:0 auto; display: flex; align-items: center;
     @include media('mobile'){
-        width:100%; height:auto; padding:50px 20px; align-items:baseline;
+        width:100%; height:auto; padding:60px 20px 50px; align-items:baseline;
     }
 
     input::placeholder {color:rgba(0,0,0,0.3);}
     .lgInner{
         width:100%; padding-top:120px;
+        @include media('mobile'){
+            padding-top:0;
+        }
         .logoBox{
             width:100%; min-height:294px;
+            @include media('mobile'){min-height: auto; margin-bottom:70px;}
             .kspologo{
                 max-width: 728px; margin:0 auto;
                 @include media('mobile'){

@@ -23,7 +23,7 @@
                     width:300px; height:50px; padding:0 40px; color: #000; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal;
                      border:0; border-radius:12px; background:var(--gray-bg01) url(../../images/common/ico_wirte_slt.svg) right 20px top 21px no-repeat;
                      @include media('mobile'){
-                        width:100%; padding:0 15px; font-size:rem(12px); background:var(--gray-bg01) url(../../images/common/ico_wirte_slt.svg) right 15px top 21px no-repeat;
+                        width:100%; padding:0 14px; font-size:rem(12px); background:var(--gray-bg01) url(../../images/common/ico_wirte_slt.svg) right 14px top 21px no-repeat;
                     }
                 }
             }

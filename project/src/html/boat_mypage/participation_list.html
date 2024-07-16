@@ -1,0 +1,222 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "주선통보",
+                    url: "../../",
+                }) %>
+
+                <div class="comGroupTop">
+                    <div class="alignL">
+                        <div class="unit"><span class="text">전체 <span class="total">1000</span>건</span></div>
+                    </div>
+                    <div class="alignR">
+                        <ul class="comSideOpt">
+                            <li class="sideItem">
+                                <div class="frmGroup">
+                                    <select name="" id="" class="iptSlt">
+                                        <option value="">참가상태 전체</option>
+                                        <option value="">참가요청</option>
+                                        <option value="">통보완료</option>
+                                        <option value="">기간만료</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cptBoardList">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:auto;">
+                            <col style="width:110px;">
+                            <col style="width:230px;">
+                            <col style="width:130px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state blue">참가요청</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">통보완료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">통보완료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">통보완료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">기간만료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">기간만료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">기간만료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">기간만료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">기간만료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">2024년 20회차 주선 참가통보서</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">기간만료</span></td> <!-- blue : 참가요청, gray : 통보완료, pink : 기간만료 -->
+                                <td>참가기간 2024-05-24 ~ 2024-05-26</td>
+                                <td class="right">통보일 0000-00-00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="comPaging">
+                    <a class="start" href="#"></a>
+                    <a class="prev" href="#"></a>
+                    <ul class="numList">
+                        <li><a href="#">1</a></li>
+                        <li class="on"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <a class="next" href="#"></a>
+                    <a class="end" href="#"></a>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

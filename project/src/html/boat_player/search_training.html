@@ -1,0 +1,171 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경정 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "전체 훈련신청 조회",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint">
+                    <div class="alignR line">
+                        <div class="frmGroup">
+                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus frmLg">
+                                <input id="startpicker-input" type="text" aria-label="Date">
+                                <div id="startpicker-container" style="margin-left: -1px;"></div>
+                            </div>
+                            <div class="textBox deco">~</div>
+                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus frmLg">
+                                <input id="endpicker-input" type="text" aria-label="Date">
+                                <div id="endpicker-container" style="margin-left: -1px;"></div>
+                            </div>
+                        </div>
+                        <button class="btn bLine">조회</button>
+                    </div>
+                </div>
+                <script>datePickerTo("startpicker-input", "startpicker-container", "endpicker-input", "endpicker-container");</script>
+
+                <div class="comTable sizeM">
+                    <div class="tableArea">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="t_01">훈련기간</th>
+                                    <th class="t_02">훈련일수</th>
+                                    <th class="t_01">신청자수</th>
+                                    <th class="t_02">신청자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>2일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>4일</td>
+                                    <td>1명</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>3일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>1일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>2일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>4일</td>
+                                    <td>1명</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>3일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>1일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>3일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2024-06-11 ~ 2024-06-11</td>
+                                    <td>1일</td>
+                                    <td>-</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="comPaging">
+                    <a class="start" href="#"></a>
+                    <a class="prev" href="#"></a>
+                    <ul class="numList">
+                        <li><a href="#">1</a></li>
+                        <li class="on"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <a class="next" href="#"></a>
+                    <a class="end" href="#"></a>
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>

@@ -1,0 +1,184 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "증명서 발급",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint">
+                    <div class="alignR">
+                        <button class="btn bLine info">발급방법안내</button>
+                    </div>
+                </div>
+
+                <div class="comInfoBox">
+                    <ul class="infoList">
+                        <li class="item">원활한 증명서 발급을 위해서는  Acrobat Reader 프로그램이 필요합니다.</li>
+                        <li class="item">이용하시는 컴퓨터에 없는 경우 오른쪽 링크 안내에 따라 Acrobat Reader를 설치해 주십시오.</li>
+                    </ul>
+                    <a href="#" class="downAcro"><img src="../../images/common/img_down_acro.png" alt="다운로드하기 Acrobat Reader"></a>
+                </div>
+
+                <div class="comInTitle">
+                    <h4>발급신청</h4>
+                </div>
+
+                <div class="modTab">
+                    <ul class="tabMenu">
+                        <li class="tabItem"><button class="tabName on" title="선택 된 탭메뉴">선수등록증명서</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                        <li class="tabItem"><button class="tabName" title="탭메뉴">사업소득원천징수영수증</button></li>
+                    </ul>
+                    <div class="tabContianer">
+                        <div class="tabCont on"> <!-- addClass - on : 컨텐츠 노출 -->
+
+                            <div class="comTable">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:35%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="t_01">용도선택</th>
+                                                <td class="left frm">
+                                                    <div class="frmGroup">
+                                                        <select name="" id="" class="iptSlt frmLg">
+                                                            <option value="">은행제출용</option>
+                                                            <option value="">의료보험공단제출용</option>
+                                                            <option value="">학교제출용</option>
+                                                            <option value="">여권 및 비자발급용</option>
+                                                            <option value="">차량구입용</option>
+                                                            <option value="">보험회사제출용</option>
+                                                            <option value="">서류제출용</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">신청일자</th>
+                                                <td>2024-05-30</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="comBtnInView">
+                                <div class="btnArea">
+                                    <button class="btn basic">발급신청하기</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tabCont">
+
+                            <div class="comTable">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:35%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="t_01">연도선택</th>
+                                                <td class="left frm">
+                                                    <div class="frmGroup">
+                                                        <select name="" id="" class="iptSlt frmLg">
+                                                            <option value="">2024년</option>
+                                                            <option value="">2023년</option>
+                                                            <option value="">2022년</option>
+                                                            <option value="">2021년</option>
+                                                            <option value="">2020년</option>
+                                                            <option value="">2019년</option>
+                                                            <option value="">2018년</option>
+                                                            <option value="">2017년</option>
+                                                            <option value="">2016년</option>
+                                                            <option value="">2015년</option>
+                                                            <option value="">2014년</option>
+                                                            <option value="">2013년</option>
+                                                            <option value="">2012년</option>
+                                                            <option value="">2011년</option>
+                                                            <option value="">2010년</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">신청일자</th>
+                                                <td>2024-05-30</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text clar">* 상금명세서는 2010년부터 조회가 가능합니다.</p>
+                            </div>
+
+                            <div class="comBtnInView mtmn50 mo_mt0">
+                                <div class="btnArea">
+                                    <button class="btn basic">발급신청하기</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="comGroupBtm line">
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
