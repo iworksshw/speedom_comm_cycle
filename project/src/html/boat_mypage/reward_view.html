@@ -1,6 +1,6 @@
 <!-- Header -->
 <%- include('../_ejs/top.ejs', {
-    title: "경륜 커뮤니티",
+    title: "경정 커뮤니티",
     url: "../../"
 }) %>
 
@@ -58,6 +58,10 @@
                                 <col style="width:auto;">
                                 <col style="width:auto;">
                                 <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
                             </colgroup>
                             <tbody>
                                 <tr>
@@ -65,8 +69,12 @@
                                     <td>12345678</td>
                                     <th>성명</th>
                                     <td>홍길동</td>
-                                    <th>사업자번호</th>
-                                    <td>123-45-678901</td>
+                                    <th>회차</th>
+                                    <td>21회 1일 ~ 21회 2일</td>
+                                    <th>입금은행</th>
+                                    <td>신한</td>
+                                    <th>계좌번호</th>
+                                    <td>1234-567-8900</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -123,35 +131,72 @@
                                 <col style="width:auto;">
                                 <col style="width:auto;">
                                 <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
+                                <col style="width:auto;">
                             </colgroup>
                             <tbody>
                                 <tr>
-                                    <th class="t_01">성적상금</th>
-                                    <th class="t_02">출전상금</th>
-                                    <th class="t_01">유도상금</th>
-                                    <th class="t_02">후보상금</th>
-                                    <th class="t_01">대기상금</th>
+                                    <th class="t_01">경정장</th>
+                                    <th class="t_02">회차</th>
+                                    <th class="t_01">일차</th>
+                                    <th class="t_02">경주번호</th>
+                                    <th class="t_01">순위</th>
+                                    <th class="t_02">성적상금</th>
+                                    <th class="t_01">출전상금</th>
+                                    <th class="t_02">출발무사고</th>
+                                    <th class="t_01">연승상금</th>
+                                    <th class="t_02">합계</th>
                                 </tr>
                                 <tr>
+                                    <td>미사리</td>
+                                    <td>21</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>1,010,000</td>
+                                    <td>150,000</td>
                                     <td>0</td>
                                     <td>0</td>
-                                    <td>0</td>
-                                    <td>750,000</td>
-                                    <td>0</td>
+                                    <td>1,290,000</td>
                                 </tr>
                                 <tr>
-                                    <th class="t_01">기타상금</th>
-                                    <th class="t_02">안전상금</th>
-                                    <th class="t_01">출전 준비금</th>
-                                    <th class="t_02">숙식비</th>
-                                    <th class="t_01">대기상금</th>
+                                    <td>미사리</td>
+                                    <td>21</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>1,010,000</td>
+                                    <td>150,000</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1,290,000</td>
                                 </tr>
                                 <tr>
+                                    <td>미사리</td>
+                                    <td>21</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>1,010,000</td>
+                                    <td>150,000</td>
                                     <td>0</td>
                                     <td>0</td>
-                                    <td>100,000</td>
+                                    <td>1,290,000</td>
+                                </tr>
+                                <tr>
+                                    <th>21회차 소계</th>
+                                    <td>21</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>1,010,000</td>
+                                    <td>150,000</td>
                                     <td>0</td>
-                                    <td></td>
+                                    <td>0</td>
+                                    <td>1,290,000</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -173,34 +218,24 @@
                                 <col style="width:auto;">
                                 <col style="width:auto;">
                                 <col style="width:auto;">
-                                <col style="width:auto;">
-                                <col style="width:auto;">
                             </colgroup>
                             <tbody>
                                 <tr>
                                     <th class="t_01">소득세</th>
                                     <th class="t_02">주민세</th>
-                                    <th class="t_01">부품구입</th>
-                                    <th class="t_02">숙식비</th>
-                                    <th class="t_01">선수회비</th>
+                                    <th class="t_01">식비</th>
                                 </tr>
                                 <tr>
                                     <td>25,500</td>
                                     <td>2,550</td>
                                     <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
                                 </tr>
                                 <tr>
-                                    <th class="t_01">퇴직적립</th>
-                                    <th class="t_02">채권압류</th>
-                                    <th class="t_01">사랑나눔</th>
-                                    <th class="t_02">교육비</th>
+                                    <th class="t_01">선수회비</th>
+                                    <th class="t_02">선수연금</th>
                                     <th class="t_01">대출금</th>
                                 </tr>
                                 <tr>
-                                    <td>0</td>
-                                    <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td>0</td>

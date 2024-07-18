@@ -171,6 +171,9 @@
             }
         }
     }
+    .minTitle {
+        margin-top:20px; color: rgba(0,0,0,0.7); font-size: 16px; font-weight: 300; line-height: 1.75; 
+    }
     .downAcro {
         width: 260px; height: 60px; position: absolute; right: 55px; top: 33px;
         img {width: 100%;}
@@ -236,12 +239,15 @@
         tbody {
             th {
                 height:60px; color: #000; font-size: rem(14px); font-weight: 700; text-align:center; line-height: 1.5; border-bottom:1px solid #eee; background:#F8F8FE;
+                &.t_01 {background:#F8F8FE;}
                 &.t_02 {background:#F1F3FB;}
                 @include media('mobile'){font-size: rem(13px);}
             }
             td {
                 height:60px; padding:18px 0; color: #000; font-size: rem(16px); font-weight: 400; text-align:center; line-height: 1.5; border-bottom:1px solid #eee;
                 &:last-child {padding-right:0 !important;}
+                &.t_01 {background:#F8F8FE;}
+                &.t_02 {background:#F1F3FB;}
                 @include media('mobile'){font-size: rem(15px);}
             }
             .left {
