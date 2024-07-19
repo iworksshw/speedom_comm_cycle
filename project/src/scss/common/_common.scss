@@ -265,6 +265,9 @@
         .c_blue{
             color: var(--blue-txt01); font-weight: 700;
         }
+        .c_red{
+            color: var(--red-txt01); font-weight: 700;
+        }
         .frmGroup {justify-content: center;}
         .iptSlt {
             height: 49px; padding-left:24px; font-size: rem(14px);
@@ -289,7 +292,8 @@
         }
     }
     .btn {
-        padding:0 20px; text-align: center; font-style: normal; font-size: rem(14px); font-weight: 700; line-height:45px; border-radius:12px;
+        margin-left:4px; padding:0 20px; text-align: center; font-style: normal; font-size: rem(14px); font-weight: 700; line-height:45px; border-radius:12px;
+        &:first-child {margin-left:0;}
         &.basic {
             color: #fff; border: 2px solid #4D5DF2; background: #4D5DF2;
         }
@@ -329,6 +333,29 @@
     @include minWidth('mobile'){
         &::-webkit-scrollbar {width:5px; height:5px; background: rgba(0,0,0,0.3);}
         &::-webkit-scrollbar-thumb {width:5px; height:5px; background: rgba(0,0,0,0.3);}
+    }
+
+    .checkText {
+        width:100%;
+        dl{
+            dt{
+                color: #000; font-size: rem(14px); font-weight: 600; line-height: normal; opacity: 0.4;
+            }
+            dd{
+                margin-top:20px; color: #000; font-size: rem(16px); font-weight: 300; line-height: normal; opacity: 0.4;
+                &:first-child {margin-top:0;}
+            }
+        }
+        &.checked{
+            dl{
+                dt{
+                    opacity: 1;
+                }
+                dd{
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     /* 예외 - 주선통보 */
@@ -679,14 +706,12 @@ textArea.areaMd {height:150px;}
 .frmChoBox .iptChk + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight: 400; line-height:20px; color:#000; background:url(../../images/common/ic_chk_off.svg) left center no-repeat;}
 .frmChoBox .iptChk:checked + .iptLbl {background:url(../../images/common/ic_chk_on.svg) left center no-repeat;}
 
-.frmChoBox .iptChk:disabled + .iptLbl {color:#666; background:url(../../images/common/ic_chk_dis_off.svg) left center no-repeat;}
-.frmChoBox .iptChk:disabled:checked + .iptLbl {background:url(../../images/common/ic_chk_dis_on.svg) left center no-repeat;}
+.frmChoBox .iptChk:disabled + .iptLbl {opacity: 0.4;}
 
 .frmChoBox .iptRdo + .iptLbl {padding-left:29px; font-size: rem(14px); font-weight: 400; line-height:20px; color:#000; background:url(../../images/common/ic_rdo_off.svg) left center no-repeat;}
 .frmChoBox .iptRdo:checked + .iptLbl {background:url(../../images/common/ic_rdo_on.svg) left center no-repeat;}
 
-.frmChoBox .iptRdo:disabled + .iptLbl {color:#666; background:url(../../images/common/ic_rdo_dis_off.svg) left center no-repeat;}
-.frmChoBox .iptRdo:disabled:checked + .iptLbl {background:url(../../images/common/ic_rdo_dis_on.svg) left center no-repeat;}
+.frmChoBox .iptRdo:disabled + .iptLbl {opacity: 0.4;}
 
 .frmChoBox:last-child {margin-right:0;}
 @include media('mobile'){

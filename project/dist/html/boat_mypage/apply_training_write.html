@@ -12,7 +12,7 @@
 	<!-- 모바일 상단,타이틀바,주소창 색변경(안드로이드에서 크롬,파폭,오페라,삼성브라우저만 가능) -->
 	<!-- <meta name="theme-color" content="#4285f4"> -->
 
-	<title>경륜 커뮤니티</title>
+	<title>경정 커뮤니티</title>
 
 	<link rel="stylesheet" href="../../common/css/swiper.css" />
 	<link rel="stylesheet" href="../../common/css/tui-date-picker.css">
@@ -97,98 +97,90 @@
 
 <div class="comH1Title">
     <div class="titleArea">
-        <h1>재제 불참사유서</h1>
+        <h1>훈련신청</h1>
     </div>
 </div>
 
-                
-                <div class="cptAppliForm">
-                    <div class="formTitle">
-                        <h2>재제심의위원회 불참사유서</h2>
-                    </div>
-                    <div class="formCont">
-                        <p>상기 본인은 국민체육진흥공단 경주사업총괄본부에서 심의하는 제재심의위원회에 회부 되었으나
-                            위와 같은 사유로 인하여 참석을 할 수가 없어 제재심의위원회에서 의결하는 제재양형을 따르도록 하겠습니다</p>
+                <div class="comTopPrint"></div>
+
+                <div class="comTable sizeM">
+                    <div class="tableArea">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:35%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>선수명</th>
+                                    <td class="left">홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>훈련기간</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="textBox">2024-06-11 ~ 2024-06-11 (2일)</div> 
+                                            <button class="btn bLine">훈련기간 선택</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>훈련사유</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="frmChoBox"><input id="rdo101" type="radio" class="iptRdo" name="rdo101"><label for="rdo101" class="iptLbl">제재훈련</label></div>
+                                            <div class="frmChoBox"><input id="rdo102" type="radio" class="iptRdo" name="rdo101"><label for="rdo102" class="iptLbl">부상훈련</label></div>
+                                            <div class="frmChoBox"><input id="rdo103" type="radio" class="iptRdo" name="rdo101"><label for="rdo103" class="iptLbl">희망훈련</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>출퇴근 여부</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="frmChoBox"><input id="rdo201" type="radio" class="iptRdo" name="rdo201"><label for="rdo201" class="iptLbl">예</label></div>
+                                            <div class="frmChoBox"><input id="rdo203" type="radio" class="iptRdo" name="rdo201"><label for="rdo203" class="iptLbl">아니오</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>멘토링 여부</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="frmChoBox"><input id="rdo301" type="radio" class="iptRdo" name="rdo301"><label for="rdo301" class="iptLbl">예</label></div>
+                                            <div class="frmChoBox"><input id="rdo303" type="radio" class="iptRdo" name="rdo301"><label for="rdo303" class="iptLbl">아니오</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비고</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder="※ 예시와 같은 변동사항이 있을 경우, 입력해주세요.  예시)&nbsp;가족사항, 개명 등"></textarea>
+                                            <span class="textByte">56/5000 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div class="comTable">
-                        <div class="tableArea">
-                            <table>
-                                <caption></caption>
-                                <colgroup>
-                                    <col style="width:35%;">
-                                    <col style="width:auto;">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th>선수명</th>
-                                        <td class="left">류선재</td>
-                                    </tr>
-                                    <tr>
-                                        <th>등록번호</th>
-                                        <td class="left">6576821315486</td>
-                                    </tr>
-                                    <tr>
-                                        <th>불참 회차(기간)</th>
-                                        <td class="left">2024년 06월 20일</td>
-                                    </tr>
-                                    <tr>
-                                        <th>불참사유</th>
-                                        <td class="left">수술로 인한 경기 불참</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="comBtnInView">
+                        <div class="btnArea">
+                            <button class="btn basic">훈련신청하기</button>
                         </div>
-                        <p class="text">
-                            * 상기 사유가 거짓으로 판명될 경우 불이익에 대한 책임을 질 것을 확약합니다.<br>
-                            * 증빙서류 : 병원 진단서, 청첩장, 예비군 소집 통지서 등 증빙할 서류
-                        </p>
-                        <p class="text"><span class="c_blue">연락처 : 경정운영팀 (031) 790-8841, 팩스 (031) 790-8397</span></p>
                     </div>
 
-                    <div class="formDate mt40">
-                        <p>2024년 05월 10일</p>
+                    <div class="comGroupBtm line">
+                        <div class="alignR">
+                            <button class="btn basic">목록</button>
+                        </div>
                     </div>
 
-                    <div class="formBtm">
-                        <p>선수주선소위원회위원장</p>
-                    </div>
 
-                    <!-- 파일 다운로드 -->
-                    <div class="comFileList">
-                        <ul class="fileGroup">
-                            <li class="file download">
-                                <dl>
-                                    <dt>첨부파일</dt>
-                                    <dd><a href="#" class="fileName">재능기부 훈련지 모집공고.png</a></dd>
-                                </dl>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="comOtherPage">
-                        <ul class="otherGroup">
-                            <li class="otherItem">
-                                <b class="otherTitle">처리상태</b>
-                                <p class="otherCont">반려</p>
-                            </li>
-                            <li class="otherItem">
-                                <b class="otherTitle">반려사유</b>
-                                <p class="otherCont">진단서 내용 없음 재 확인 요망</p>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-
-                <div class="comGroupBtm">
-                    <div class="alignL">
-                        <button class="btn bGray">수정</button>
-                        <button class="btn oGray">삭제</button>
-                    </div>
-                    <div class="alignR">
-                        <button class="btn basic">목록</button>
-                    </div>
-                </div>
+                
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
             </div>

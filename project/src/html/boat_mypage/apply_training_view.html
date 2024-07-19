@@ -1,0 +1,131 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경정 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "훈련신청",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint"></div>
+                <div class="comH2Title">
+                    <div class="titleArea">
+                        <h2>훈련신청 상세내역</h2>
+                    </div>
+                </div>
+
+                <div class="comTable sizeM">
+                    <div class="text top">
+                        <p>훈련신청 내용 및 처리상황을 확인 하실 수 있습니다.</p>
+                    </div>
+                    <div class="tableArea">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:20%;">
+                                <col style="width:30%;">
+                                <col style="width:20%;">
+                                <col style="width:30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>등록번호</th>
+                                    <td>12345678</td>
+                                    <th>선수명</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>훈련사유</th>
+                                    <td colspan="3" class="left">희망훈련</td>
+                                </tr>
+                                <tr>
+                                    <th>훈련시작일</th>
+                                    <td>2024-04-15</td>
+                                    <th>훈련종료일</th>
+                                    <td>2024-04-16</td>
+                                </tr>
+                                <tr>
+                                    <th>출퇴근 여부</th>
+                                    <td>아니오</td>
+                                    <th>멘토링 여부</th>
+                                    <td>아니오</td>
+                                </tr>
+                                <tr>
+                                    <th>신청일자</th>
+                                    <td>2024-04-16</td>
+                                    <th>처리일자</th>
+                                    <td>2024-04-16</td>
+                                </tr>
+                                <tr>
+                                    <th>처리상태</th>
+                                    <td>접수</td>
+                                    <th>반려사유</th>
+                                    <td>아니오</td>
+                                </tr>
+                                <tr>
+                                    <th>비고</th>
+                                    <td colspan="3" class="left">훈련 시간이 언제인지 확인이 필요합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="comGroupBtm line">
+                        <div class="alignL">
+                            <button class="btn bGray">수정</button>
+                            <button class="btn oGray">삭제</button>
+                        </div>
+                        <div class="alignR">
+                            <button class="btn basic">신청하기</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
