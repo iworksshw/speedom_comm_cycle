@@ -1,0 +1,135 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경정 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "훈련신청",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint"></div>
+
+                <div class="comTable sizeM">
+                    <div class="tableArea">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:35%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>선수명</th>
+                                    <td class="left">홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>훈련기간</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="textBox">2024-06-11 ~ 2024-06-11 (2일)</div> 
+                                            <button class="btn bLine">훈련기간 선택</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>훈련사유</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="frmChoBox"><input id="rdo101" type="radio" class="iptRdo" name="rdo101"><label for="rdo101" class="iptLbl">제재훈련</label></div>
+                                            <div class="frmChoBox"><input id="rdo102" type="radio" class="iptRdo" name="rdo101"><label for="rdo102" class="iptLbl">부상훈련</label></div>
+                                            <div class="frmChoBox"><input id="rdo103" type="radio" class="iptRdo" name="rdo101"><label for="rdo103" class="iptLbl">희망훈련</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>출퇴근 여부</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="frmChoBox"><input id="rdo201" type="radio" class="iptRdo" name="rdo201"><label for="rdo201" class="iptLbl">예</label></div>
+                                            <div class="frmChoBox"><input id="rdo203" type="radio" class="iptRdo" name="rdo201"><label for="rdo203" class="iptLbl">아니오</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>멘토링 여부</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <div class="frmChoBox"><input id="rdo301" type="radio" class="iptRdo" name="rdo301"><label for="rdo301" class="iptLbl">예</label></div>
+                                            <div class="frmChoBox"><input id="rdo303" type="radio" class="iptRdo" name="rdo301"><label for="rdo303" class="iptLbl">아니오</label></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>비고</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder="※ 예시와 같은 변동사항이 있을 경우, 입력해주세요.  예시)&nbsp;가족사항, 개명 등"></textarea>
+                                            <span class="textByte">56/5000 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="comBtnInView">
+                        <div class="btnArea">
+                            <button class="btn basic">훈련신청하기</button>
+                        </div>
+                    </div>
+
+                    <div class="comGroupBtm line">
+                        <div class="alignR">
+                            <button class="btn basic">목록</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
