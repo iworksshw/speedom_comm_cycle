@@ -1,0 +1,58 @@
+/* --------------------------- 상단 로케이션 메뉴 --------------------------- */
+.cptLocaMenu {
+    width:100%; height:50px; border-bottom:1px solid #E6E6F0; position: relative; z-index: 100;
+    @include media('mobile'){display:none;}
+
+    &.main {
+        .locaArea .menuGroup {
+            display:none;
+        }
+    }
+    .locaArea {
+        width:100%; height: 100%; padding:0 60px; display:flex; justify-content: space-between;
+        @include media('gnb'){max-width:1340px; padding:0 20px; margin:0 auto;}
+        .menuGroup {
+            height: 100%; display: flex;
+            .menuItem {
+                height: 100%; border-right:1px solid #E6E6F0; position: relative;
+                &:first-child {
+                    width:50px; height:100%; border-left:1px solid #E6E6F0; 
+                    .title {
+                        width:100%; height:100%; font-size:0; background:url(../../images/common/ic_loca_home.svg) center no-repeat;
+                        &::before{display:none;}
+                    }
+                }
+                .title {
+                    width:300px; height:100%; padding-left:25px; color: #222; font-size: rem(16px); font-weight: 300; line-height: 1.37; display: flex; align-items: center;
+                    position: relative;
+                    &::before{
+                        content:""; width:62px; height:50px; background:url(../../images/common/ic_loca_arr.svg) right 24px center no-repeat; display:block; 
+                        position:absolute; right:0; top:0;
+                    }
+                    @include media('tablet'){width:250px;}
+                }
+                &:hover {
+                    .menuBox {display:block;}
+                }
+            }
+            .menuBox {
+                background:#fff; display:none; position: absolute; left: -1px; top:50px;
+                .item {
+                    width:302px; height:50px; border:1px solid #E6E6F0; border-top:0; display:block;
+                    a {
+                        width:100%; height:50px; padding-left: 25px; display:flex; align-items: center;
+                    }
+                }
+            }
+        }
+        .sign {
+            width:100%; height: 100%; display: flex; justify-content: flex-end;
+            button {
+                width:159px; height: 100%; padding-right:25px; color: #222; font-size: rem(14px); font-weight: 600; line-height: 1.57; border-left:1px solid #E6E6F0; 
+                border-right:1px solid #E6E6F0; position: relative;
+                &.login {background:url(../../images/common/ic_loca_logout.svg) right 48px center no-repeat;}
+                &.logout {background:url(../../images/common/ic_loca_logout.svg) right 42px center no-repeat;}
+            }
+        }
+    }
+}
