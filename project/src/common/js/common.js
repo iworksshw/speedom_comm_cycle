@@ -1,5 +1,28 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+    //전체메뉴
+    document.querySelector(".cptGnb .menuBtn").addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector(".cptAllMenu").classList.add("on");
+    });
+    document.querySelector(".cptAllMenu .menuClose").addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector(".cptAllMenu").classList.remove("on");
+    });
+    const depth1Menus = document.querySelectorAll(".cptAllMenu .depth1List");
+    depth1Menus.forEach(function(depth1Menu, idxI, elements){
+        depth1Menu.querySelector(".depth1Name").addEventListener("click", function(e){
+            //depth1Menus.classList.remove("on");
+            elements.forEach(function(element, idxJ){
+                if(idxI == idxJ){
+                    slideDown(depth1Menu.querySelector(".depth2Box"),300,"flex");
+                }else{
+                    slideUp(element.querySelector(".depth2Box"),300);
+                }
+            });
+        });
+    });
+
     //파일찾기
     const uploadFiles = document.querySelectorAll(".fileBox .uploadBtn");
     uploadFiles.forEach(function(uploadFile,idx){
@@ -138,8 +161,12 @@ function slideUp(element, duration) {
 }
 
 //slide function (slideDown)
-function slideDown(element, duration) {
-    element.style.display = "block";
+function slideDown(element, duration, flexBox) {
+    if(flexBox == "flex"){
+        element.style.display = "flex";
+    } else {
+        element.style.display = "block";
+    }
     element.style.height = "0px"; // 이 부분을 수정하여 초기 높이를 0으로 설정합니다.
     let height = element.scrollHeight;
     let interval = 10; // millidurationonds per frame
