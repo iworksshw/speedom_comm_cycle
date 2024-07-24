@@ -1,0 +1,56 @@
+/* --------------------------- 최상단 글러벌 네비게이션 --------------------------- */
+.cptAllMenu {
+    width: 100%; height: 100%; background: rgba(43,56,172,0); display: none; position: fixed; left:0; top:0; z-index: 1000; transition: all 0.3s; pointer-events: none;
+    @include media('mobile'){display: block;}
+
+    &.on {
+        background: rgba(43,56,172,0.8); pointer-events: all;
+        .allMenuArea {
+            right: 0;
+        }
+    }
+    .allMenuArea {
+        width: 300px; height: 100%; padding:90px 20px 0; background:#fff; position: absolute; right: -320px; top: 0; overflow-y: auto; transition: all 0.3s;
+
+        .welcome {
+            width: 100%; min-height: 30px; padding-left:41px; color: #000; font-size: rem(16px); font-weight: 300; line-height: normal; 
+            background: url(../../images/common/ic_profile.svg) left center no-repeat; display: flex; align-items: center;
+            b {font-weight: 600;}
+        }
+        .sign {
+            width: 100%; margin-top: 20px; display: flex; justify-content: flex-end;
+            button {
+                min-height: 18px; padding-right:26px; color: #222; font-size: rem(12px); font-weight: 600; line-height: 1.833;
+                &.login {background: url(../../images/common/ic_loca_logout.svg) right center no-repeat;}
+                &.logout {background: url(../../images/common/ic_loca_logout.svg) right center no-repeat;}
+            }
+            
+        }
+        .menuBox {
+            margin-top:20px; 
+            .depth1Group {
+                border-top: 1px solid #eeeeee;
+                .depth1List {
+                    border-bottom: 1px solid #eeeeee;
+                    .depth1Name {padding: 20px 0; color: #000; font-size: rem(18px); font-weight: 600; line-height: normal; display: block;}
+                    .depth2Box {
+                        width: 100%; padding-left: 20px; display:none; gap: 20px; overflow: hidden;
+                        .depth2Group {
+                            padding-bottom: 40px; 
+                            .depth2List {
+                                .depth2Name {
+                                    color: #2B38AC; font-size: rem(14px); font-weight: 300; line-height: 2.428;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .menuClose {
+            width:44px; height:44px; font-size: 0; background: url(../../images/common/ic_all_close.svg) center no-repeat; position: absolute; right: 10px; top: 10px;
+        }
+    }
+}
