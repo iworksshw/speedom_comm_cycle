@@ -223,6 +223,8 @@
     &:first-child {margin-top:0;}
     .tableArea {
         width:100%; 
+        &::-webkit-scrollbar {width:6px; height:6px; border-radius: 3px; background: rgba(140, 152, 255, 0.20);}
+        &::-webkit-scrollbar-thumb {width:6px; height:6px; border-radius: 3px; background: #B6BDFD;}
     }
     table {
         width:100%; border-spacing: 0; border-collapse: collapse; table-layout: fixed; border-top:1px solid #555;
@@ -329,10 +331,6 @@
             .tableArea {overflow-x: auto;}
             .tableArea > table {min-width: 780px;}
         }
-    }
-    @include minWidth('mobile'){
-        &::-webkit-scrollbar {width:5px; height:5px; background: rgba(0,0,0,0.3);}
-        &::-webkit-scrollbar-thumb {width:5px; height:5px; background: rgba(0,0,0,0.3);}
     }
 
     .checkText {

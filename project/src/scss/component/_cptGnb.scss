@@ -3,37 +3,43 @@
     width:100%; height:100px; background:#2B38AC;
     @include media('mobile'){height:60px;}
     .gnbArea {
-        width:100%; height: 100%; padding:29px 60px 0; background:url(../../images/common/community.png) calc(100% - 105px) 26px no-repeat; display:flex; justify-content: space-between;
-        @include media('gnb'){max-width:1340px; padding:29px 20px 0; margin:0 auto;}
+        width:100%; height: 100%; padding:0 60px; background:url(../../images/common/community.png) calc(100% - 95px) center no-repeat; display:flex; justify-content: space-between;
+        @include media('gnb'){max-width:1340px; padding:0 20px; margin:0 auto;}
         @include media('tablet'){background:none;}
         @include media('mobile'){padding:0 20px;}
         .logoBox {
-            width:149px; padding-top:20px;
+            width:360px; padding-bottom:12px; align-self: center;
             img {width:100%;}
             @include media('mobile'){
-                width:102px; padding:0; display:flex;
+                width:205px; padding-bottom:6px; display:flex;
                 a{align-self: center;}
             }
         }
         .gnbBox {
             flex-grow: 1;
             .menuArea{
-                width: 100%; height: 100%; padding-left:57px;
+                width: 100%; height: 100%;
                 .depth1Group{
-                    width:100%; height: 100%; display:flex;
+                    width:100%; height: 100%; display:flex; justify-content: center;
                     .depth1List{
                         height: 100%; display: flex;; position:relative;
-                        &:first-child::before{content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:0; top:29px;}
-                        &::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; right:0; top:29px;}
+                        //&:first-child::before{content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; left:0; top:29px;}
+                        //&::after {content:""; width:1px; height:13px; background:rgba(255,255,255,0.2); display:block; position:absolute; right:0; top:29px;}
                         .depth1Name{
-                            height: 100%; padding:0 52px; color: #FFF; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal; display:flex; 
-                            align-items: center
+                            width:105px; height: 100%; margin:0 2.07vw; color: #FFF; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal; display:flex; 
+                            align-items: center; white-space: nowrap; 
                         }
                         .depth2Group{
-                            display:none;
+                            //display:none; 
+                            height:0; position:absolute; left:0; top:150px; z-index: 301; overflow:hidden; transition: height 0.2s;
+                            &.line02 {left:10.625vw;}
                             .depth2List{
+                                padding-left:2.07vw; 
+                                &:first-child {
+                                    padding-top:30px;
+                                }
                                 .depth2Name{
-
+                                    color: #000; font-size: rem(16px); font-style: normal; font-weight: 300; line-height: 2.125; white-space: nowrap;
                                 }
                             }
                         }
@@ -55,8 +61,68 @@
             }
         }
         .gnbTitle {
-            width:270px; padding-top:29px; color: #FFF; font-size: rem(15px); font-style: normal; font-weight: 700; text-align: right; line-height: normal; letter-spacing: 1.5px;
+            width: max-content; padding-top:29px; padding-left:10vw; color: #FFF; font-size: rem(15px); font-style: normal; font-weight: 700; text-align: right; line-height: normal; 
+            letter-spacing: 1.5px; align-self: center; white-space: nowrap;
+            @include media('1280px'){padding-left:0;}
             @include media('tablet'){display:none;}
+        }
+    }
+    // 메인페이지 전용
+    &.main {
+        height:150px;
+        @include media('mobile'){height:60px;}
+        .gnbArea {
+            .gnbBox {
+                .menuArea{
+                    .depth1Group{
+                        .depth1List{
+                            .depth1Name{
+                                font-size: rem(20px); font-weight: 300; transition: font-size 0.1s;
+                            }
+                            &:hover {
+                                .depth1Name {
+                                    font-size: rem(24px); font-weight: 600;
+                                }
+                                .depth2Group {
+                                    .depth2List {
+                                        .depth2Name{
+                                            color: #2B38AC; transition:all 0.1s;
+                                            &::before {
+                                                content:''; width:6px; height:6px; border-radius:3px; background:#fff; display:block; 
+                                                position: absolute; left:-18px; top:6px; transition:all 0.2s;
+                                            }
+                                            &:hover {
+                                                color: var(--blue-txt01); font-weight: 600; position: relative;
+                                                &::before {
+                                                    background:var(--blue-txt01);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    &::before {
+                        content:""; width:100vw; height:0; background:#fff; display:block; position: fixed; left:0; top:150px; z-index: 300;
+                        box-shadow: 0px 0px 15px 0px rgba(43, 56, 172, 0.15); transition: height 0.2s;
+                    }
+                    &:hover{
+                        &::before {
+                            height:300px;
+                        }
+                        .depth1Group {
+                            .depth1List {
+                                .depth2Group {
+                                    height:300px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
         }
     }
 }
