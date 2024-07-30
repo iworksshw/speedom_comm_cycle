@@ -32,17 +32,28 @@
                                 <span>안녕하세요</span>
                                 <span class="name"><b>류선재</b>님</span>
                             </h1>
-                            <div class="quickMenu swiperContainer">
-                                <ul class="quickGroup">
-                                    <li class="quickItem"><span class="card"><a href="">선수정보</a></span></li>
-                                    <li class="quickItem"><span class="card"><a href="">상금명세서</a></span></li>
-                                    <li class="quickItem"><span class="card"><a href="">성적조회</a></span></li>
-                                    <li class="quickItem"><span class="card"><a href="">등급변동내역</a></span></li>
-                                    <li class="quickItem"><span class="card"><a href="">주선통보</a></span></li>
-                                    <li class="quickItem"><span class="card"><a href="">제재처분통지</a></span></li>
-                                    <li class="quickItem"><span class="card"><a href="">증명서발급</a></span></li>
+                            <div class="quickMenu swiperContainer ">
+                                <ul class="quickGroup swiper-wrapper">
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">선수정보</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">상금명세서</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">성적조회</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">등급변동내역</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">주선통보</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">제재처분통지</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">증명서발급</a></span></li>
                                 </ul>
                             </div>
+                            <script>
+                                var swiper = new Swiper(".quickMenu", {
+                                    slidesPerView: "auto",
+                                    spaceBetween: 10,
+                                    freeMode: true,
+                                    pagination: {
+                                        el: ".swiper-pagination",
+                                        clickable: true,
+                                    },
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="mainCont">
