@@ -42,6 +42,7 @@
                                     <li class="quickItem swiper-slide"><span class="card"><a href="">제재처분통지</a></span></li>
                                     <li class="quickItem swiper-slide"><span class="card"><a href="">증명서발급</a></span></li>
                                 </ul>
+                                <div class="swiper-scrollbar"></div>
                             </div>
                             <script>
                                 var swiper = new Swiper(".quickMenu", {
@@ -51,6 +52,9 @@
                                     pagination: {
                                         el: ".swiper-pagination",
                                         clickable: true,
+                                    },
+                                    scrollbar: {
+                                        el: ".swiper-scrollbar",
                                     },
                                 });
                             </script>
@@ -64,19 +68,25 @@
                                 </h2>
                                 <ul class="boardList">
                                     <li class="item">
-                                        <i class="desc">기타문의</i>
-                                        <a href="" class="link">경륜선수와 함께하는 자전거 엄청난 안전교실..</a>
-                                        <span class="date">2004-05-20</span>
+                                        <div class="textBox">
+                                            <i class="desc">기타문의</i>
+                                            <a href="" class="link">경륜선수와 함께하는 자전거 엄청난 안전교실 온라인 교육이 등록되었습니다</a>
+                                        </div>
+                                        <div class="date">2004-05-20</div>
                                     </li>
                                     <li class="item">
-                                        <i class="desc">온라인 교육</i>
-                                        <a href="" class="link">온라인 교육이 등록되었습니다</a>
-                                        <span class="date">2004-05-20</span>
+                                        <div class="textBox">
+                                            <i class="desc">온라인 교육</i>
+                                            <a href="" class="link">온라인 교육이 등록되었습니다</a>
+                                        </div>
+                                        <div class="date">2004-05-20</div>
                                     </li>
                                     <li class="item">
-                                        <i class="desc">심판제재처분</i>
-                                        <a href="" class="link">심판 제 재 처분통지서가 등록되었습니다.</a>
-                                        <span class="date">2004-05-20</span>
+                                        <div class="textBox">
+                                            <i class="desc">심판제재처분</i>
+                                            <a href="" class="link">심판 제 재 처분통지서가 등록되었습니다.</a>
+                                        </div>
+                                        <div class="date">2004-05-20</div>
                                     </li>
                                 </ul>
                                 <div class="paging">
@@ -90,19 +100,26 @@
                             
                             <div class="mainBoard type2">
                                 <h2 class="title">
-                                    <span>공지 사항</span>
+                                    <span class="text">공지 사항</span>
+                                    <a href="#" class="more">더보기</a>
                                 </h2>
                                 <ul class="boardList">
                                     <li class="item">
-                                        <a href="" class="link">경륜선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">경륜선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                     <li class="item">
-                                        <a href="" class="link">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 선수…</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 경륜선수와 함께하는 자전거 안전교실 재능기부 활동 </a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                     <li class="item">
-                                        <a href="" class="link">경륜선수 제5기, 제9기 재등록 검정 안내</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">경륜선수 제5기, 제9기 재등록 검정 안내</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                 </ul>
@@ -114,27 +131,33 @@
                                     <button class="number">5</button>
                                 </div>
                             </div>
-                            
                             <div class="mainBoard type3">
                                 <h2 class="title">
-                                    <span>자유게시판</span>
+                                    <span class="text">자유게시판</span>
+                                    <a href="#" class="more">더보기</a>
                                 </h2>
                                 <ul class="boardList">
                                     <li class="item">
-                                        <a href="" class="link">동료 경륜선수분들께 드리는 글</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">동료 경륜선수분들께 드리는 글</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                     <li class="item">
-                                        <a href="" class="link">[마감]기록측정 신청 (12월 6일 / 수)</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">[마감]기록측정 신청 (12월 6일 / 수)</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                     <li class="item">
-                                        <a href="" class="link">기록측정 게시판 신설</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">기록측정 게시판 신설</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                 </ul>
                                 <div class="paging">
-                                    <button class="number">1</button>
+                                    <button class="number on">1</button>
                                     <button class="number">2</button>
                                     <button class="number">3</button>
                                     <button class="number">4</button>
@@ -144,20 +167,26 @@
                             
                             <div class="mainBoard type4">
                                 <h2 class="title">
-                                    <span>선수자료실</span>
+                                    <span class="text">선수자료실</span>
+                                    <a href="#" class="more">더보기</a>
                                 </h2>
                                 <ul class="boardList">
                                     <li class="item">
-                                        <a href="" class="link">도핑 치료목적사용면책(TUE) 신청서</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">도핑 치료목적사용면책(TUE) 신청서</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                     <li class="item">
-                                        <a href="" class="link">2024년 경주경주 불참사유서 등 제출 양식</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">2024년 경주경주 불참사유서 등 제출 양식</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                     <li class="item">
-                                        <i class="desc"></i>
-                                        <a href="" class="link">경륜심판판정규칙</a>
+                                        <div class="textBox">
+                                            <a href="" class="link">경륜심판판정규칙</a>
+                                        </div>
                                         <span class="date">2004-05-20</span>
                                     </li>
                                 </ul>
@@ -166,7 +195,7 @@
                                     <button class="number">2</button>
                                     <button class="number">3</button>
                                     <button class="number">4</button>
-                                    <button class="number">5</button>
+                                    <button class="number on">5</button>
                                 </div>
                             </div>
                         </div>
