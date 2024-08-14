@@ -19,7 +19,7 @@
                     }
                 }
                 @include media("mobile") {
-                    width: 100%; min-height: 130px; padding: 32px 0 0 125px; 
+                    width: 100%; min-width: auto; min-height: 130px; padding: 32px 0 0 125px; 
                     background: rgba(140, 152, 255, 0.10) url(../../images/common/ic_profile.svg) 30px center / 70px no-repeat;
                     span { 
                         font-size: rem(20px);
