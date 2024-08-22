@@ -5,7 +5,7 @@
         @include media("mobile") {height: auto;}
         .topArea {
             width: 100%; height: 100%; max-width: 1340px; padding: 0 20px; margin: 0 auto; display: flex; align-items: center; gap: 32px; position: relative;
-            @include media("mobile") {padding: 50px 20px 66px; flex-wrap: wrap; gap: 30px;}
+            @include media("mobile") {padding: 50px 20px 56px; flex-wrap: wrap; gap: 30px;}
             .greeting {
                 width: 368px; min-width: 368px; min-height: 180px; padding: 52px 0 0 160px; border-radius: 8px; 
                 background: rgba(140, 152, 255, 0.10) url(../../images/common/ic_profile.svg) 46px center / 80px no-repeat;
@@ -31,11 +31,12 @@
             }
             
             .quickMenu {
-                width: 100%; height: 100%; padding-right:20px; overflow: hidden;
+                width: 100%; height: 100%;  overflow: hidden; position: relative;
                 .quickGroup { 
                     padding-top: 60px;
                     .quickItem {
-                        width: 120px; height: 180px; transition: all 0.2s;
+                        width: 120px; height: 180px; margin-right: 10px; transition: all 0.2s;
+                        &:last-child {margin-right:0;}
                         .card { 
                             width: 100%; height: 100%; border: 4px solid #fff; border-radius: 12px; background: #fff; display: block; transition: border 0.2s, box-shadow 0.2s;
                             a {
@@ -58,7 +59,7 @@
                     }
                 }
                 @include media("mobile") {
-                    height: auto; padding-right:0;
+                    height: 154px; padding-right:0;
                     .quickGroup { 
                         padding-top: 0;
                         .quickItem {
@@ -87,7 +88,8 @@
             }
             
             .swiper-container-horizontal > .swiper-scrollbar {
-                width: calc(100% - 40px); height: 6px; border-radius: 3px; background: rgba(140,152,255,0.2); left: 20px; bottom: 50px;
+                width: 100%; height: 6px; border-radius: 3px; background: rgba(140,152,255,0.2); left: 0; bottom: 50px;
+                @include media('mobile') {left: 0; bottom: 0;}
                 .swiper-scrollbar-drag {background: #B6BDFD;}
             }
         }
