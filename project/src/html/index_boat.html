@@ -1,0 +1,235 @@
+<!-- Header -->
+<%- include('./_ejs/top_boat.ejs', {
+    title: "경정 커뮤니티",
+    url: "../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('./_ejs/gnb_boat.ejs', {
+                url: "../",
+                main: "main"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutMainContainer" id="container">
+
+            <!-- 메인 콘텐츠 영역 -->
+            <div class="layoutMainCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <div class="cptMain">
+                    <div class="mainTop">
+                        <div class="topArea">
+                            <h1 class="greeting">
+                                <span>안녕하세요</span>
+                                <span class="name"><b>류선재</b>님</span>
+                            </h1>
+                            <div class="quickMenu swiperContainer ">
+                                <ul class="quickGroup swiper-wrapper">
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">선수정보</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">상금명세서</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">성적조회</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">모터보트추첨</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">주선통보</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">제재처분통지</a></span></li>
+                                    <li class="quickItem swiper-slide"><span class="card"><a href="">증명서발급</a></span></li>
+                                </ul>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                            <script>
+                                var swiper = new Swiper(".quickMenu", {
+                                    slidesPerView: "auto",
+                                    freeMode: true,
+                                    pagination: {
+                                        el: ".swiper-pagination",
+                                        clickable: true,
+                                    },
+                                    scrollbar: {
+                                        el: ".swiper-scrollbar",
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="mainCont">
+                        <div class="contArea">
+                            <div class="mainBoard type1">
+                                <h2 class="title">
+                                    <span>알림 사항</span>
+                                </h2>
+                                <ul class="boardList">
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <i class="desc">기타문의</i>
+                                            <a href="" class="link">경정선수와 함께하는 자전거 엄청난 안전교실 온라인 교육이 등록되었습니다</a>
+                                        </div>
+                                        <div class="date">2004-05-20</div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <i class="desc">온라인 교육</i>
+                                            <a href="" class="link">온라인 교육이 등록되었습니다</a>
+                                        </div>
+                                        <div class="date">2004-05-20</div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <i class="desc">심판제재처분</i>
+                                            <a href="" class="link">심판 제 재 처분통지서가 등록되었습니다.</a>
+                                        </div>
+                                        <div class="date">2004-05-20</div>
+                                    </li>
+                                </ul>
+                                <div class="paging">
+                                    <button class="number">1</button>
+                                    <button class="number on">2</button>
+                                    <button class="number">3</button>
+                                    <button class="number">4</button>
+                                    <button class="number">5</button>
+                                </div>
+                            </div>
+                            
+                            <div class="mainBoard type2">
+                                <h2 class="title">
+                                    <span class="text">공지 사항</span>
+                                    <a href="#" class="more">더보기</a>
+                                </h2>
+                                <ul class="boardList">
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 경정선수와 함께하는 자전거 안전교실 재능기부 활동 </a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">경정선수 제5기, 제9기 재등록 검정 안내</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                </ul>
+                                <div class="paging">
+                                    <button class="number">1</button>
+                                    <button class="number">2</button>
+                                    <button class="number">3</button>
+                                    <button class="number on">4</button>
+                                    <button class="number">5</button>
+                                </div>
+                            </div>
+                            <div class="mainBoard type3">
+                                <h2 class="title">
+                                    <span class="text">자유게시판</span>
+                                    <a href="#" class="more">더보기</a>
+                                </h2>
+                                <ul class="boardList">
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">동료 경정선수분들께 드리는 글</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">[마감]기록측정 신청 (12월 6일 / 수)</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">기록측정 게시판 신설</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                </ul>
+                                <div class="paging">
+                                    <button class="number on">1</button>
+                                    <button class="number">2</button>
+                                    <button class="number">3</button>
+                                    <button class="number">4</button>
+                                    <button class="number">5</button>
+                                </div>
+                            </div>
+                            
+                            <div class="mainBoard type4">
+                                <h2 class="title">
+                                    <span class="text">선수자료실</span>
+                                    <a href="#" class="more">더보기</a>
+                                </h2>
+                                <ul class="boardList">
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">도핑 치료목적사용면책(TUE) 신청서</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">2024년 경주경주 불참사유서 등 제출 양식</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="textBox">
+                                            <a href="" class="link">경정심판판정규칙</a>
+                                        </div>
+                                        <span class="date">2004-05-20</span>
+                                    </li>
+                                </ul>
+                                <div class="paging">
+                                    <button class="number">1</button>
+                                    <button class="number">2</button>
+                                    <button class="number">3</button>
+                                    <button class="number">4</button>
+                                    <button class="number on">5</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainBtm">
+                        <div class="btmArea">
+                            <dl>
+                                <dt>불편·오류사항 신고접수</dt>
+                                <dd>사용 중 발생하는 불편·오류사항은 언제든지 신고해주세요</dd>
+                            </dl>
+                            <button>신고하기</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('./_ejs/footer_boat.ejs', {
+                url: "../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('./_ejs/bottom_boat.ejs', { }) %>

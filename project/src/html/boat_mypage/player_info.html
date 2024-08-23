@@ -1,5 +1,5 @@
 <!-- Header -->
-<%- include('../_ejs/top.ejs', {
+<%- include('../_ejs/top_boat.ejs', {
     title: "경륜 커뮤니티",
     url: "../../"
 }) %>
@@ -11,7 +11,7 @@
         <!-- 상단영역 -->
         <div class="layoutTop">
             <!-- Top -->
-            <%- include('../_ejs/gnb.ejs', {
+            <%- include('../_ejs/gnb_boat.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -25,13 +25,185 @@
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
-                <%- include('../_ejs/sub_top.ejs', {
+                <%- include('../_ejs/sub_top_boat.ejs', {
                     subTitle: "선수정보",
                     url: "../../",
                 }) %>
 
+                <div class="cptPlayerInfo">
+                    <div class="infoArea">
+                        <div class="imgBox">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infoBox">
+                            <div class="profile">
+                                <i class="desc">좋은 하루 되세요</i>
+                                <div class="name">
+                                    <b>류선재</b>
+                                    <span>6554156</span>
+                                </div>
+                                <div class="btnBox">
+                                    <button class="btn bLine">비밀번호 재설정</button>
+                                </div>
+                            </div>
+                            <ul class="infoList">
+                                <li class="item"><dl><dt>기수</dt><dd>17기</dd></dl></li>
+                                <li class="item"><dl><dt>등급</dt><dd>A2</dd></dl></li>
+                                <li class="item"><dl><dt>출산지</dt><dd>충북</dd></dl></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comInTitle">
+                    <h4>2024년 경주기록</h4>
+                    <div class="absR">
+                        <span class="textBox">전체 성적 순위 : <b>850위</b></span>
+                    </div>
+                </div>
+
+                <div class="modTab">
+                    <ul class="tabMenu">
+                        <li class="tabItem"><button class="tabName on" title="선택 된 탭메뉴">전반기 경주기록</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                        <li class="tabItem"><button class="tabName" title="탭메뉴">후반기 경주기록​</button></li>
+                    </ul>
+                    <div class="tabContianer">
+                        <div class="tabCont on">
                 
+                            <div class="comTable sizeM">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="t_01">평균착순점​</th>
+                                                <th class="t_02">평균사고점​</th>
+                                                <th class="t_01">승률​</th>
+                                                <th class="t_02">연대율​</th>
+                                                <th class="t_01">3연대율​</th>
+                                                <th class="t_02">출주회수​</th>
+                                                <th class="t_02">평균ST​</th>
+                                            </tr>
+                                            <tr>
+                                                <td>4.94</td>
+                                                <td>0.07</td>
+                                                <td>8.6</td>
+                                                <td>34.3</td>
+                                                <td>45.7</td>
+                                                <td>35</td>
+                                                <td>1.72</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">1착</th>
+                                                <th class="t_02">2착</th>
+                                                <th class="t_01">3착</th>
+                                                <th class="t_02">작외</th>
+                                                <th class="t_01">결장</th>
+                                                <th class="t_02">F</th>
+                                                <th class="t_02">L</th>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>9</td>
+                                                <td>4</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">출주제외I​</th>
+                                                <th class="t_02">출주제외II​</th>
+                                                <th class="t_01">반칙실격​</th>
+                                                <th class="t_02">실격​</th>
+                                                <th class="t_01">반칙경고​</th>
+                                                <th class="t_02">경고​</th>
+                                                <th class="t_02">주의</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tabCont">
                 
+                            <div class="comTable sizeM">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="t_01">평균착순점​</th>
+                                                <th class="t_02">평균사고점​</th>
+                                                <th class="t_01">승률​</th>
+                                                <th class="t_02">연대율​</th>
+                                                <th class="t_01">3연대율​</th>
+                                                <th class="t_02">출주회수​</th>
+                                                <th class="t_02">평균ST​</th>
+                                            </tr>
+                                            <tr>
+                                                <td>4.94</td>
+                                                <td>0.07</td>
+                                                <td>8.6</td>
+                                                <td>34.3</td>
+                                                <td>45.7</td>
+                                                <td>35</td>
+                                                <td>1.72</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">1착</th>
+                                                <th class="t_02">2착</th>
+                                                <th class="t_01">3착</th>
+                                                <th class="t_02">작외</th>
+                                                <th class="t_01">결장</th>
+                                                <th class="t_02">F</th>
+                                                <th class="t_02">L</th>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>9</td>
+                                                <td>4</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">출주제외I</th>
+                                                <th class="t_02">출주제외II</th>
+                                                <th class="t_01">반칙실격​</th>
+                                                <th class="t_02">실격​</th>
+                                                <th class="t_01">반칙경고​</th>
+                                                <th class="t_02">경고​</th>
+                                                <th class="t_02">주의</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 
@@ -44,7 +216,7 @@
         <!-- 하단영역 -->
         <div class="layoutFooter">
             <!-- Footer -->
-            <%- include('../_ejs/footer.ejs', {
+            <%- include('../_ejs/footer_boat.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -55,4 +227,4 @@
 
 
 <!-- Bottom -->
-<%- include('../_ejs/bottom.ejs', { }) %>
+<%- include('../_ejs/bottom_boat.ejs', { }) %>
