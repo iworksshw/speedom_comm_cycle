@@ -36,9 +36,10 @@
                 }
             }
             .menuBox {
-                background:#fff; display:none; position: absolute; left: -1px; top:50px;
+                background:#fff; display:none; position: absolute; left: -1px; top:49px;
                 .item {
                     width:302px; height:50px; border:1px solid #E6E6F0; border-top:0; display:block;
+                    &:first-child {border-top:1px solid #E6E6F0;}
                     a {
                         width:100%; height:50px; padding-left: 25px; display:flex; align-items: center;
                     }
