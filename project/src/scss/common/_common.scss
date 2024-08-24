@@ -145,6 +145,8 @@
     width:100%; margin-bottom:70px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01); position: relative;
     @include media('mobile'){margin-bottom:50px; padding:40px 20px;}
     .infoArea {
+        margin-top: 30px;
+        &:first-child {margin-top: 0;}
         .infoTitle{
             padding-left:17px; color: #000; font-size: rem(15px); font-weight: 700; position: relative;
             &::before {content:""; width:7px; height:7px; border-radius:50%; background: #4D5DF2; display:block; position:absolute; left:0; top:7px;}
@@ -153,6 +155,10 @@
             padding-left:26px; margin-top:20px;
             @include media('mobile'){padding-left:2px;}
         }
+    }
+    .infoText {
+        color: #4d4d4d; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: 1.5;
+        @include media('mobile'){font-size: rem(15px); line-height: 1.333;}
     }
     .infoList {
         padding:2px 0;
