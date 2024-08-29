@@ -1,0 +1,156 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "심판제재처분",
+                    url: "../../",
+                }) %>
+
+                <div class="modTab">
+                    <ul class="tabMenu">
+                        <li class="tabItem"><button class="tabName on" title="선택 된 탭메뉴">심판 제재처분 확인서</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                        <li class="tabItem"><button class="tabName" title="탭메뉴">심판 제재처분 통지서</button></li>
+                    </ul>
+                    <div class="tabContianer">
+                        <div class="tabCont on"> <!-- addClass - on : 컨텐츠 노출 -->
+
+                            <div class="comTable sizeL">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:auto;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:130px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="t_01">발급번호</th>
+                                                <th class="t_02">재제대상경주</th>
+                                                <th class="t_01">사유</th>
+                                                <th class="t_02">제재처분</th>
+                                                <th class="t_01">확인자</th>
+                                                <th class="t_02">확인일자</th>
+                                                <th class="t_01">확인여부</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2024 - 9563</td>
+                                                <td>24년 광명 제08회
+                                                    1일차 04경주</td>
+                                                <td>제5주회 3코너 부분에서 회선 안쪽을 주행하던 7번선수와 서로 미는 행위로 인하여 그 영향으로 본인 및 7,3,4번의 선수가 낙차사고를 일으킨 경우로 출전정지의 제재를 처분함</td>
+                                                <td>출전정지</td>
+                                                <td>홍길동</td>
+                                                <td>2024-03-29 16:05:57.0</td>
+                                                <td class="frm">
+                                                    <!-- <button class="btn basic">통지서 확인</button> 확인은 이 버튼 활성화 -->
+                                                    <button class="btn bLine">통지서 보기</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tabCont">
+
+                            <div class="comTable sizeL">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:auto;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:130px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="t_01">발급번호</th>
+                                                <th class="t_02">재제대상경주</th>
+                                                <th class="t_01">사유</th>
+                                                <th class="t_02">제재처분</th>
+                                                <th class="t_01">확인자</th>
+                                                <th class="t_02">확인일자</th>
+                                                <th class="t_01">확인여부</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2024 - 9914</td>
+                                                <td>24년 광명 제08회</td>
+                                                <td>합산적용 - 2024년 광명 08회차:38 - 2024년 창원 04회차:0 - 2024년 광명 03회차:13 계:51</td>
+                                                <td>출전정지</td>
+                                                <td>홍길동</td>
+                                                <td>2024-03-29 16:05:57.0</td>
+                                                <td class="frm">
+                                                    <button class="btn basic">통지서 확인</button>
+                                                    <!-- <button class="btn bLine">통지서 보기</button> 보기는 이 버튼 활성화-->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
