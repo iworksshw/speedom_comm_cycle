@@ -144,7 +144,7 @@
                                                                 <option value="">훈련지명</option>
                                                             </select>
                                                             <div class="textBox">희망일자</div>
-                                                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus tui-left"> <!-- addClass 위치 - tui-left: 좌측, tui-top: 상단, tui-pop: 레이어팝업 -->
                                                                 <input type="text" id="datepicker-input" aria-label="Date-Time">
                                                                 <div id="datepicker-container" style="margin-top: -1px;"></div>
                                                             </div>
@@ -158,14 +158,14 @@
                                                     <td>션오프리</td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="t_01">결혼여부</th>
+                                                    <th class="t_01"><span class="required">*</span>결혼여부</th>
                                                     <td class="frm">
                                                         <div class="frmGroup">
                                                             <div class="frmChoBox"><input id="rdo001" type="radio" class="iptRdo" name="rdo001"><label for="rdo001" class="iptLbl">미혼</label></div>
                                                             <div class="frmChoBox"><input id="rdo002" type="radio" class="iptRdo" name="rdo001"><label for="rdo002" class="iptLbl">기혼</label></div>
                                                         </div>
                                                     </td>
-                                                    <th class="t_01">흡연유무</th>
+                                                    <th class="t_01"><span class="required">*</span>흡연유무</th>
                                                     <td class="frm">
                                                         <div class="frmGroup">
                                                             <div class="frmChoBox"><input id="rdo101" type="radio" class="iptRdo" name="rdo101"><label for="rdo101" class="iptLbl">흡연</label></div>
@@ -174,7 +174,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="t_01">휴대전화</th>
+                                                    <th class="t_01"><span class="required">*</span>휴대전화</th>
                                                     <td class="frm">
                                                         <div class="frmGroup"><input type="text" class="iptText" placeholder="휴대전화번호를 입력해주세요" ></div>
                                                     </td>
@@ -184,7 +184,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th class="t_01">상금계좌</th>
+                                                    <th class="t_01"><span class="required">*</span>상금계좌</th>
                                                     <td class="frm">
                                                         <div class="frmGroup ex2">
                                                             <select name="" id="" class="iptSlt">
@@ -199,7 +199,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th rowspan="2" class="t_01">주소</th>
+                                                    <th rowspan="2" class="t_01"><span class="required">*</span>주소</th>
                                                     <td colspan="3" class="left frm">
                                                         <div class="frmGroup ex3">
                                                             <button class="btn bLine">도로명 주소 검색</button>
@@ -284,7 +284,7 @@
                                                     </td>
                                                     <td class="frmS">
                                                         <div class="frmGroup">
-                                                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                                            <div class="tui-datepicker-input tui-datetime-input tui-has-focus tui-left tui-top"> <!-- addClass 위치 - tui-left: 좌측, tui-top: 상단, tui-pop: 레이어팝업 -->
                                                                 <input type="text" id="datepicker-input2" aria-label="Date-Time">
                                                                 <div id="datepicker-container2" style="margin-top: -1px;"></div>
                                                             </div>
@@ -374,7 +374,7 @@
                                             </colgroup>
                                             <tbody>
                                                 <tr>
-                                                    <th class="t_01">건강상태</th>
+                                                    <th class="t_01"><span class="required">*</span>건강상태</th>
                                                     <td colspan="2" class="frm">
                                                         <div class="frmGroup">
                                                             <div class="frmChoBox"><input id="rdo301" type="radio" class="iptRdo" name="rdo301"><label for="rdo301" class="iptLbl">상</label></div>
@@ -382,21 +382,21 @@
                                                             <div class="frmChoBox"><input id="rdo303" type="radio" class="iptRdo" name="rdo301"><label for="rdo303" class="iptLbl">하</label></div>
                                                         </div>
                                                     </td>
-                                                    <th class="t_01">건강상태</th>
+                                                    <th class="t_01"><span class="required">*</span>연속출전여부</th>
                                                     <td colspan="2" class="frm">
                                                         <div class="frmGroup">
-                                                            <div class="frmChoBox"><input id="rdo401" type="radio" class="iptRdo" name="rdo401"><label for="rdo401" class="iptLbl">상</label></div>
-                                                            <div class="frmChoBox"><input id="rdo402" type="radio" class="iptRdo" name="rdo401"><label for="rdo402" class="iptLbl">중</label></div>
-                                                            <div class="frmChoBox"><input id="rdo403" type="radio" class="iptRdo" name="rdo401"><label for="rdo403" class="iptLbl">하</label></div>
+                                                            <div class="frmChoBox"><input id="rdo401" type="radio" class="iptRdo" name="rdo401"><label for="rdo401" class="iptLbl">광명</label></div>
+                                                            <div class="frmChoBox"><input id="rdo402" type="radio" class="iptRdo" name="rdo401"><label for="rdo402" class="iptLbl">창원</label></div>
+                                                            <div class="frmChoBox"><input id="rdo403" type="radio" class="iptRdo" name="rdo401"><label for="rdo403" class="iptLbl">부산</label></div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th rowspan="2" class="t_01">훈련상태</th>
-                                                    <th class="t_02">훈련지</th>
-                                                    <th class="t_01">인터벌 300m</th>
-                                                    <th class="t_02">인터벌 200m</th>
-                                                    <th class="t_01">훈련량</th>
+                                                    <th class="t_02"><span class="required">*</span>훈련지</th>
+                                                    <th class="t_01"><span class="required">*</span>인터벌 300m</th>
+                                                    <th class="t_02"><span class="required">*</span>인터벌 200m</th>
+                                                    <th class="t_01"><span class="required">*</span>훈련량</th>
                                                     <th class="t_02">동참 훈련자</th>
                                                 </tr>
                                                 <tr>
@@ -433,11 +433,11 @@
                                             </colgroup>
                                             <tbody>
                                                 <tr>
-                                                    <th rowspan="2" class="t_01">자전거 현황</th>
-                                                    <th class="t_02">기어입력</th>
-                                                    <th class="t_01">차수</th>
-                                                    <th class="t_02">자전거 등록번호</th>
-                                                    <th class="t_01">자전거 상표</th>
+                                                    <th rowspan="2" class="t_01"><span class="required">*</span>자전거 현황</th>
+                                                    <th class="t_02"><span class="required">*</span>기어입력</th>
+                                                    <th class="t_01"><span class="required">*</span>차수</th>
+                                                    <th class="t_02"><span class="required">*</span>자체번호</th>
+                                                    <th class="t_01"><span class="required">*</span>자체모델</th>
                                                 </tr>
                                                 <tr>
                                                     <td class="frm">
@@ -447,10 +447,10 @@
                                                         <div class="frmGroup"><input type="text" class="iptText" placeholder="차수 입력" ></div>
                                                     </td>
                                                     <td class="frm">
-                                                        <div class="frmGroup"><input type="text" class="iptText" placeholder="자전거 등록번호 입력" ></div>
+                                                        <div class="frmGroup"><input type="text" class="iptText" placeholder="자체번호 입력" ></div>
                                                     </td>
                                                     <td class="frm">
-                                                        <div class="frmGroup"><input type="text" class="iptText" placeholder="자전거 상표 입력" ></div>
+                                                        <div class="frmGroup"><input type="text" class="iptText" placeholder="자체모델 입력" ></div>
                                                     </td>
                                                 </tr>
                                                 <tr>
