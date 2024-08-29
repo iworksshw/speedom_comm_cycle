@@ -450,6 +450,21 @@
     border-color: #aaa
 }
 
+.tui-datepicker-input.tui-left > div {
+    position: absolute;
+    right: 276px;
+    bottom: 0;
+}
+.tui-datepicker-input.tui-top .tui-datepicker {
+    bottom: 50px;
+}
+.tui-datepicker-input.tui-pop .tui-datepicker {
+    width:100%; height:100%; background:rgba(0,0,0,0.5); position: fixed; left:0; top:0; z-index: 1000;
+}
+.tui-datepicker-input.tui-pop .tui-datepicker-body {
+    position: absolute; left: 50vw; top: 50vh; transform: translate(-50%, -50%);
+}
+
 /*
 .tui-datetime-input {
     width: 170px
