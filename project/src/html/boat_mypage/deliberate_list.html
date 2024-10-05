@@ -1,0 +1,156 @@
+<!-- Header -->
+<%- include('../_ejs/top_boat.ejs', {
+    title: "경정 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb_boat.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top_boat.ejs', {
+                    subTitle: "제재처분통지",
+                    url: "../../",
+                }) %>
+
+                <div class="modTab">
+                    <ul class="tabMenu">
+                        <li class="tabItem"><button class="tabName on" title="선택 된 탭메뉴">경정 제재심의 참석통지서</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                        <li class="tabItem"><button class="tabName" title="탭메뉴">공정 제재처분 통지서</button></li>
+                    </ul>
+                    <div class="tabContianer">
+                        <div class="tabCont on"> <!-- addClass - on : 컨텐츠 노출 -->
+
+                            <div class="comTable sizeL">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:auto;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:130px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="t_01">발급번호</th>
+                                                <th class="t_02">재제대상경주</th>
+                                                <th class="t_01">사유</th>
+                                                <th class="t_02">제재처분</th>
+                                                <th class="t_01">참석여부</th>
+                                                <th class="t_02">확인자</th>
+                                                <th class="t_01">확인일자</th>
+                                                <th class="t_02">확인여부</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>24-017</td>
+                                                <td>24년 제33회 3일차 13경주</td>
+                                                <td class="left">경정관리규정 제16조(등록의 취소)2항 7초에 근거하여 경정선수로써 품위손상하는 행위를 한 경우에 
+                                                    의거 수상레저보트 조종 중과실로 인명을 사상 한 선수</td>
+                                                <td>경정관리규정 제16조(등록의 취소) 2항 7호</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>2024-03-29 16:05:57.0</td>
+                                                <td class="frm">
+                                                    <button class="btn basic">통지서 확인</button>
+                                                    <!-- <button class="btn bLine">통지서 보기</button> -->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tabCont">
+
+                            <div class="comTable sizeL">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:10%;">
+                                            <col style="width:10%;">
+                                            <col style="width:auto;">
+                                            <col style="width:20%;">
+                                            <col style="width:10%;">
+                                            <col style="width:130px;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th class="t_01">연도</th>
+                                                <th class="t_02">발급번호</th>
+                                                <th class="t_01">제재처분</th>
+                                                <th class="t_02">공지기간</th>
+                                                <th class="t_01">통보일</th>
+                                                <th class="t_02">확인여부</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2022</td>
+                                                <td>2022-11</td>
+                                                <td class="left">출전정지 3회차</td>
+                                                <td>2022-08-09 ~ 2022-08-29</td>
+                                                <td>-</td>
+                                                <td class="frm">
+                                                    <!-- <button class="btn basic">통지서 확인</button> -->
+                                                    <button class="btn bLine">통지서 보기</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer_boat.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom_boat.ejs', { }) %>

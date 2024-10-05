@@ -29,10 +29,21 @@
         }
     }
     .formBtm {
-        width: 100%; 
+        width: 100%; display: flex; justify-content: center;
         p {
-            width: 100%; color: #000; text-align: center; font-size: rem(22px); font-weight: 500; line-height: 1.545;
+            width: max-content; color: #000; text-align: center; font-size: rem(22px); font-weight: 500; line-height: 1.545; position: relative;
             @include media('mobile'){font-size: rem(17px); line-height: 1.411;}
+            > span {position: relative; z-index: 2;}
+            .mark {
+                width: 80px; height: 80px; position: absolute; right: -40px; top: -8px; z-index: 1;
+                img {width: 100%;}
+            }
+            .mark02 {
+                width: 100%; 
+                @include media('mobile'){
+                    img {width: 100%;}
+                }
+            }
         }
     }
     .formTitle + .formName {margin-top:50px;}

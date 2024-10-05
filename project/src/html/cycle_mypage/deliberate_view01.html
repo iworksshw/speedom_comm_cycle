@@ -1,0 +1,218 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "제재참석·처분통지",
+                    url: "../../",
+                }) %>
+
+                <div class="comTopPrint">
+                    <div class="alignR">
+                        <button class="btn bLine print" disabled="">인쇄</button>
+                    </div>
+                </div>
+
+                <div class="cptAppliForm">
+                    <div class="formTitle">
+                        <h2>경륜 제재심의 참석통지서</h2>
+                    </div>
+
+                    <div class="formCont">
+                        <p>경륜경정제재심의위원회 운영규칙 제 7초에 의하여 위와같이 귀하의 출석을 통지합니다</p>
+                    </div>
+                    
+                    <div class="comTable sizeL">
+                        <div class="text top">
+                            <p>발급번호 24-017</p>
+                        </div>
+                        <div class="tableArea">
+                            <table>
+                                <caption></caption>
+                                <colgroup>
+                                    <col style="width:25%;">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="2">대상선수</th>
+                                        <th class="t_02">성명</th>
+                                        <td>류선재</td>
+                                        <th class="t_02">생년월일</th>
+                                        <td>1990-01-01</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="t_02">등록번호</th>
+                                        <td>12345678</td>
+                                        <th class="t_02">기수</th>
+                                        <td>7기</td>
+                                    </tr>
+                                    <tr>
+                                        <th>근거규정</th>
+                                        <td colspan="4">2024년 06월 20일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>관련경주</th>
+                                        <td colspan="4">경륜시행규정 제42조 제3호</td>
+                                    </tr>
+                                    <tr>
+                                        <th>제재요구사유</th>
+                                        <td colspan="4">수술로 인한 불참</td>
+                                    </tr>
+                                    <tr>
+                                        <th>요구부서</th>
+                                        <td colspan="4">심판</td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="7">제재상정</th>
+                                        <td colspan="4">가 유형: 출전정지 1회차 이하</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="t_02">표기유형</th>
+                                        <th colspan="3">표기 별 제재 상정 정도</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_02">가</td>
+                                        <td colspan="3">출전정지 1회차 이하</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_02">나</td>
+                                        <td colspan="3">출전정지 1회차 초과~3회차 이하</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_02">다</td>
+                                        <td colspan="3">출전정지 4회차 이상 ~6회차 이하<br>출전정지 1개월 이상 ~ 3개월 이하</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_02">라</td>
+                                        <td colspan="3">출전정지 3개월 초과</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="left">※ 제재상정 유형은 제재요구부서에서 요구된 양형(상정, 정도)를 상기 분류표 기준으로 표기한 것으로서
+                                            제재심의 개최 후 의결된 결과와는 다를 수 있습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>출석일시</th>
+                                        <td colspan="4">
+                                            <b>2024년 06월 20일 15시 00분</b><br>
+                                            ※ 제재심의 개최기간을 기준으로 작성되었으며, <span class="txtRed">대기시간 최소화를 위해 담당부서에서 최종 개별통보 예정</span> (개별통보 없을 시 출석일시대로 참석)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>심의장소</th>
+                                        <td colspan="4">광명돔경륜장 5층 대회의실</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="formDate">
+                        <p>2024년 05월 10일</p>
+                    </div>
+
+                    <div class="formBtm">
+                        <p>
+                            <span>서울올림픽기념국민체육진흥공단<br>경주사업총괄본부 경주운영위원장 귀하</span>
+                            <span class="mark"><img src="../../images/common/mark_01.jpg" alt="도장"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comInfoBox">
+                    <dl class="infoArea">
+                        <dt class="infoTitle">안내사항</dt>
+                        <dd class="infoCont">
+                            <div class="infoText">
+                                1. 사정에 의해 참석이 불가능하여 불참 하에 제재심의를 진행하고자 할 경우, ‘제재심의 불참사유서를 작성하여 심의 전일까지 공정팀으로 제출하여 주시기 바랍니다.<br>
+                                2. 사정에 의해 참석이 불가능하지만 추후 참석 소명을 희망하여 차회 열리는 제재심의에 회부를 요청하고자 할 경우, 제재심의 담당부서로 연락하여 주시기 바랍니다.<br>
+                                3. 제재 불참사유서 제출 또는 차회 심의 회부요청 없이 지정된 일시에 출석하지 아니할 경우, 소명을 포기한 것으로 간주될 수 있습니다.
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="comTable">
+                    <div class="tableArea">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:25%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>참석여부</th>
+                                    <td class="frm">
+                                        <button class="btn basic">참석</button>
+                                        <button class="btn bLine">불참</button>
+                                        <button class="btn bLine">연기</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="comGroupBtm line">
+                    <div class="alignL">
+                        <div class="textBox">
+                            <p class="c_blue">제재심의 담당부서 연락처 : 02-2067-5803, 5806</p>
+                        </div>
+                    </div>
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
