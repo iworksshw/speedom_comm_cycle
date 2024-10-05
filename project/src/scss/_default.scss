@@ -7,6 +7,11 @@
   --red-txt01:#FF0000;
 }
 
+/* ------------------------------ 텍스트 ------------------------------ */
+.txtBlue {color: var(--key-blue01) !important;}
+.txtKey {color: var(--key-text01) !important;}
+.txtPurple {color: var(--blue-txt01) !important;}
+.txtRed {color: var(--red-txt01) !important;}
 
 /* Pretendard */
 @font-face {
