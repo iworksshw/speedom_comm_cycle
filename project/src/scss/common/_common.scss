@@ -667,6 +667,49 @@
 }
 
 
+/* -------------------------------- 셀렉트 텍스트 리스트 -------------------------------- */
+.comSltList {
+    width: 100%;
+    .list {
+        width: 100%;
+        .item {
+            width: 100%; margin-top: 16px;
+            &:first-child {margin-top: 0;}
+            .iptRdo {
+                display: block;
+            }
+            .iptLbl {
+                width: 100%; padding: 20px; border: 1px solid #F8F8FE; border-radius: 12px; background: #F8F8FE; display: flex; justify-content: space-between; cursor: pointer;
+                .left {
+                    color: #000; font-size: rem(16px); font-style: normal; font-weight: 500; line-height: 28px; display: flex; justify-content: flex-start;
+                }
+                .right {
+                    color: #000; font-size: rem(16px); font-style: normal; font-weight: 500; line-height: 28px; display: flex; justify-content: flex-end;
+                    em {color: #4053FF; margin-left: 4px;}
+                }
+            }
+            .iptRdo:checked + .iptLbl {border: 1px solid #808CFC;}
+        }
+    }
+    @include media('mobile') {
+        .list {
+            .item {
+                .iptLbl {
+                    flex-wrap: wrap;
+                    .left {
+                        width: 100%;
+                    }
+                    .right {
+                        width: 100%; margin-top: 8px; justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
 //기본 폼
 input[type=text] {}
 input[type=password] {}

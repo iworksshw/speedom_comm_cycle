@@ -32,3 +32,29 @@
 .lytLogin{
     width:100%;
 }
+
+//윈도우 팝업
+.lytWinPopup {
+    width: 100%;
+    .popArea {
+        width: 100%;
+        .popTitle {
+            width: 100%; padding: 20px 30px; border-bottom: 1px solid #EEE; background: #2B38AC; display: flex; justify-content: space-between;
+            .alignL {
+                width: 100%; display: flex; justify-content: flex-start;
+                h1 {
+                    color: #fff; font-size: rem(20px); font-style: normal; font-weight: 600; line-height: normal;
+                }
+            }
+            .alignR {
+                width: 100%; display: flex; justify-content: flex-end;
+                p {
+                    color: #fff; font-size: rem(14px); font-style: normal; font-weight: 500; line-height: normal; align-content: center;
+                }
+            }
+        }
+        .popCont {
+            width: 100%; padding: 30px;
+        }
+    }
+}
