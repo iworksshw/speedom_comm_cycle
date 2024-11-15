@@ -1,0 +1,256 @@
+<!-- Header -->
+<%- include('../_ejs/top_staff.ejs', {
+    title: "직원 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb_staff.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top_staff.ejs', {
+                    subTitle: "1:1문의",
+                    url: "../../",
+                }) %>
+
+                <div class="comInfoBox">
+                    <ul class="infoList">
+                        <li class="item"><b class="bold">공정 상담방은 고충상담과 질의 및 제보,사실보고,고민 등이 있는 선수분들이 자유롭게 이야기 할 수 있도록 마련된 게시판입니다.</b></li>
+                        <li class="item">1:1 비공개 게시판으로서 <b class="c_blue">본인이 작성한 글만 조회·열람 가능</b>합니다.</li>
+                        <li class="item">1:1문의는 <b class="c_blue">실명과 익명으로도 작성</b>할 수 있습니다.</li>
+                        <li class="item">1:1문의 답변은 근무일(수~일) 48시간 이내 답변을 원칙으로 합니다.</li>
+                    </ul>
+                </div>
+                
+                <div class="comGroupTop">
+                    <div class="alignL">
+                        <div class="unit"><span class="text">전체 <span class="total">1000</span>건</span></div>
+                    </div>
+                    <div class="alignR">
+                        <ul class="comSideOpt">
+                            <li class="sideItem">
+                                <div class="frmGroup">
+                                    <select name="" id="" class="iptSlt">
+                                        <option value="">처리상태 전체</option>
+                                        <option value="">접수완료</option>
+                                        <option value="">답변완료</option>
+                                        <option value="">진행중</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li class="sideItem">
+                                <div class="frmSearch">
+                                    <input type="text" placeholder="검색어를 입력해주세요">
+                                    <button class="btnSearch">검색</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cptBoardList">
+                    <table>
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width:auto;">
+                            <col style="width:68px;">
+                            <col style="width:195px;">
+                            <col style="width:135px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                            <span class="icons">
+                                                <span class="icon new">새로운 글</span>
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동 경정선수와 함께하는 자전거 안전교실 재능기부 활동 경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state pink">접수완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state blue">진행중</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right"></td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                            <tr>
+                                <td class="bdTitle left">
+                                    <div class="link">
+                                        <div class="title">
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
+                                            <span class="num">[2]</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="bdState"><span class="state gray">답변완료</span></td> <!-- blue : 진행중, pink : 접수완료, gray : 답변완료 -->
+                                <td>접수일자 0000-00-00</td>
+                                <td class="right">처리일자 0000-00-00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="comGroupBtm">
+                    <div class="alignR">
+                        <button class="btn basic">문의하기</button> <!-- 20240712 텍스트 수정 -->
+                    </div>
+                </div>
+                <div class="comPaging">
+                    <a class="start" href="#"></a>
+                    <a class="prev" href="#"></a>
+                    <ul class="numList">
+                        <li><a href="#">1</a></li>
+                        <li class="on"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <a class="next" href="#"></a>
+                    <a class="end" href="#"></a>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer_staff.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom_staff.ejs', { }) %>

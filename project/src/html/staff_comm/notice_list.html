@@ -1,6 +1,6 @@
 <!-- Header -->
-<%- include('../_ejs/top_boat.ejs', {
-    title: "경정 커뮤니티",
+<%- include('../_ejs/top_staff.ejs', {
+    title: "직원 커뮤니티",
     url: "../../"
 }) %>
 
@@ -11,7 +11,7 @@
         <!-- 상단영역 -->
         <div class="layoutTop">
             <!-- Top -->
-            <%- include('../_ejs/gnb_boat.ejs', {
+            <%- include('../_ejs/gnb_staff.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -25,8 +25,8 @@
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
                 <!-- 서브 탑 (타이틀) -->
-                <%- include('../_ejs/sub_top_boat.ejs', {
-                    subTitle: "경주 불참사유서",
+                <%- include('../_ejs/sub_top_staff.ejs', {
+                    subTitle: "공지사항",
                     url: "../../",
                 }) %>
 
@@ -37,13 +37,9 @@
                     <div class="alignR">
                         <ul class="comSideOpt">
                             <li class="sideItem">
-                                <div class="frmGroup">
-                                    <select name="" id="" class="iptSlt">
-                                        <option value="">접수상태 전체</option>
-                                        <option value="">접수</option>
-                                        <option value="">승인</option>
-                                        <option value="">반려</option>
-                                    </select>
+                                <div class="frmSearch">
+                                    <input type="text" placeholder="검색어를 입력해주세요">
+                                    <button class="btnSearch">검색</button>
                                 </div>
                             </li>
                         </ul>
@@ -55,141 +51,149 @@
                         <colgroup>
                             <col style="width:auto;">
                             <col style="width:110px;">
-                            <col style="width:250px;">
-                            <col style="width:150px;">
+                            <col style="width:90px;">
+                            <col style="width:110px;">
                         </colgroup>
                         <tbody>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 21회차 ~ 25회차 경주 불참사유서</a>
+                                            <a href="#"><b>종사원 공정교육 및 수시교육 결과 (1분기)공지</b></a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
+                                            <span class="icons">
+                                                <span class="icon new">새로운 글</span>
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state gray">접수</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>사업홍보팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#"><b>2024년 경정경정 도핑검사 주의사항 공지(재)</b></a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state orange">신청</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정기획팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
+                                            <span class="icons">
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state blue">승인</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>공정팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">경정훈련원 주차신청서</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
+                                            <span class="icons">
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state blue">승인</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 선수 개인 물품 회수요청 피스타 이용 제한 및 선수 개인 물품 회수요청 피스타 이용 제한 및 선수 개인 물품 회수요청</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
+                                            <span class="icons">
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state pink">반려</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 21회차 ~ 25회차 경주 불참사유서</a>
+                                            <a href="#">(24.05.15 (수)) 미사경정공원 이용 제한 및 종사원 개인 물품 회수요청</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state gray">접수</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 선수 개인 물품 회수요청</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state blue">승인</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 선수 개인 물품 회수요청</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
+                                            <span class="icons">
+                                                <span class="icon file">첨부파일</span>
+                                            </span>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state blue">승인</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 선수 개인 물품 회수요청</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state blue">승인</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                             <tr>
                                 <td class="bdTitle left">
                                     <div class="link">
                                         <div class="title">
-                                            <a href="#">2024년 16회차 경주 불참사유서</a>
+                                            <a href="#">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 선수 개인 물품 회수요청</a> <!-- 상위공지 or 강조게시글은 <b>태그가 들어갑니다 -->
                                         </div>
                                     </div>
                                 </td>
-                                <td class="bdState"><span class="state pink">반려</span></td> <!-- gray : 접수, blue : 승인, pink : 반려 -->
-                                <td>불참기간 2024-06-01 ~ 2024-06-29</td>
-                                <td class="right">신청일자 2024-05-12</td>
+                                <td>경정선수지원팀</td>
+                                <td>35125</td>
+                                <td class="right">0000-00-00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <!-- 그룹하단 -->
-                <div class="comGroupBtm">
-                    <div class="alignR">
-                        <button class="btn basic">불참사유서 작성하기</button>
-                    </div>
-                </div>
-
                 <div class="comPaging">
                     <a class="start" href="#"></a>
                     <a class="prev" href="#"></a>
@@ -216,7 +220,7 @@
         <!-- 하단영역 -->
         <div class="layoutFooter">
             <!-- Footer -->
-            <%- include('../_ejs/footer_boat.ejs', {
+            <%- include('../_ejs/footer_staff.ejs', {
                 url: "../../"
             }) %>
         </div>
@@ -227,4 +231,4 @@
 
 
 <!-- Bottom -->
-<%- include('../_ejs/bottom_boat.ejs', { }) %>
+<%- include('../_ejs/bottom_staff.ejs', { }) %>
