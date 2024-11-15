@@ -39,7 +39,7 @@ a:active, a:hover {text-decoration:none;}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 caption {font-size: 0;}
 @media print {
-  html,body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5; font-family:'Pretendard', sans-serif; color:#000}
+  html,body,th,td,input,select,textarea,button {font-size:12px; line-height:1.5; font-family:'Pretendard', sans-serif; color:#000}
   .comTopPrint {display: none !important;}
 }
 
