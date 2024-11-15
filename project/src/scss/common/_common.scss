@@ -125,6 +125,9 @@
             &.info {
                 padding-right:44px; background:var(--gray-bg01) url(../../images/common/ic_info_print.svg) right 16px center no-repeat;
             }
+            &.hidePrint {
+                display: none;
+            }
         }
     }
 }

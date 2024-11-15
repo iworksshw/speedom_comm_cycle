@@ -41,6 +41,7 @@ caption {font-size: 0;}
 @media print {
   html,body,th,td,input,select,textarea,button {font-size:12px; line-height:1.5; font-family:'Pretendard', sans-serif; color:#000}
   .comTopPrint {display: none !important;}
+  * {page-break-before: auto;}
 }
 
 input[type=radio] {width:1px; height:1px; font-size:0; opacity:0.01; overflow:hidden;}
