@@ -38,6 +38,9 @@ a {color:#000;text-decoration:none}
 a:active, a:hover {text-decoration:none;}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 caption {font-size: 0;}
+@media print {
+  html,body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5; font-family:'Pretendard', sans-serif; color:#000}
+}
 
 input[type=radio] {width:1px; height:1px; font-size:0; opacity:0.01; overflow:hidden;}
 input[type=checkbox] {width:1px; height:1px; font-size:0; opacity:0.01; overflow:hidden;}
