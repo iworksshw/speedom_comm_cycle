@@ -1,0 +1,124 @@
+<!-- Header -->
+<%- include('../_ejs/top_staff.ejs', {
+    title: "직원 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb_staff.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top_staff.ejs', {
+                    subTitle: "공지사항",
+                    url: "../../",
+                }) %>
+
+                <!-- 그룹 상단 -->
+                <div class="cptBoardView">
+                    <div class="boardArea">
+                        <div class="boardTop">
+                            <h2 class="boardTitle">경정 선수와 함께하는 재능기부 활동</h2>
+                            <ul class="boardState">
+                                <li class="item info">
+                                    <span>사업홍보팀</span>
+                                    <span>6485</span>
+                                    <span>0000-00-00</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="boardBody">
+                            <div class="boardCont">
+
+                                안녕하세요, 사업홍보팀 김유빈 사원입니다.
+                                <br>
+                                <br>2024년 사회공헌 사업으로 '경정 선수와 함께하는 재능기부' 사업을 추진하려고 합니다.
+                                <br>별도 신청기한 없이 하반기 중 진행되며, 최대 6개 훈련지까지만 신청받으려고 합니다.
+                                <br>
+                                <br>관심있는 선수분들께서는 아래 모집공고문 참고하시어 신청해주시기 바랍니다.
+                                <br>
+                                <br>문의사항 : 사업홍보팀 김유빈 사원 02-2067-5378
+
+                            </div>
+                            <div class="comFileList">
+                                <ul class="fileGroup">
+                                    <li class="file download">
+                                        <dl>
+                                            <dt>첨부파일</dt>
+                                            <dd><a href="#" class="fileName">재능기부 훈련지 모집공고.png</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="file download">
+                                        <dl>
+                                            <dt>첨부파일</dt>
+                                            <dd><a href="#" class="fileName">재능기부 훈련지 모집공고.png</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 그룹하단 -->
+                <div class="comGroupBtm">
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+
+                <!-- 이전글/다음글 -->
+                <div class="comOtherPage">
+                    <ul class="otherGroup">
+                        <li class="otherItem">
+                            <b class="otherTitle">이전글</b>
+                            <p class="otherCont"><a href="#" class="link">지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다. 지난 광명 경주 진행 시 A선수와 B선수가 담합하는 것을 보았습니다.</a></p>
+                            <i class="otherDate">2004.05.20</i>
+                        </li>
+                        <li class="otherItem">
+                            <b class="otherTitle">다음글</b>
+                            <p class="otherCont"><a href="#" class="link">할머니 할아버지께서 들려주시는 재미있는 옛날이야기나 구연동화에 귀를 귀울여보신 적 있으신가요?</a></p>
+                            <i class="otherDate">2004.05.20</i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer_staff.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom_staff.ejs', { }) %>

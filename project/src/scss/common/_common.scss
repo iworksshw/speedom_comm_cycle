@@ -265,6 +265,13 @@
                     .iptText {text-align: left;}
                 }
             }
+            .signGroup {
+                width: 100%; position: relative;
+                .name {text-align: center;}
+                .signBox {opacity: 0.5; position: absolute; right: 50px; top: 0; z-index: 1;}
+                .sign {font-family: cursive; font-weight: 800; position: absolute; right: 35px; top: 0; z-index: 2;}
+            }
+
             .frmS {padding:5px 5px;}
             .frm {padding:5px 16px;}
             .frmL {padding:5px 40px;}
