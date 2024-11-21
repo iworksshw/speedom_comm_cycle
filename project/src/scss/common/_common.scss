@@ -699,6 +699,7 @@
                 }
             }
             .iptRdo:checked + .iptLbl {border: 1px solid #808CFC;}
+            .iptRdo:disabled + .iptLbl {opacity: 0.4;}
         }
     }
     @include media('mobile') {
