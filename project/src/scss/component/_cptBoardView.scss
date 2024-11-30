@@ -57,6 +57,7 @@
                 &:first-child {margin-top:0;}
                 &:last-child {padding-bottom:0;}
                 img {max-width:100%;}
+                table {max-width:100%;}
                 @include media('mobile'){padding-bottom:40px; color: #000; font-size: rem(15px); line-height: 1.53;}
             }
         }
