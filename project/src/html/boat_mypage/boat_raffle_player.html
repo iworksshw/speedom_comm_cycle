@@ -1,0 +1,96 @@
+<!-- Header -->
+<%- include('../_ejs/top_boat.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb_boat.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top_boat.ejs', {
+                    subTitle: "모터보트 추첨​",
+                    url: "../../",
+                }) %>
+
+                <!-- 일반 선수 메시지 -->
+                <div class="comRaffleTop">
+                    <div class="searchArea">
+                        <ul class="textList">
+                            <li>일반선수입니다. 모터, 보트 추첨 시 <b>회색 영역을 선택</b>해 주시기 바랍니다. (<span class="blue">파란색</span>, <span class="red">붉은색</span> 영역은 선택이 불가합니다.)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 상위 선수 메시지 -->
+                <div class="comRaffleTop">
+                    <div class="searchArea">
+                        <ul class="textList">
+                            <li>상위선수입니다. 모터, 보트 추첨 시 <span class="blue">파란색 영역을 선택</span>해 주시기 바랍니다. (회색, <span class="red">붉은색</span> 영역은 선택이 불가합니다.)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cptRaffleBoat">
+                    <div class="raffleArea">
+                        <h3 class="raffleTitle">2024년 21회 모터 추첨 신청​</h3>
+                        <h4 class="raffleNumber">선택된 모터 번호 : <span class="number">4-2</span></h4>
+                        <div class="btnArea">
+                            <div class="col">
+                                <button type="button" class="sltBtn blue">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                                <button type="button" class="sltBtn">선택</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer_boat.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom_boat.ejs', { }) %>
