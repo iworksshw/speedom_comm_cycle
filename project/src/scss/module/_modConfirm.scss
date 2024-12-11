@@ -1,0 +1,38 @@
+.modConfirm {
+    width: 100%; height: 100%; display: none; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; z-index: 1000;
+    &.on {
+        display: flex;
+        .popupDim {
+            opacity: 0; animation: popOpenDimd 0.2s linear forwards;
+        }
+    }
+    .popupDim {
+        width: 100%; height: 100%; font-size: 0; background: rgba(0, 0, 0, 0.8); position: fixed; left: 0; top: 0;
+    }
+    @keyframes popOpenDimd { 0% {opacity:0;} 100% {opacity:1;} }
+
+    .confirmArea {
+        width: 450px; padding: 40px 32px 24px; border-radius: 20px; background: #fff; box-shadow: 2px 4px 30px 0px rgba(0, 0, 0, 0.10); 
+        position: relative; z-index: 1;
+
+        .btnPopClose {
+            width:24px; height:24px; font-size:0; border:0; background:url(../../images/common/ic_32_confirm_close.svg) center no-repeat; 
+            position:absolute; right:16px; top:16px; z-index:10;
+        }
+        .popTitle {
+            width: 100%; color: #000; text-align: center; font-size: rem(22px); font-weight: 700; line-height: 1.4;
+        }
+        .popCont {
+            width: 100%; margin-top: 12px; color: #444444; text-align: center; font-size: rem(20px); font-weight: 300; line-height: 1.6;
+        }
+        .popBtm {
+            width: 100%; margin-top: 30px;
+            .comGroupBtm {
+                margin: 0; justify-content: center;
+            }
+            .btn {
+                width: 150px; height: 48px; border-radius: 8px;
+            }
+        }
+    }
+}

@@ -49,6 +49,10 @@
 /* -------------------------------- 엑셀다운로드 인쇄 영역 -------------------------------- */
 .comTopPrint{
     width:100%; padding-bottom:12px; margin-bottom:50px; border-bottom:1px solid #eee; display:flex; justify-content: space-between;
+
+    &.raffle {
+        margin-top: 30px; padding-bottom: 0; border: 0;
+    }
     @include media('mobile'){
         padding-bottom: 8px; margin-bottom: 30px; flex-wrap: wrap-reverse;
         .line {
@@ -147,6 +151,16 @@
 .comInfoBox{
     width:100%; margin-bottom:70px; padding:35px 50px; border-radius: 12px; background: var(--gray-bg01); position: relative;
     @include media('mobile'){margin-bottom:50px; padding:40px 20px;}
+    &:has(.alignL) {
+        display: flex; justify-content: space-between;
+        @include media('mobile'){flex-wrap: wrap;}
+    }
+    .alignL {
+
+    }
+    .alignR {
+        display: flex; justify-content: flex-end;
+    }
     .infoArea {
         margin-top: 30px;
         &:first-child {margin-top: 0;}
@@ -190,6 +204,10 @@
     }
 }
 .cptAppliForm + .comInfoBox {
+    margin-top:90px;
+    @include media('mobile'){margin-top:70px;}
+}
+.comGroupBtm  + .comInfoBox {
     margin-top:90px;
     @include media('mobile'){margin-top:70px;}
 }
@@ -527,6 +545,9 @@
         &.oGray {
             color: #FF9900; background: var(--gray-bg01);
         }
+        &.gLine {
+            color: #4D4D4D; border: 1px solid #B0B2B7;  background: #ffffff;
+        }
     }
 }
 
@@ -764,6 +785,12 @@
             }
             .textBox {
                 width: 100%; height: 45px; margin-top: 9px; text-align: center;
+            }
+            .textList {
+                width: 100%; align-content: center;
+                li{
+                    font-size: rem(15px);
+                }
             }
         }
     }
