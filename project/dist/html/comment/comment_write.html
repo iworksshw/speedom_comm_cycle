@@ -1,0 +1,277 @@
+<!-- Header -->
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" >
+	<meta name="format-detection" content="telephone=no">
+	<!-- 캐싱방지 -->
+	<!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT"> -->
+	<!-- 모바일 상단,타이틀바,주소창 색변경(안드로이드에서 크롬,파폭,오페라,삼성브라우저만 가능) -->
+	<!-- <meta name="theme-color" content="#4285f4"> -->
+
+	<title>한줄평 커뮤니티</title>
+
+	<link rel="stylesheet" href="../../common/css/swiper.css" />
+	<link rel="stylesheet" href="../../common/css/tui-date-picker.css">
+	<link rel="stylesheet" href="../../common/css/tui-time-picker.css">
+	<link rel="stylesheet" href="../../common/css/style.css" />
+	<!-- <link rel="stylesheet" href="../common/css/jquery-ui.min.css" /> -->
+	
+	<script src="../../common/js/swiper.js"></script>
+	<script src="../../common/js/tui-time-picker.js"></script>
+	<script src="../../common/js/tui-date-picker.js"></script>
+	<script src="../../common/js/common.js"></script>
+	<!--
+    <script src="../common/js/basic.js"></script>
+    -->
+</head>
+<body>
+<div class="skip"><a class="quickBtn" href="#container">본문바로가기</a></div>
+<div class="wrap">
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            
+
+            <div class="cptGnb ">
+                <div class="gnbArea">
+                    <div class="logoBox">
+                        <a href="#"><img src="../../images/common/logo_kcycle.png" alt="KCYCLE" style="width:100%;"></a>
+                    </div>
+                    <div class="gnbBox">
+                        <div class="menuArea">
+                            <ul class="depth1Group">
+                                <li class="depth1List">
+                                    <a href="#" class="depth1Name">한줄평 관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="menuBtn">
+                            <span>메</span>
+                            <span>뉴</span>
+                            <span>열기</span>
+                        </button>
+                    </div>
+                    <div class="gnbTitle">
+                        한줄평 커뮤니티
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20240723 추가 -->
+            <div class="cptAllMenu">
+                <div class="allMenuArea">
+                    <p class="welcome">안녕하세요, <b>류선재</b>님</p>
+                    <div class="sign">
+                        <button class="login">로그인</button>
+                        <button class="logout">로그아웃</button>
+                    </div>
+                    <div class="menuBox">
+                        <ul class="depth1Group">
+                            <li class="depth1List">
+                                <a href="#" class="depth1Name">한줄평 관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="menuClose">메뉴닫기</button>
+                </div>
+            </div>
+
+            
+            <div class="cptLocaMenu ">
+                <div class="locaArea">
+                    <ul class="menuGroup">
+                        <li class="menuItem home">
+                            <a href="#" class="title">홈</a>
+                        </li>
+                        <li class="menuItem depth1">
+                            <a href="#" class="title">한줄평 관리</a>
+                        </li>
+                    </ul>
+                    <div class="sign">
+                        <button class="login">로그인</button>
+                        <button class="logout">로그아웃</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 20240723 추가 -->
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                
+
+<div class="comH1Title">
+    <div class="titleArea">
+        <h1>한줄평 관리</h1>
+    </div>
+</div>
+
+
+                <div class="comRaffleTop">
+                    <div class="searchArea search">
+                        <div class="alignL">
+                            <dl class="checkBoat">
+                                <dt>경주일</dt>
+                                <dd>
+                                    <div class="frmGroup frmHalf">
+                                        <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                                            <input type="text" id="datepicker-input" aria-label="Date-Time">
+                                            <div id="datepicker-container" style="margin-top: -1px;"></div>
+                                        </div>
+                                    </div>
+                                    <script>datePicker("datepicker-input","datepicker-container");</script>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="comTable sizeM">
+                    <div class="tableArea">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:25%;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>창원01</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder=""></textarea>
+                                            <span class="textByte">56/200 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>창원02</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder=""></textarea>
+                                            <span class="textByte">56/200 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>창원03</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder=""></textarea>
+                                            <span class="textByte">56/200 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>창원04</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder=""></textarea>
+                                            <span class="textByte">56/200 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>창원05</th>
+                                    <td class="left frm">
+                                        <div class="frmGroup">
+                                            <textarea class="iptTextarea" placeholder=""></textarea>
+                                            <span class="textByte">56/200 byte</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <div class="comGroupBtm">
+                    <div class="alignR">
+                        <button class="btn basic">취소</button>
+                        <button class="btn basic">등록</button>
+                    </div>
+                </div>
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            
+
+<div class="cptFooter">
+    <div class="footArea">
+        <div class="siteArea">
+            <ul class="siteGroup">
+                <li class="siteItem"><a href="">KSPO 국민체육진흥공단</a></li>
+                <li class="siteItem"><a href="">경주사업총괄본부</a></li>
+                <li class="siteItem"><a href="">KCYCLE 경룬</a></li>
+                <li class="siteItem"><a href="">KBOAT 경정</a></li>
+                <li class="siteItem"><a href="">올림핑공원</a></li>
+                <li class="siteItem"><a href="">한국스포츠개발원</a></li>
+            </ul>
+        </div>
+        <div class="copyArea">
+            <div class="copyGroup">
+                <div class="copyL">
+                    <div class="copyList">
+                        <span class="copyItem">
+                            경기도 광명시 광명로 721 (광명동)
+                        </span>
+                        <span class="copyItem">
+                            공정신고 : secure1@kspo.or.kr
+                        </span>
+                    </div>
+                </div>
+                <div class="copyR">
+                    <div class="numberList">
+                        <span class="numItem">
+                            080-008-5000 <span class="sup">(무료)</span>
+                        </span>
+                        <span class="numItem">
+                            02-2067-8000 <span class="sup">(유료)</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+
+</div>
+</body>
+</html>

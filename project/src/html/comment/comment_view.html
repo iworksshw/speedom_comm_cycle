@@ -1,0 +1,130 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "한줄평 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb_comment.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <!-- 서브 탑 (타이틀) -->
+                <%- include('../_ejs/sub_top.ejs', {
+                    subTitle: "한줄평 관리",
+                    url: "../../",
+                }) %>
+
+                <!-- 그룹 상단 -->
+                <div class="cptBoardView">
+                    <div class="boardArea">
+                        <div class="boardTop">
+                            <h2 class="boardTitle">(34회 2일차) 08월 31일 (토요일)</h2>
+                            <ul class="boardState">
+                                <li class="item info">
+                                    <span>등록일자 2024-05-19 HH24:MI:SS</span>
+                                    <span>수정일자 2024-05-20 HH24:MI:SS</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comTable sizeM">
+                            <div class="tableArea">
+                                <table>
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:25%;">
+                                        <col style="width:auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>창원01</th>
+                                            <td class="left">
+                                                입력한 한줄평 내용이 조회됩니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>창원02</th>
+                                            <td class="left">
+                                                입력한 한줄평 내용이 조회됩니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>창원03</th>
+                                            <td class="left">
+                                                입력한 한줄평 내용이 조회됩니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>창원04</th>
+                                            <td class="left">
+                                                입력한 한줄평 내용이 조회됩니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>창원05</th>
+                                            <td class="left">
+                                                입력한 한줄평 내용이 조회됩니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>창원06</th>
+                                            <td class="left">
+                                                입력한 한줄평 내용이 조회됩니다.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 그룹하단 -->
+                <div class="comGroupBtm">
+                    <div class="alignL">
+                        <button class="btn bGray">수정</button>
+                        <button class="btn oGray">삭제</button>
+                    </div>
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
