@@ -1,0 +1,52 @@
+.cptRaffleBoat {
+    width: 100%; margin-top: 80px;
+    .raffleArea {
+        width: 100%; 
+        .raffleTitle {
+            width: 100%; color: #000; text-align: center; font-size: rem(34px); font-weight: 500;
+        }
+        .comInTitle {
+            margin-top: 28px;
+        }
+        .raffleChoice {
+            .col {
+                width: 100%; display: flex; gap: 1px;
+            }
+            .sltBtn {
+                margin-top:1px; height: 60px; font-size: 0; border: 6px solid #99999B; background: #99999B; flex-grow: 1;
+                &.blue {
+                    border: 6px solid #0432FF; background: #0432FF;
+                }
+                &.red {
+                    border: 6px solid #ff0000; background: #ff0000;
+                }
+                &.active {
+                    border: 6px solid #4D5DF2; background: #F8F8FE url(../../images/common/ic_32_choice.svg) center no-repeat;
+                }
+                &:disabled {
+                    cursor: default;
+                }
+            }
+        }
+    }
+    @include media("mobile"){
+        margin-top: 60px;
+        .raffleArea {
+            .raffleTitle {
+                font-size: rem(28px);
+            }
+            .comInTitle {
+                margin-top: 20px;
+            }
+            .raffleChoice {
+                width: 100%; overflow-x: auto;
+                .col {
+                    width: 900px;
+                }
+                .sltBtn {
+                    height: 45px;
+                }
+            }
+        }
+    }
+}

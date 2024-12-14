@@ -3,6 +3,23 @@
     .mainTop {
         width: 100%; height:300px; background: #EEEEFC;
         @include media("mobile") {height: auto;}
+        
+
+        &:not(:has(.topArea .quickMenu)) {
+            height: 140px;
+            .topArea {
+                justify-content: center;
+                .greeting {
+                    width: max-content; min-height: 50px; padding: 0 0 0 70px; display: flex;
+                    background: rgba(140, 152, 255, 0) url(../../images/common/ic_profile.svg) left center / 50px no-repeat;
+                    span {
+                        color: #000; font-size: rem(40px); font-weight: 300; display: flex; order: 1;
+                        &.name {margin-top: 0; margin-right: 10px; order: 0;}
+                    }
+                }
+            }
+        }
+
         .topArea {
             width: 100%; height: 100%; max-width: 1340px; padding: 0 20px; margin: 0 auto; display: flex; align-items: center; gap: 32px; position: relative;
             @include media("mobile") {padding: 50px 20px 56px; flex-wrap: wrap; gap: 30px;}
@@ -99,7 +116,7 @@
         .contArea {
             width: 100%; max-width: 1340px; padding: 0 20px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 80px 40px;
             .mainBoard {
-                width: calc(50% - 20px);
+                width: 100%; //width: calc(50% - 20px);
                 &.type1 .title {background: url(../../images/common/ic_main_noti01.svg) left center no-repeat;}
                 &.type2 .title {background: url(../../images/common/ic_main_noti02.svg) left center no-repeat;}
                 &.type3 .title {background: url(../../images/common/ic_main_noti03.svg) left center no-repeat;}
@@ -115,9 +132,9 @@
                     }
                 }
                 .boardList {
-                    width: 100%; margin-top: 18px;
+                    width: 100%; margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px 20px;
                     .item {
-                        width: 100%; height: 70px; margin-top: 10px; padding: 23px 30px; border-radius: 12px; background: #F8F8FE; display: flex; justify-content: space-between; align-items: center;
+                        width: calc(50% - 10px); height: 70px; padding: 23px 30px; border-radius: 12px; background: #F8F8FE; display: flex; justify-content: space-between; align-items: center;
                         &:first-child {margin-top: 0;}
                         .textBox {
                             width: calc(100% - 120px); height: 100%; display: flex; gap: 10px; align-items: center;
@@ -132,16 +149,39 @@
                             width: 120px; color: #000; text-align: right; font-size: rem(14px); font-weight: 300; line-height: normal; display: block; white-space: nowrap;
                         }
                     }
-                }
-                .paging {
-                    width: 100%; margin-top: 20px; display: flex; justify-content: flex-end; gap: 10px;
-                    .number {
-                        width: 10px; height: 10px; font-size: 0; border-radius: 50%; background-color: #CACFFC;
-                        &.on {
-                            background-color: #8C98FF;
+                    .noItem {
+                        width: 100%; padding: 23px 0; color: #000; font-size: rem(20px); font-weight: 400; text-align: center; line-height: normal; 
+                        border-radius: 12px; background: #F8F8FE; display: flex; justify-content: center;
+                        &::before {
+                            content:""; width: 24px; height: 24px; margin-right: 8px; font-size: 0; background: url(../../images/common/ic_24_main_info.svg) center no-repeat; display: block;
                         }
                     }
                 }
+                
+                .paging {
+                    display: flex; justify-content: flex-end;
+                    .prev {
+                        width: 24px; font-size: 0; background: url(../../images/common/ic_24_main_left.svg) center no-repeat; display: block;
+                    }
+                    .next {
+                        width: 24px; font-size: 0; background: url(../../images/common/ic_24_main_right.svg) center no-repeat; display: block;
+                    }
+                    .page {
+                        margin: 0 6px; color: #4D4D4D; font-size: rem(16px); font-weight: 400; line-height: normal; align-content: center; display: block;
+                    }
+                    b {
+                        font-weight: 600;
+                    }
+                }
+                // .paging {
+                //     width: 100%; margin-top: 20px; display: flex; justify-content: flex-end; gap: 10px;
+                //     .number {
+                //         width: 10px; height: 10px; font-size: 0; border-radius: 50%; background-color: #CACFFC;
+                //         &.on {
+                //             background-color: #8C98FF;
+                //         }
+                //     }
+                // }
             }
         }
         @include media('mobile') {
@@ -153,7 +193,7 @@
                     .boardList {
                         margin-top: 13px;
                         .item {
-                            height: auto; margin-top: 8px; padding: 11px 14px 19px; position: relative;
+                            width: 100%; height: auto; margin-top: 8px; padding: 11px 14px 19px; position: relative;
                             &:first-child {margin-top: 0;}
                             .textBox {
                                 width: 100%; height: auto; padding-top: 18px; flex-wrap: wrap; gap: 0;
@@ -172,15 +212,15 @@
                             }
                         }
                     }
-                    .paging {
-                        margin-top: 10px;
-                        .number {
-                            width: 8px; height: 8px; font-size: 0; border-radius: 50%; background-color: #CACFFC;
-                            &.on {
-                                background-color: #8C98FF;
-                            }
-                        }
-                    }
+                    // .paging {
+                    //     margin-top: 10px;
+                    //     .number {
+                    //         width: 8px; height: 8px; font-size: 0; border-radius: 50%; background-color: #CACFFC;
+                    //         &.on {
+                    //             background-color: #8C98FF;
+                    //         }
+                    //     }
+                    // }
                 }
             }
         }

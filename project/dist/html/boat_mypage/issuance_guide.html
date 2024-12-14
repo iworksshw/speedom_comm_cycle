@@ -14,16 +14,16 @@
 
 	<title>경정 커뮤니티</title>
 
-	<link rel="stylesheet" href="../common/css/swiper.css" />
-	<link rel="stylesheet" href="../common/css/tui-date-picker.css">
-	<link rel="stylesheet" href="../common/css/tui-time-picker.css">
-	<link rel="stylesheet" href="../common/css/style.css" />
+	<link rel="stylesheet" href="../../common/css/swiper.css" />
+	<link rel="stylesheet" href="../../common/css/tui-date-picker.css">
+	<link rel="stylesheet" href="../../common/css/tui-time-picker.css">
+	<link rel="stylesheet" href="../../common/css/style.css" />
 	<!-- <link rel="stylesheet" href="../common/css/jquery-ui.min.css" /> -->
 	
-	<script src="../common/js/swiper.js"></script>
-	<script src="../common/js/tui-time-picker.js"></script>
-	<script src="../common/js/tui-date-picker.js"></script>
-	<script src="../common/js/common.js"></script>
+	<script src="../../common/js/swiper.js"></script>
+	<script src="../../common/js/tui-time-picker.js"></script>
+	<script src="../../common/js/tui-date-picker.js"></script>
+	<script src="../../common/js/common.js"></script>
 	<!--
     <script src="../common/js/basic.js"></script>
     -->
@@ -41,10 +41,10 @@
             <!-- Top -->
             
 
-            <div class="cptGnb main">
+            <div class="cptGnb ">
                 <div class="gnbArea">
                     <div class="logoBox">
-                        <a href="#"><img src="../images/common/logo_kcycle.png" alt="KCYCLE" style="width:100%;"></a>
+                        <a href="#"><img src="../../images/common/logo_kcycle.png" alt="KCYCLE" style="width:100%;"></a>
                     </div>
                     <div class="gnbBox">
                         <div class="menuArea">
@@ -234,7 +234,7 @@
             </div>
 
             
-            <div class="cptLocaMenu main">
+            <div class="cptLocaMenu ">
                 <div class="locaArea">
                     <ul class="menuGroup">
                         <li class="menuItem home">
@@ -277,250 +277,252 @@
         <!-- //상단영역 -->
 
         <!-- 중단영역 -->
-        <div class="layoutMainContainer" id="container">
+        <div class="layoutContainer" id="container">
 
-            <!-- 메인 콘텐츠 영역 -->
-            <div class="layoutMainCont">
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
 
                 <!-- 서브 컨텐츠 내용이 들어오는 영역-->
-                <div class="cptMain">
-                    <div class="mainTop">
-                        <div class="topArea">
-                            <h1 class="greeting">
-                                <span>안녕하세요</span>
-                                <span class="name"><b>류선재</b>님</span>
-                            </h1>
-                            <div class="quickMenu swiperContainer ">
-                                <ul class="quickGroup swiper-wrapper">
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">선수정보</a></span></li>
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">상금명세서</a></span></li>
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">성적조회</a></span></li>
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">모터보트추첨</a></span></li>
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">주선통보</a></span></li>
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">제재처분통지</a></span></li>
-                                    <li class="quickItem swiper-slide"><span class="card"><a href="">증명서발급</a></span></li>
-                                </ul>
-                                <div class="swiper-scrollbar"></div>
-                            </div>
-                            <script>
-                                var swiper = new Swiper(".quickMenu", {
-                                    slidesPerView: "auto",
-                                    freeMode: true,
-                                    pagination: {
-                                        el: ".swiper-pagination",
-                                        clickable: true,
-                                    },
-                                    scrollbar: {
-                                        el: ".swiper-scrollbar",
-                                    },
-                                });
-                            </script>
-                        </div>
+                <!-- 서브 탑 (타이틀) -->
+                
+
+<div class="comH1Title">
+    <div class="titleArea">
+        <h1>증명서 발급</h1>
+    </div>
+</div>
+
+                <div class="comTopPrint">
+                    <div class="alignR">
+                        <button class="btn bLine info">발급방법안내</button>
                     </div>
-                    <div class="mainCont">
-                        <div class="contArea">
-                            <div class="mainBoard type1">
-                                <h2 class="title">
-                                    <span>알림 사항</span>
-                                    <!-- 20241210 추가 -->
-                                    <div class="paging">
-                                        <a href="#" class="prev">이전</a>
-                                        <span class="page"><b>1</b>/50</span>
-                                        <a href="#" class="next">다음</a>
-                                    </div>
-                                    <!-- //20241210 추가 -->
-                                </h2>
-                                <ul class="boardList">
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <i class="desc">기타문의</i>
-                                            <a href="" class="link">경정선수와 함께하는 자전거 엄청난 안전교실 온라인 교육이 등록되었습니다</a>
-                                        </div>
-                                        <div class="date">2004-05-20</div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <i class="desc">온라인 교육</i>
-                                            <a href="" class="link">온라인 교육이 등록되었습니다</a>
-                                        </div>
-                                        <div class="date">2004-05-20</div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <i class="desc">심판제재처분</i>
-                                            <a href="" class="link">심판 제 재 처분통지서가 등록되었습니다.</a>
-                                        </div>
-                                        <div class="date">2004-05-20</div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <i class="desc">기타문의</i>
-                                            <a href="" class="link">경정선수와 함께하는 자전거 엄청난 안전교실 온라인 교육이 등록되었습니다</a>
-                                        </div>
-                                        <div class="date">2004-05-20</div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <i class="desc">온라인 교육</i>
-                                            <a href="" class="link">온라인 교육이 등록되었습니다</a>
-                                        </div>
-                                        <div class="date">2004-05-20</div>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <i class="desc">심판제재처분</i>
-                                            <a href="" class="link">심판 제 재 처분통지서가 등록되었습니다.</a>
-                                        </div>
-                                        <div class="date">2004-05-20</div>
-                                    </li>
-                                </ul>
+                </div>
+
+                <div class="comInfoBox">
+                    <ul class="infoList">
+                        <li class="item">원활한 증명서 발급을 위해서는  Acrobat Reader 프로그램이 필요합니다.</li>
+                        <li class="item">이용하시는 컴퓨터에 없는 경우 오른쪽 링크 안내에 따라 Acrobat Reader를 설치해 주십시오.</li>
+                    </ul>
+                    <a href="#" class="downAcro"><img src="../../images/common/img_down_acro.png" alt="다운로드하기 Acrobat Reader"></a>
+                </div>
+
+                <div class="comInTitle">
+                    <h4>발급신청</h4>
+                </div>
+
+                <div class="modTab">
+                    <ul class="tabMenu">
+                        <li class="tabItem"><button class="tabName on" title="선택 된 탭메뉴">선수등록증명서</button></li> <!-- addClass - on : 메뉴 선택됨 -->
+                        <li class="tabItem"><button class="tabName" title="탭메뉴">사업소득원천징수영수증</button></li>
+                    </ul>
+                    <div class="tabContianer">
+                        <div class="tabCont on"> <!-- addClass - on : 컨텐츠 노출 -->
+
+                            <div class="comTable">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:35%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="t_01">용도선택</th>
+                                                <td class="left frm">
+                                                    <div class="frmGroup">
+                                                        <select name="" id="" class="iptSlt frmLg">
+                                                            <option value="">은행제출용</option>
+                                                            <option value="">의료보험공단제출용</option>
+                                                            <option value="">학교제출용</option>
+                                                            <option value="">여권 및 비자발급용</option>
+                                                            <option value="">차량구입용</option>
+                                                            <option value="">보험회사제출용</option>
+                                                            <option value="">서류제출용</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">신청일자</th>
+                                                <td>2024-05-30</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            
-                            <div class="mainBoard type2">
-                                <h2 class="title">
-                                    <span class="text">공지 사항</span>
-                                    <a href="#" class="more">더보기</a>
-                                </h2>
-                                <ul class="boardList">
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 경정선수와 함께하는 자전거 안전교실 재능기부 활동 </a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">경정선수 제5기, 제9기 재등록 검정 안내</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">경정선수와 함께하는 자전거 안전교실 재능기부 활동</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">(24.5.15.(수)) 광명스피돔 피스타 이용 제한 및 경정선수와 함께하는 자전거 안전교실 재능기부 활동 </a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">경정선수 제5기, 제9기 재등록 검정 안내</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                </ul>
+
+                            <div class="comBtnInView">
+                                <div class="btnArea">
+                                    <button class="btn basic">발급신청하기</button>
+                                </div>
                             </div>
-                            <div class="mainBoard type3">
-                                <h2 class="title">
-                                    <span class="text">자유게시판</span>
-                                    <a href="#" class="more">더보기</a>
-                                </h2>
-                                <ul class="boardList">
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">동료 경정선수분들께 드리는 글</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">[마감]기록측정 신청 (12월 6일 / 수)</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">기록측정 게시판 신설</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">동료 경정선수분들께 드리는 글</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">[마감]기록측정 신청 (12월 6일 / 수)</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">기록측정 게시판 신설</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <div class="mainBoard type4">
-                                <h2 class="title">
-                                    <span class="text">선수자료실</span>
-                                    <a href="#" class="more">더보기</a>
-                                </h2>
-                                <ul class="boardList">
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">도핑 치료목적사용면책(TUE) 신청서</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">2024년 경주경주 불참사유서 등 제출 양식</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">경정심판판정규칙</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">도핑 치료목적사용면책(TUE) 신청서</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">2024년 경주경주 불참사유서 등 제출 양식</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                    <li class="item">
-                                        <div class="textBox">
-                                            <a href="" class="link">경정심판판정규칙</a>
-                                        </div>
-                                        <span class="date">2004-05-20</span>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </div>
-                    </div>
-                    <div class="mainBtm">
-                        <div class="btmArea">
-                            <dl>
-                                <dt>불편·오류사항 신고접수</dt>
-                                <dd>사용 중 발생하는 불편·오류사항은 언제든지 신고해주세요</dd>
-                            </dl>
-                            <button>신고하기</button>
+                        <div class="tabCont">
+
+                            <div class="comTable">
+                                <div class="tableArea">
+                                    <table>
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:35%;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th class="t_01">연도선택</th>
+                                                <td class="left frm">
+                                                    <div class="frmGroup">
+                                                        <select name="" id="" class="iptSlt frmLg">
+                                                            <option value="">2024년</option>
+                                                            <option value="">2023년</option>
+                                                            <option value="">2022년</option>
+                                                            <option value="">2021년</option>
+                                                            <option value="">2020년</option>
+                                                            <option value="">2019년</option>
+                                                            <option value="">2018년</option>
+                                                            <option value="">2017년</option>
+                                                            <option value="">2016년</option>
+                                                            <option value="">2015년</option>
+                                                            <option value="">2014년</option>
+                                                            <option value="">2013년</option>
+                                                            <option value="">2012년</option>
+                                                            <option value="">2011년</option>
+                                                            <option value="">2010년</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="t_01">신청일자</th>
+                                                <td>2024-05-30</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text clar">* 상금명세서는 2010년부터 조회가 가능합니다.</p>
+                            </div>
+
+                            <div class="comBtnInView mtmn50 mo_mt0">
+                                <div class="btnArea">
+                                    <button class="btn basic">발급신청하기</button>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                    
+                <div class="comGroupBtm line">
+                    <div class="alignR">
+                        <button class="btn basic">목록</button>
+                    </div>
+                </div>
+                
+                <!-- 증명서 발급 신청 방법 안내 -->
+                <div id="sample01" class="modPopup md on"> <!-- class - on : 팝업오픈 -->
+                    <div class="popupDim">딤영역</div>
+                    <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
+                        <div class="popupInMotion">
+                            <div class="popupContainer">
+                                <div class="popupContArea">
+                                    <button class="btnPopClose" onclick="closePopup('sample01');">닫기</button>
+                                    <div class="popTitle">증명서 발급 신청 방법 안내</div>
+                                    <div class="popCont">
+                                        <!-- 팝업 컨텐츠 영역 -->
+                                        <div class="cptIssuance">
+                                            <div class="issueTitle">
+                                                <span class="num">01.</span>
+                                                <span class="text"><b>발급신청 선택</b></span>
+                                            </div>
+                                            <div class="issueCont">
+                                                발급을 원하는 증명서를 선택해주세요. 
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue001.png" alt="" >
+                                            </div>
+
+                                            <div class="issueTitle">
+                                                <span class="num">02.</span>
+                                                <span class="text"><b>선수등록증명서</b>를 선택한 경우, <b>용도</b>선택를, <br>
+                                                    <b>사업소득원천징수증</b>을 선택한 경우, <b>연도</b>를 선택해 주세요.</span>
+                                            </div>
+
+                                            <div class="issueList">
+                                                <b>선수등록증명서</b><br/>
+                                                용도선택은 크게 <b>은행제출용, 의료보험공단 제출용, 학교제출용, 여권 및 비자발급용, 차량구입용, 보험회사 제출용, 서류제출용</b>으로 분류되어있습니다.
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue002.png" alt="" >
+                                            </div>
+
+                                            <div class="issueList">
+                                                <b>사업소득원천징수영수증</b><br/>
+                                                사업소득원천징수영수증은 2010년부터 발급이 가능합니다.
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue003.png" alt="" >
+                                            </div>
+
+
+                                            <div class="issueTitle">
+                                                <span class="num">03.</span>
+                                                <span class="text"><b>발급신청하기</b></span>
+                                            </div>
+                                            <div class="issueCont">
+                                                <b class="txtPurple">발급신청하기</b> 버튼을 클릭해주세요.
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue004.png" alt="" >
+                                            </div>
+
+
+                                            <div class="issueTitle">
+                                                <span class="num">04.</span>
+                                                <span class="text"><b>발급신청 완료 안내</b></span>
+                                            </div>
+                                            <div class="issueCont">
+                                                증명서 발급 완료 안내 메세지에서 <b class="txtPurple">확인</b> 버튼을 선택해주세요.
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue005.png" alt="" >
+                                            </div>
+
+
+                                            <div class="issueTitle">
+                                                <span class="num">05.</span>
+                                                <span class="text"><b>발급한 증명서 선택</b></span>
+                                            </div>
+                                            <div class="issueCont">
+                                                증명서 발급 목록에서 발급한 증명서를 선택해주세요.
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue006.png" alt="" >
+                                            </div>
+
+
+                                            <div class="issueTitle">
+                                                <span class="num">06.</span>
+                                                <span class="text"><b>증명서 발급 인쇄</b></span>
+                                            </div>
+                                            <div class="issueCont">
+                                                증명서 상세 페이지에서 <b class="txtPurple">인쇄</b> 버튼을 선택하여 증명서를 인쇄합니다. <br/>
+                                                총 3회까지 인쇄 가능합니다.
+                                            </div>
+                                            <div class="imgBox">
+                                                <img src="../../images/contents/issue007.png" alt="" >
+                                            </div>
+
+                                        </div>
+                                        <!-- //팝업 컨텐츠 영역 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //증명서 발급 신청 방법 안내 -->
                 
                 <!-- //서브 컨텐츠 내용이 들어오는 영역-->
                 

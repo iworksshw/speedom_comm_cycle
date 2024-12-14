@@ -1,0 +1,112 @@
+.cptPrivacy {
+    width: 100%;
+    .privacyTitle {
+        width: 100%; margin-top:30px; border-top: 1px solid #eeeeee; padding-top: 30px;
+        &:first-child {margin-top: 0; border-top: 0; padding-top: 0;}
+        h4 {
+            width: 100%; color: #000; font-size: rem(34px); font-weight: 500; line-height: 1.6; text-align: center;
+        }
+    }
+    .privacyTitDesc {
+        width: 100%; margin-top: 16px; color: #000; font-size: rem(18px); font-weight: 400; line-height: 1.5; text-align: center;
+    }
+    .boxTitle {
+        margin-top: 30px;
+        h5 {
+            width: 100%; color: #000; font-size: rem(20px); font-weight: 600; line-height: 1.5;
+        }
+    }
+    .boxCont {
+        width: 100%; margin-top: 12px; padding: 24px; border-radius: 12px; background: #FAFAFA;
+        dl {
+            width: 100%; margin-top: 20px;
+            &:first-child {margin-top: 0;}
+            dt {
+                width: 100%; padding-left: 24px; text-indent: -24px; color: #000; font-size: rem(15px); font-weight: 600; line-height: normal;
+            }
+            dd {
+                width: 100%; margin-top: 12px; color: #4D4D4D; font-size: rem(15px); font-weight: 300;
+                .txtList {
+                    .item {
+                        width: 100%; margin-top: 12px; padding-left: 10px; position: relative;
+                        &:first-child {margin-top: 0;}
+                        &::before {
+                            content:""; width: 4px; height: 4px; border-radius: 50%; background: #4D5DF2; display: block; position: absolute; left: 0; top: 7px;
+                        }
+                        .listTit {
+                            color: #000; font-size: rem(15px); font-weight: 500; line-height: normal;
+                        }
+                        .listTxt {
+                            margin-top: 4px; color: #4D4D4D; font-size: rem(15px); font-weight: 300; line-height: normal;
+                        }
+                    }
+                }
+            }
+            .captionInfo {
+                margin-top: 4px; color: #4D5DF2; font-size: rem(13px); font-weight: 500; line-height: normal;
+            }
+        }
+    }
+    .agreement {
+        width: 100%; min-height: 50px; display: flex; justify-content: space-between;
+        .agreeTxt {
+            color: #4053FF; font-size: rem(17px); font-weight: 600; line-height: normal; align-content: center;
+        }
+        .agreeBox {
+            display: flex; justify-content: flex-end;
+        }
+    }
+    .privacyTbl {
+        margin-top: 4px; border-top: 1px solid #555;
+        table {
+            border-spacing: 0; border-collapse: collapse; table-layout: fixed;
+        }
+        th {
+            padding: 12px 10px; color: #000000; font-size: rem(15px); font-weight: 500; line-height: 1.3; border-right: 1px solid #EEE; background: #F8F8FE;   
+        }
+        td {
+            padding: 12px 10px; color: #4D4D4D; font-size: rem(15px); font-weight: 300; line-height: 1.3; border-top: 1px solid #EEE; border-right: 1px solid #EEE; background: #ffffff;  
+        }
+        .tbTxtList {
+            .tbItem {
+                width: 100%; margin-top: 4px; padding-left: 7px; position: relative;
+                &:first-child {margin-top: 0;}
+                &::before {
+                    content:""; width: 3px; height: 3px; border-radius: 50%; background: #CCCCCC; display: block; position: absolute; left: 0; top: 7px;
+                }
+            }
+        }
+    }
+    
+    @include media('mobile') {
+        .privacyTitle {
+            h4 {
+                font-size: rem(28px); line-height: 1.3;
+            }
+        }
+        .privacyTitDesc {
+            font-size: rem(17px);
+        }
+        .boxTitle {
+            margin-top: 24px;
+            h5 {
+                font-size: rem(18px);
+            }
+        }
+        .agreement {
+            margin-top: 20px;
+            flex-wrap: wrap;
+            .agreeBox {width: 100%; margin-top: 10px;}
+        }
+        .privacyTbl {
+            width: 100%; overflow-x: auto;
+            table {width: 800px;}
+        }
+        .boxCont {
+            padding: 15px;
+            dl {
+                dt {padding-left: 18px; text-indent: -18px;}
+            }
+        }
+    }
+}

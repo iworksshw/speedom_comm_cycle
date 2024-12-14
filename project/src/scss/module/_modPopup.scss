@@ -1,0 +1,65 @@
+.modPopup {
+    width:100%; height:100%; display:none; justify-content:center; align-items:center; position:fixed; left:50%; top:50%; z-index:1000; 
+    transform:translate(-50%,-50%);
+    
+    &.sm .popupArea {max-width:580px;}
+    &.md .popupArea {max-width:960px;}
+    &.lg .popupArea {max-width:1500px;}
+    &.tini .popupArea {max-width:400px;}
+
+    &.on {
+        display:flex; 
+        .popupDim {opacity:0; animation: popOpenDimd 0.2s linear forwards;}
+    }
+    *::-webkit-scrollbar {width:4px; background:rgba(132, 132, 132, 0.2);}
+    *::-webkit-scrollbar-thumb {background:#9fa0a0;}
+
+    .popupDim {width:100%; height:100%; font-size:0; background:rgba(0,0,0,0.8); position:fixed; left:0; top:0;}
+    @keyframes popOpenDimd { 0% {opacity:0;} 100% {opacity:1;} }
+    .popupArea {width:100%; max-width:1500px; height:auto; max-height: calc(100% - 60px);}
+    .popupInMotion {width:100%; height:100%; background:#fff;}
+    
+    .popupContainer {
+        width:100%; height:100%; max-height: calc(100vh - 60px); overflow:hidden;
+        
+        .popupContArea {
+            width:100%; height:100%; position:relative; background:#fff;
+            
+            .btnPopClose {
+                width:32px; height:32px; font-size:0; border:0; background:url(../../images/common/ic_32_pop_close.svg) center no-repeat; 
+                position:absolute; right:30px; top:15px; z-index:10;
+            }
+            .popTitle {
+                width: 100%; min-height: 60px; padding: 20px 60px 20px 30px; font-size: 20px; font-weight: 600; color: #fff; line-height: 23px; 
+                border-bottom: 1px solid rgba(132, 132, 132, 0.2); position: relative; word-break: keep-all; background: #2B38AC;
+
+                &.shadow {box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);}
+            }
+            .popCont {
+                width:100%; max-height:calc(100vh - 214px); padding:30px; overflow:auto;
+            }
+            .popBtm {
+                padding:14px 10px; display:flex; justify-content:center; background: #eeeefc;
+                &.division {justify-content:space-between;}
+                
+                .comGroupBtm {
+                    margin: 0; justify-content: center;
+                }
+                .btn {
+                    width: 180px; height: 52px;
+                }
+            }
+        }
+    }
+    @include media('mobile') {
+        .popupArea {
+            max-width: calc(100% - 40px) !important;
+        }
+        .popupContainer {
+            .popupContArea {
+                .popTitle {padding: 20px 45px 20px 15px;}
+                .popCont {padding: 20px 15px;}
+            }
+        }
+    }
+}
