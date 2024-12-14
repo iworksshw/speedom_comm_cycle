@@ -702,8 +702,18 @@
 .comRaffleTop {
     width: 100%; margin-top: 10px; padding: 23px 50px; border-radius: 12px; background: #F8F8FE;
     &:first-child {margin-top: 0;}
+
+    &:has(.search) {
+        margin-bottom: 60px;
+        .searchArea {
+            .alignL {
+                width: 100%;
+            }
+        }
+    }
     .searchArea {
-        width: 100%; min-height: 52px; display: flex; justify-content: space-between;
+        width: 100%; min-height: 52px; margin-top: 10px; display: flex; justify-content: space-between;
+        &:first-child {margin-top: 0;}
         .alignL {
             width: 650px; display: flex; flex-shrink: 0;
         }
@@ -753,9 +763,44 @@
         .red {
             color: #ff0000;
         }
+        .frmGroup {
+            margin-top: 0;
+            .tui-datepicker-input > input {
+                background: #fff url(../../images/common/ic_textfield_calendar.svg) right 15px center no-repeat !important;
+                &:disabled {background: #F8F8FE !important;}
+            }
+            .iptText {
+                height: 49px !important; background: #fff;
+            }
+            .iptSlt {
+                margin-left: 0 !important; height: 49px !important;
+                &.frmMd {width: 170px !important;}
+            }
+        }
+        .btn {
+            width:max-content; min-width:90px; height:49px; margin-right:4px; padding:0 15px; font-size: rem(14px); font-weight: 700; border-radius:12px; 
+            display: flex; justify-content: center; align-items: center;
+            &.gLine {
+                color: #4D4D4D; border: 1px solid #B0B2B7;  background: #ffffff;
+            }
+        }
     }   
     @include media ('tablet') {
+        &:has(.search) {
+            .searchArea {
+                .alignL {
+                    width: 100%;
+                }
+                .checkBoat {
+                    dd {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
         .searchArea {
+            margin-top: 15px;
+            &:first-child {margin-top: 0;}
             .alignL {
                 width: 350px;
             }
@@ -766,6 +811,25 @@
     }
     @include media ('mobile') {
         padding: 23px 20px;
+        &:has(.search) {
+            margin-bottom: 20px;
+            .searchArea {
+                .frmGroup {
+                    width: 100%;
+                    .tui-datepicker-input {width: 100%; min-width: auto;}
+                    .textBox.deco {width: max-content;}
+                    .iptText {
+                        width: 100% !important;
+                    }
+                    .iptSlt {
+                        &.frmMd {width: 100% !important;}
+                    }
+                }
+                .btn {
+                    width:100%;
+                }
+            }
+        }
         .searchArea {
             flex-wrap: wrap;
             .alignL {
