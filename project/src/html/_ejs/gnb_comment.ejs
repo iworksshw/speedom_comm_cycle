@@ -1,0 +1,67 @@
+<%
+var url = locals.url ? locals.url : '../../';
+var main = locals.main ? locals.main : '';
+%>
+
+            <div class="cptGnb <%= main %>">
+                <div class="gnbArea">
+                    <div class="logoBox">
+                        <a href="#"><img src="<%= url %>images/common/logo_kcycle.png" alt="KCYCLE" style="width:100%;"></a>
+                    </div>
+                    <div class="gnbBox">
+                        <div class="menuArea">
+                            <ul class="depth1Group">
+                                <li class="depth1List">
+                                    <a href="#" class="depth1Name">한줄평관리</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="menuBtn">
+                            <span>메</span>
+                            <span>뉴</span>
+                            <span>열기</span>
+                        </button>
+                    </div>
+                    <div class="gnbTitle">
+                        한줄평 커뮤니티
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20240723 추가 -->
+            <div class="cptAllMenu">
+                <div class="allMenuArea">
+                    <p class="welcome">안녕하세요, <b>류선재</b>님</p>
+                    <div class="sign">
+                        <button class="login">로그인</button>
+                        <button class="logout">로그아웃</button>
+                    </div>
+                    <div class="menuBox">
+                        <ul class="depth1Group">
+                            <li class="depth1List">
+                                <a href="#" class="depth1Name">한줄평관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="menuClose">메뉴닫기</button>
+                </div>
+            </div>
+
+            
+            <div class="cptLocaMenu <%= main %>">
+                <div class="locaArea">
+                    <ul class="menuGroup">
+                        <li class="menuItem home">
+                            <a href="#" class="title">홈</a>
+                        </li>
+                        <li class="menuItem depth1">
+                            <a href="#" class="title">한줄평관리</a>
+                        </li>
+                    </ul>
+                    <div class="sign">
+                        <button class="login">로그인</button>
+                        <button class="logout">로그아웃</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 20240723 추가 -->
