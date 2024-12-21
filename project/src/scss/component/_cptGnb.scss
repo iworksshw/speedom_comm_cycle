@@ -29,9 +29,32 @@
                             width:105px; height: 100%; margin:0 2.07vw; color: #FFF; font-size: rem(16px); font-style: normal; font-weight: 400; line-height: normal; display:flex; 
                             align-items: center; white-space: nowrap; 
                         }
+                        
+                        &:hover {
+                            .depth1Name {
+                                font-size: rem(24px); font-weight: 600;
+                            }
+                            .depth2Group {
+                                .depth2List {
+                                    .depth2Name{
+                                        color: #2B38AC; transition:all 0.1s;
+                                        &::before {
+                                            content:''; width:6px; height:6px; border-radius:3px; background:#fff; display:block; 
+                                            position: absolute; left:-18px; top:6px; transition:all 0.2s;
+                                        }
+                                        &:hover {
+                                            color: var(--blue-txt01); font-weight: 600; position: relative;
+                                            &::before {
+                                                background:var(--blue-txt01);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         .depth2Group{
                             //display:none; 
-                            height:0; position:absolute; left:0; top:150px; z-index: 301; overflow:hidden; transition: height 0.2s;
+                            height:0; position:absolute; left:0; top:100px; z-index: 301; overflow:hidden; transition: height 0.2s;
                             &.line02 {left:10.625vw;}
                             .depth2List{
                                 padding-left:2.07vw; 
@@ -44,6 +67,23 @@
                             }
                         }
                     }
+                }
+                &::before {
+                    content:""; width:100vw; height:0; background:#fff; display:block; position: absolute; left:0; top:100px; z-index: 300;
+                    box-shadow: 0px 0px 15px 0px rgba(43, 56, 172, 0.15); transition: height 0.2s;
+                }
+                &:hover{
+                    &::before {
+                        height:300px;
+                    }
+                    .depth1Group {
+                        .depth1List {
+                            .depth2Group {
+                                height:300px;
+                            }
+                        }
+                    }
+
                 }
             }
             .menuBtn{
@@ -100,6 +140,10 @@
                                         }
                                     }
                                 }
+                            }
+                            .depth2Group{
+                                //display:none; 
+                                top:150px;
                             }
                         }
                     }

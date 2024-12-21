@@ -114,3 +114,12 @@ body.noScrl {height:100vh; overflow:hidden;}
   .mo_mb40 {margin-bottom:40px !important;}
   .mo_mb50 {margin-bottom:50px !important;}
 }
+
+@media print {
+  .lytLayout {
+    .layoutArea {
+      .layoutTop {display: none;}
+      .layoutFooter {display: none;}
+    }
+  }
+}
