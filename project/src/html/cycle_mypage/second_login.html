@@ -1,0 +1,86 @@
+<!-- Header -->
+<%- include('../_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('../_ejs/gnb.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutContainer" id="container">
+
+            <!-- 서브 콘텐츠 영역 -->
+            <div class="layoutSubCont">
+
+                <!-- 서브 컨텐츠 내용이 들어오는 영역-->
+                <div class="cptLogin">
+                    <div class="lgInner">
+                        <div class="logoBox">
+                            <div class="kspologo"><img src="../../images/common/logo_kcycle_login.png" alt="Kcycle 로그인"></div>
+                            <h1 class="kspoIndex">2차인증
+            </h1>
+                        </div>
+                        <div class="contBox">
+                            
+                            <dl>
+                                <dt class="title">
+                                    <span class="required">*</span>비밀번호
+                                </dt>
+                                <dd class="iptBox">
+                                    <input type="password" placeholder="비밀번호를 입력해주세요">
+                                </dd>
+                            </dl>
+                            <div class="inText clar">유효성 문구 노출</div>
+                            
+                        </div>
+                        <div class="footBox">
+                            <div class="loginBox">
+                                <button class="btn basic" disabled="">로그인</button>
+                            </div>
+                            <div class="loginSerch">
+                                <a href="#pw">비밀번호 찾기</a>
+                            </div>
+                            <div class="footInfo">
+                                시스템 문의 : 정보지원팀<br>
+                                연락처 : 02-2067-5536
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- //서브 컨텐츠 내용이 들어오는 영역-->
+                
+            </div>
+            <!-- //서브 콘텐츠 영역 -->
+
+        </div>
+        <!-- //중단영역 -->
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('../_ejs/footer.ejs', {
+                url: "../../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('../_ejs/bottom.ejs', { }) %>
