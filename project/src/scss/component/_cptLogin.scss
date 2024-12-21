@@ -1,6 +1,33 @@
 
 .cptLogin{
     width:100%; min-height:100vh; margin:0 auto; display: flex; align-items: center;
+
+    @at-root {
+        .lytLayout:has(.cptLogin) {
+            .cptLogin {
+                min-height: auto;
+                .lgInner {
+                    padding-top: 0;
+                    .logoBox {
+                        min-height: 214px;
+                    }
+                    .contBox {
+                        min-height: 167px;
+                    }
+                    .footBox {
+                        min-height: 187px;
+                        .footInfo {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+            .cptFooter {
+                margin-top: 100px;
+            }
+        }
+    }
+
     @include media('mobile'){
         width:100%; height:auto; padding:60px 20px 50px; align-items:baseline;
     }
