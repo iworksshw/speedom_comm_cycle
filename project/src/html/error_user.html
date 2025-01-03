@@ -1,0 +1,40 @@
+<!-- Header -->
+<%- include('./_ejs/top.ejs', {
+    title: "error",
+    url: "../"
+}) %>
+
+<div class="cptError">
+    <div class="errorArea">
+        <dl class="errorBox errorUser">
+            <dt class="errorTitle">
+                <h1>요청하신 웹페이지의 사용권한이 없습니다.</h1>
+            </dt>
+            <dd class="errorMsg">
+                <p>
+                    권한이 필요하신 경우 관리자에게 문의해 주세요.<br>
+                    입력하신 페이지 주소가 잘못되었을 수 있으니 다시 한번 확인해주세요.
+                </p>
+            </dd>
+        </dl>
+        <div class="btnArea">
+            <a href="#" class="btn gLine">이전 페이지</a>
+            <a href="#" class="btn basic">메인으로 이동</a>
+        </div>
+        <div class="manager">
+            <ul class="managerGroup">
+                <li class="item">
+                    <span class="tit">시스템 문의 : </span>
+                    <span class="msg">정보지원팀</span>
+                </li>
+                <li class="item">
+                    <span class="tit">연락처 : </span>
+                    <span class="msg">02-2067-5536</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bottom -->
+<%- include('./_ejs/bottom.ejs', { }) %>
