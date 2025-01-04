@@ -8,7 +8,7 @@
             @include media('mobile'){height:auto; padding:32px 0 26px;}
             .siteGroup{
                 width: 100%; padding:0 20px; max-width: 1312px; height: 100%; margin:0 auto; display:flex;
-                @include media('mobile'){flex-wrap:wrap;}
+                @include media('tablet'){flex-wrap:wrap;}
                 .siteItem{
                     height: 100%; flex-grow: 1; position:relative;
                     &:first-child::before{content:""; width:1px; height:13px; background:rgba(0,0,0,0.2); display:block; position:absolute; left:0; top:calc(50% - 6px);}
@@ -17,20 +17,45 @@
                         width: 100%; height: 100%; color: #000; text-align: center; font-size: rem(15px); font-style: normal; font-weight: 500; line-height: normal; 
                         display:flex; justify-content: center; align-items: center;
                     }
+                    
+                    @include media('tablet'){
+                        width: 25%; height:30px; padding:0 4px; display:flex;
+                        &:nth-child(1) {
+                            &::before{display:none;}
+                        }
+                        &:nth-child(4) {
+                            &::after{display:none;}
+                        }
+                        &:nth-child(7) {
+                            &::after{display:none;}
+                        }
+                        &:nth-child(n+5) {width: 33%;}
+                    }
                     @include media('mobile'){
                         height:30px; padding:0 4px; display:flex; 
                         &:nth-child(1) {
-                            order:1;
+                            width: 46%;
                             &::before{display:none;}
                         }
-                        &:nth-child(2) {order:2;}
-                        &:nth-child(3) {order:2;}
-                        &:nth-child(4) {order:1;}
-                        &:nth-child(5) {order:1;}
-                        &:nth-child(6) {
-                            order:2;
+                        &:nth-child(2) {
+                            width: 27%;
+                        }
+                        &:nth-child(3) {
+                            width: 27%;
                             &::after{display:none;}
                         }
+                        &:nth-child(4) {
+                            width: 27%;
+                            &::after{display:initial;}
+                        }
+                        &:nth-child(5) {
+                            &::after{display:none;}
+                        }
+                        &:nth-child(n+4) {width:50%;}
+                        &:nth-child(7) {
+                            &::after{display:none;}
+                        }
+                        a {font-size: rem(14px);}
                     }
                 }
             }
