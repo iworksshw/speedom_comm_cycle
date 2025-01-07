@@ -767,7 +767,7 @@
             margin-top: 0;
             .tui-datepicker-input > input {
                 background: #fff url(../../images/common/ic_textfield_calendar.svg) right 15px center no-repeat !important;
-                &:disabled {background: #F8F8FE !important;}
+                &:disabled {background: #eee !important;}
             }
             .iptText {
                 height: 49px !important; background: #fff;
@@ -994,6 +994,16 @@ textArea.areaMd {height:150px;}
 .frmChoBtn .iptRdo + .iptLbl {width:100px; height:30px; font-size: rem(14px); font-weight: 400; text-align:center; color:#fff; line-height:26px; border-radius:3px; border:1px solid #444; background:#666;}
 .frmChoBtn .iptRdo:checked + .iptLbl {border:1px solid #2784ff; background:#319af6;}
 
+.frmChoBox:has(.gLine) {
+    margin-right: 0;
+}
+.frmChoBox .iptRdo + .iptLbl.gLine {
+    width: max-content; height: 49px; min-width: 90px; margin-right: 4px; padding: 0 15px; font-size: 0.875rem; font-weight: 700; 
+    border-radius: 12px; display: flex; justify-content: center; align-items: center; color: #4D4D4D; border: 1px solid #B0B2B7; background: #ffffff;
+}
+.frmChoBox .iptRdo:checked + .iptLbl.gLine {
+    color: #fff; border: 1px solid #4D5DF2; background: #4D5DF2;
+}
 
 /* ------------------------------ 한줄 안에 여러폼을 넣어야 할 경우 ------------------------------ */
 .frmGroup {display:flex; align-items:center;}
