@@ -115,11 +115,18 @@ body.noScrl {height:100vh; overflow:hidden;}
   .mo_mb50 {margin-bottom:50px !important;}
 }
 
+
+/* 프린트 시 */
 @media print {
   .lytLayout {
     .layoutArea {
       .layoutTop {display: none;}
       .layoutFooter {display: none;}
     }
+  }
+
+  /* 모터보트 추첨 상단 */
+  .comRaffleTop {
+    min-width: 1000px;
   }
 }
