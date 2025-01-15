@@ -65,6 +65,10 @@
         }
         .contBox{
             max-width:500px; min-height:327px; margin:0 auto; display:flex; flex-wrap: wrap; align-content: flex-start;
+
+            &.auto {
+                margin-bottom: 10px; min-height: auto;
+            }
             .textMsg{
                 width:100%; 
                 .text{
