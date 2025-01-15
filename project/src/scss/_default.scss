@@ -129,4 +129,9 @@ body.noScrl {height:100vh; overflow:hidden;}
   .comRaffleTop {
     min-width: 1000px;
   }
+
+  //아코디언 on된 내용만 출력하기
+  .modAccordion:not(:has(.accrTitle.on)) {
+    display: none;
+  }
 }
