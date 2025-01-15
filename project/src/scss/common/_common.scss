@@ -28,16 +28,53 @@
 
 /* -------------------------------- 작은 타이틀 (테이블 타이틀) -------------------------------- */
 .comInTitle {
-    width:100%; margin-bottom:22px; position:relative;
+    width:100%; margin-bottom:22px; position:relative; display: flex; align-items: flex-end;
     .absR {
         display:flex; position:absolute; right:0; bottom:-12px;
     }
     h4 {
-        padding-left:17px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: normal; position:relative;
+        width: 100%; padding-left:17px; color: #000; font-size: rem(15px); font-style: normal; font-weight: 700; line-height: normal; position:relative;
         &::before {content:""; width:7px; height:7px; border-radius:50%; background: #4D5DF2; display:block; position:absolute; left:0; top:5px;}
     }
     .textBox {
         color: #000; font-size: rem(14px); font-weight: 400; line-height: normal;
+    }
+
+    
+    .alignR{
+        width:100%; display:flex; justify-content: flex-end;
+    }    
+    .btn{
+        height: 42px; margin-left:4px; padding: 0px 20px; text-align: center; font-size: rem(14px); font-style: normal; font-weight: 700; 
+        border-radius: 12px; white-space: nowrap;
+        &:first-child {margin-left:0;}
+        &.bLine {
+            color: var(--blue-txt01); border: 2px solid #CACFFC; background: var(--gray-bg01);
+            &:disabled {opacity: 0.5; mix-blend-mode: luminosity;}
+        }
+        &.excel {
+            padding-right:50px; background:var(--gray-bg01) url(../../images/common/ic_down_excel.svg) right 20px center no-repeat;
+        }
+        &.print {
+            padding-right:50px; background:var(--gray-bg01) url(../../images/common/ic_print.svg) right 20px center no-repeat;
+        }
+        &.info {
+            padding-right:50px; background:var(--gray-bg01) url(../../images/common/ic_info_print.svg) right 20px center no-repeat;
+        }
+        @include media('mobile'){
+            &.excel {
+                padding-right:44px; background:var(--gray-bg01) url(../../images/common/ic_down_excel.svg) right 16px center no-repeat;
+            }
+            &.print {
+                padding-right:44px; background:var(--gray-bg01) url(../../images/common/ic_print.svg) right 16px center no-repeat;
+            }
+            &.info {
+                padding-right:44px; background:var(--gray-bg01) url(../../images/common/ic_info_print.svg) right 16px center no-repeat;
+            }
+            &.hidePrint {
+                display: none;
+            }
+        }
     }
 }
 .comTable + .comInTitle {margin-top:50px;}
