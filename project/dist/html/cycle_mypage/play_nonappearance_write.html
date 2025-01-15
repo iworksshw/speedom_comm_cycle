@@ -324,8 +324,8 @@
                                 </colgroup>
                                 <tbody>
                                     <tr>
-                                        <th>선수명</th>
-                                        <td class="left">류선재</td>
+                                        <th>선수명(등급)</th> <!-- 20250115 수정 -->
+                                        <td class="left">류선재(A2)</td> <!-- 20250115 수정 -->
                                     </tr>
                                     <tr>
                                         <th>등록번호</th>
@@ -349,6 +349,25 @@
                                             <script>datePickerTo("startpicker-input02", "startpicker-container02", "endpicker-input02", "endpicker-container02");</script>
                                         </td>
                                     </tr>
+
+                                    <!-- 20250115 추가 -->
+                                    <tr>
+                                        <th>사유코드</th>
+                                        <td class="left frm">
+                                            <div class="frmGroup" style="flex-wrap: wrap;">
+                                                <div class="frmChoBox"><input id="rdo001" type="radio" class="iptRdo" name="rdo001"><label for="rdo001" class="iptLbl">가사​</label></div>
+                                                <div class="frmChoBox"><input id="rdo002" type="radio" class="iptRdo" name="rdo001"><label for="rdo002" class="iptLbl">훈련​</label></div>
+                                                <div class="frmChoBox"><input id="rdo003" type="radio" class="iptRdo" name="rdo001"><label for="rdo003" class="iptLbl">경조사​</label></div>
+                                                <div class="frmChoBox"><input id="rdo004" type="radio" class="iptRdo" name="rdo001"><label for="rdo004" class="iptLbl">예비군​</label></div>
+                                                <div class="frmChoBox"><input id="rdo005" type="radio" class="iptRdo" name="rdo001"><label for="rdo005" class="iptLbl">부상(시합중)</label></div>
+                                                <div class="frmChoBox"><input id="rdo006" type="radio" class="iptRdo" name="rdo001"><label for="rdo006" class="iptLbl">부상(일상생활 중, 질병)</label></div>
+                                                <div class="frmChoBox"><input id="rdo007" type="radio" class="iptRdo" name="rdo001"><label for="rdo007" class="iptLbl">부상(훈련중)</label></div>
+                                                <div class="frmChoBox"><input id="rdo008" type="radio" class="iptRdo" name="rdo001"><label for="rdo008" class="iptLbl">기타(대회, 행사, 공무 등)</label></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- //20250115 추가 -->
+
                                     <tr>
                                         <th>불참사유</th>
                                         <td class="left frm">
