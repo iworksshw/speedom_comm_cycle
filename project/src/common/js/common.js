@@ -58,23 +58,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ------------------------------- 아코디언 함수 ------------------------------- //
 function accordionInit(){
-    const modAccos = document.querySelectorAll(".modAccordion");
-    modAccos.forEach(function(modAcco,modIdx){
-        const accoItems = modAcco.querySelectorAll(".accrBox");
+    //const modAccos = document.querySelectorAll(".modAccordion");
+    //modAccos.forEach(function(modAcco,modIdx){
+        const accoItems = document.querySelectorAll(".accrBox");
         accoItems.forEach(function(accoItem,itemIdx,elements){
             const accoBtn = accoItem.querySelector(".accrTitle");
             const accoCont = accoItem.querySelector(".accrBody");
+            console.log(itemIdx);
             accoBtn.addEventListener("click",function(){
-                if(this.classList.contains("on")){
-                    this.classList.remove("on");
-                    slideUp(accoCont,300);
-                    return;
-                }
-                this.classList.add("on");
-                slideDown(accoCont,300);
+                accoItems.forEach(function(element, eleIdx){
+                    if(element.querySelector(".accrTitle").classList.contains("on")){
+                        element.querySelector(".accrTitle").classList.remove("on");
+                        slideUp(element.querySelector(".accrBody"),300);
+                    }else if(itemIdx == eleIdx){
+                        element.querySelector(".accrTitle").classList.add("on");
+                        slideDown(element.querySelector(".accrBody"),300);
+                    }
+                });
+
+                // if(this.classList.contains("on")){
+                //     this.classList.remove("on");
+                //     slideUp(accoCont,300);
+                //     return;
+                // }
+                // this.classList.add("on");
+                // slideDown(accoCont,300);
             });
         });
-    });
+    //});
 }
 
 // ------------------------------- 탭메뉴 함수 ------------------------------- //
