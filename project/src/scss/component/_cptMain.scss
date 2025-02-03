@@ -8,13 +8,27 @@
         &:not(:has(.topArea .quickMenu)) {
             height: 140px;
             .topArea {
-                justify-content: center;
+                justify-content: center; 
                 .greeting {
                     width: max-content; min-height: 50px; padding: 0 0 0 70px; display: flex;
                     background: rgba(140, 152, 255, 0) url(../../images/common/ic_profile.svg) left center / 50px no-repeat;
                     span {
                         color: #000; font-size: rem(40px); font-weight: 300; display: flex; order: 1;
                         &.name {margin-top: 0; margin-right: 10px; order: 0;}
+                    }
+                }
+            }
+            @include media("mobile") {
+                .topArea {
+                    padding: 0 20px;
+                    .greeting {
+                        flex-wrap: wrap;
+                        span {
+                            width: 100%; font-size: rem(18px);
+                            &.name {
+                                font-size: rem(36px); order: 1;
+                            }
+                        }
                     }
                 }
             }
