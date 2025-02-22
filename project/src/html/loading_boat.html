@@ -1,0 +1,67 @@
+<!-- Header -->
+<%- include('./_ejs/top.ejs', {
+    title: "경륜 커뮤니티",
+    url: "../"
+}) %>
+
+<!-- 레이아웃 -->
+<div class="lytLayout">
+    <div class="layoutArea">
+
+        <!-- 상단영역 -->
+        <div class="layoutTop">
+            <!-- Top -->
+            <%- include('./_ejs/gnb.ejs', {
+                url: "../",
+                main: "main"
+            }) %>
+        </div>
+        <!-- //상단영역 -->
+
+        <!-- 중단영역 -->
+        <div class="layoutMainContainer" id="container">
+
+
+            <div id="sample01" class="modSmPopup on"> <!-- class - on : 팝업오픈, md : middle,  lg : large -->
+                <div class="popupDim">딤영역</div>
+                <div class="popupArea"> <!-- style - 너비값(width), 높이값(height) : 팝업 너비 및 높이 지정 -->
+                    <div class="popupContainer">
+                        <div class="popupContArea">
+                            <div class="popCont">
+                                <!-- 팝업 컨텐츠 영역 -->
+                                <div class="popImage">
+                                    <div class="imgBt"><img src="../images/common/loading_boat.png" alt="로딩이미지 캐릭터"></div>
+                                </div>
+            
+                                <div class="popTitle">
+                                    <h2>잠시만 기다려주세요!</h2>
+                                    <p>페이지를 불러오는 중입니다!</p>
+                                </div>
+                                <!-- //팝업 컨텐츠 영역 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- //중단영역 -->
+
+
+
+        <!-- 하단영역 -->
+        <div class="layoutFooter">
+            <!-- Footer -->
+            <%- include('./_ejs/footer.ejs', {
+                url: "../"
+            }) %>
+        </div>
+        <!-- //하단영역 -->
+
+    </div>
+</div>
+
+
+<!-- Bottom -->
+<%- include('./_ejs/bottom.ejs', { }) %>
