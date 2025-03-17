@@ -402,6 +402,14 @@
             .tableArea {overflow-x: auto;}
             .tableArea > table {min-width: 780px;}
         }
+        &.sizeS {
+            .tableArea {overflow-x: auto;}
+            .tableArea > table {min-width: 580px;}
+        }
+        &.sizeXS {
+            .tableArea {overflow-x: auto;}
+            .tableArea > table {min-width: 480px;}
+        }
     }
 
     .checkText {
